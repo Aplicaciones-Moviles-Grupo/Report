@@ -62,3 +62,7 @@
 #### 3.1.4.4.Mobile Applications User Flow Diagrams
 
 #### 3.1.4.5.Mobile Applications Prototyping
+
+<img src="resources/chapter-3/prototype-mobile-app.png" alt="edit-vehicle" style="margin-bottom: 5px;" width="600">
+
+Link del Prototipo: [https://www.figma.com/proto/ogKCZcKoFNJczb2QF6g0oX/Aplicaciones-Moviles---Grupo-2?node-id=37-921&p=f&t=qlRYowPt05w3zXVe-1&scaling=scale-down&content-scaling=fixed&page-id=37%3A908&starting-point-node-id=37%3A941](https://www.figma.com/proto/ogKCZcKoFNJczb2QF6g0oX/Aplicaciones-Moviles---Grupo-2?node-id=37-921&p=f&t=qlRYowPt05w3zXVe-1&scaling=scale-down&content-scaling=fixed&page-id=37%3A908&starting-point-node-id=37%3A941)
