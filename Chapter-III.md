@@ -190,6 +190,46 @@ Visualización de rutas y paradas en mapa interactivo (visible en las pantallas 
 
 #### 3.1.4.3.Mobile Applications Mock-ups
 
+#### LoginView
+![faqdesign.png](resources/chapter-4/mockups/4.PNG)
+
+#### RegisterUserView
+![faqdesign.png](resources/chapter-4/mockups/15.png)
+
+#### RegisterProfileView
+![faqdesign.png](resources/chapter-4/mockups/14.png)
+
+#### ProfileView
+![faqdesign.png](resources/chapter-4/mockups/13.png)
+
+#### EditProfileView
+![faqdesign.png](resources/chapter-4/mockups/7.png)
+
+#### EditVehicleView
+![faqdesign.png](resources/chapter-4/mockups/10.png)
+
+#### HomeView
+![faqdesign.png](resources/chapter-4/mockups/10.png)
+
+#### StopsView
+![faqdesign.png](resources/chapter-4/mockups/11.png)
+
+#### CreateStopView
+![faqdesign.png](resources/chapter-4/mockups/17.png)
+
+#### EditStopView
+![faqdesign.png](resources/chapter-4/mockups/9.png)
+
+#### RoutesView
+![faqdesign.png](resources/chapter-4/mockups/6.png)
+
+#### CreateRouteView
+![faqdesign.png](resources/chapter-4/mockups/5.png)
+
+#### EditRouteView
+![faqdesign.png](resources/chapter-4/mockups/8.png)
+
+
 #### 3.1.4.4.Mobile Applications User Flow Diagrams
 
 #### 3.1.4.5.Mobile Applications Prototyping
