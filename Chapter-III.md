@@ -154,7 +154,33 @@ Visualización de rutas y paradas en mapa interactivo (visible en las pantallas 
 
 #### 3.1.3.1.Landing Page Wireframe
 
+#### Full landing page wireframe design
+![wireframe (1).png](resources%2Fchapter-4%2Flanding%2Fwireframe%20%281%29.png)
+#### a. Hero section wireframe
+![herosectionwireframe.png](resources/chapter-4/landing/wireframe_hero-section.png)
+#### b. Como funciona section wireframe
+![comofuncionawireframe.png](resources/chapter-4/landing/wireframe_como-funciona-section.png)
+#### c. Ventajas section wireframe
+![ventajaswireframe.png.png](resources/chapter-4/landing/wireframe_ventajas-section.png)
+#### d. FAQ section wireframe
+![faqwireframe.png.png](resources/chapter-4/landing/wireframe_faq-section.png)
+#### e. Footer section wireframe
+![footerwireframe.png.png](resources/chapter-4/landing/wireframe_footer-section.png)
+
 #### 3.1.3.2.Landing Page Mock-up
+
+#### Full landing page design
+![mockup.png](resources%2Fchapter-4%2Flanding%2Fmockup.png)
+#### a. Hero section design
+![herosectiondesign.png](resources/chapter-4/landing/design_hero-section.png)
+#### b. Como funciona section design
+![comofuncionadesign.png](resources/chapter-4/landing/design_como-funciona-section.png)
+#### c. Ventajas section design
+![ventajasdesign.png](resources/chapter-4/landing/design_ventajas-section.png)
+#### d. FAQ section design
+![faqdesign.png](resources/chapter-4/landing/design_faq-section.png)
+#### e. Footer section design
+![faqdesign.png](resources/chapter-4/landing/design_footer-section.png)
 
 ### 3.1.4.Mobile Applications UX/UI Design
 
