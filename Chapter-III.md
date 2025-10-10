@@ -188,6 +188,13 @@ Visualización de rutas y paradas en mapa interactivo (visible en las pantallas 
 
 #### 3.1.4.2.Mobile Applications Wireflow Diagrams
 
+<img src="resources/chapter-3/Wireflow-1.png" style="margin-bottom: 5px;" height="400">
+
+<img src="resources/chapter-3/Wireflow-2.png" style="margin-bottom: 5px;" height="400">
+
+<img src="resources/chapter-3/Wireflow-3.png" style="margin-bottom: 5px;" height="400">
+
+
 #### 3.1.4.3.Mobile Applications Mock-ups
 
 **Login and Register**
