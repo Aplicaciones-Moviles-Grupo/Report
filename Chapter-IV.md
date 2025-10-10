@@ -226,6 +226,7 @@ Esta configuración asegura que la **Landing Page** se mantenga disponible en l�
 
 ![img_3.png](img_3.png)
 
+
 ## 4.2.Landing Page & Mobile Application Implementation
 
 ### 4.2.1.Sprint 1
@@ -235,6 +236,37 @@ Esta configuración asegura que la **Landing Page** se mantenga disponible en l�
 #### 4.2.1.2.Sprint Backlog 1
 
 #### 4.2.1.3.Development Evidence for Sprint Review
+
+**LANDING PAGE**<br>
+En el desarrollo de la **Landing Page**, la implementación estuvo a cargo de un único integrante del equipo.  
+Por esta razón, el proyecto se trabajó **exclusivamente en su entorno local**, sin requerir colaboración simultánea en línea.  
+Esta decisión se tomó por **comodidad y eficiencia**, dado que el alcance del proyecto era reducido y no implicaba la necesidad de integración con otros desarrolladores.
+
+Posteriormente, el proyecto fue desplegado en **GitHub Pages** para su publicación, permitiendo que el resto del equipo y los evaluadores pudieran visualizar la versión final directamente desde la web.
+
+<table><thead>
+  <tr>
+    <th>&nbsp;&nbsp;&nbsp;<br>Repository&nbsp;&nbsp;&nbsp;</th>
+    <th>&nbsp;&nbsp;&nbsp;<br>Branch&nbsp;&nbsp;&nbsp;</th>
+    <th>&nbsp;&nbsp;&nbsp;<br>Commit ID&nbsp;&nbsp;&nbsp;</th>
+    <th>&nbsp;&nbsp;&nbsp;<br>Commit<br>&nbsp;&nbsp;&nbsp;<br>Message&nbsp;&nbsp;&nbsp;</th>
+    <th>&nbsp;&nbsp;&nbsp;<br>Commit<br>&nbsp;&nbsp;&nbsp;<br>Message Body&nbsp;&nbsp;&nbsp;</th>
+    <th>&nbsp;&nbsp;&nbsp;<br>Committed on&nbsp;&nbsp;&nbsp;(Date)&nbsp;&nbsp;&nbsp;</th>
+  </tr></thead>
+<tbody>
+  <tr>
+<td rowspan="10">
+	<h5>Landing Page</h5>
+	<a href="https://aplicaciones-moviles-grupo.github.io/landing-page-original" target="_blank" rel="noopener noreferrer">https://aplicaciones-moviles-grupo.github.io/landing-page-original</a>
+	<br>
+</td>
+    <td><br>main</td>
+    <td><br>9d66d7fd7ccd87ec117c25cb8dcc7bb561dad065</td>
+    <td><br>first commit</td>
+    <td><br>first commit</td>
+    <td><br>Oct 8, 10:38 PM GMT-5</td>
+  </tr>
+</tbody></table>
 
 #### 4.2.1.4.Testing Suite Evidence for Sprint Review
 
