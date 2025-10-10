@@ -486,12 +486,12 @@ En esta sesión aplicamos la técnica de Candidate Context Discovery para identi
 
 Este proceso nos llevo a crear los siguientes Bounded Contexts:
 
-| Bounded Context       | Descripción                                                                 | Eventos clave                                                   |
-|-----------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------|
-| IAM                   | Maneja la autenticación y autorización de los usuarios, asegurando accesos. | `Usuario Registrado`, `Usuario Autenticado`                     |
-| Profile               | Administra la información de perfil de conductores y pasajeros.             | `Perfil Creado`, `Perfil Actualizado`                           |
-| Gestión de Paraderos  | Permite crear, editar y eliminar paraderos, que sirven como puntos de ruta. | `Paradero Creado`, `Paradero Actualizado`, `Paradero Eliminado` |
-| Gestión de Rutas      | Administra la creación, edición y eliminación de rutas con paraderos.       | `Ruta Creada`, `Ruta Actualizada`, `Ruta Eliminada`             |
+| Bounded Context   | Descripción                                                                 | Eventos clave                                                   |
+|-------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------|
+| IAM               | Maneja la autenticación y autorización de los usuarios, asegurando accesos. | `Usuario Registrado`, `Usuario Autenticado`                     |
+| Profile           | Administra la información de perfil de conductores y pasajeros.             | `Perfil Creado`, `Perfil Actualizado`                           |
+| Stops Management  | Permite crear, editar y eliminar paraderos, que sirven como puntos de ruta. | `Paradero Creado`, `Paradero Actualizado`, `Paradero Eliminado` |
+| Routes Management | Administra la creación, edición y eliminación de rutas con paraderos.       | `Ruta Creada`, `Ruta Actualizada`, `Ruta Eliminada`             |
 
 
 #### 2.5.1.2. Domain Message Flow Modeling
@@ -537,29 +537,29 @@ En esta sección se presentan los Bounded Context Canvases correspondientes a lo
 * Se propone el uso de un Anti-Corruption Layer (ACL) en Profile, ya que esto garantiza que cambios en IAM no afecten directamente al contexto Profile.
 
 
-**Profile – Rutas (Conformist)**
+**Profile – Routes (Conformist)**
 
-* El contexto de Rutas necesita información de los conductores o usuarios para registrar qué persona creó y administra una ruta.
+* El contexto de Routes necesita información de los conductores o usuarios para registrar qué persona creó y administra una ruta.
 
 * Profile es Upstream, ya que provee los datos del usuario.
 
-* Rutas es Downstream, adoptando el modelo de Profile de forma directa.
+* Routes es Downstream, adoptando el modelo de Profile de forma directa.
 * La relación es de tipo Conformist, ya que Rutas depende del modelo definido en Profile
 
-**Profile – Paraderos (Conformist)**
+**Profile – Stops (Conformist)**
 
-De manera similar, el contexto de Paraderos depende de los datos de usuario para registrar quién creó, modificó o eliminó un paradero.
+De manera similar, el contexto de Stops depende de los datos de usuario para registrar quién creó, modificó o eliminó un paradero.
 
 * Profile es Upstream, como fuente de información de usuario.
 
-* Paraderos es Downstream, ajustándose al modelo de Profile.
-* La relación se establece como Conformist, ya que Paraderos adopta directamente el modelo de usuario de Profile para mantener coherencia e integridad en los datos.
+* Stops es Downstream, ajustándose al modelo de Profile.
+* La relación se establece como Conformist, ya que Stops adopta directamente el modelo de usuario de Profile para mantener coherencia e integridad en los datos.
 
-**Rutas – Paraderos (Customer/Supplier)**
+**Routes – Stops (Customer/Supplier)**
 
-El contexto de Rutas necesita consumir información de los paraderos para construir recorridos y definir los puntos de inicio, intermedio y final.
+El contexto de Rutas necesita consumir información de los Stops para construir recorridos y definir los puntos de inicio, intermedio y final.
 
-* En esta relación, Paraderos es Upstream (Supplier), ya que provee la información de los paraderos disponibles.
+* En esta relación, Stops es Upstream (Supplier), ya que provee la información de los Stops disponibles.
 
 * Rutas es Downstream (Customer), pues consume esa información para asociarla a una ruta.
 
