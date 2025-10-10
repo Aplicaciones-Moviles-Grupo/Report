@@ -186,7 +186,69 @@ Visualización de rutas y paradas en mapa interactivo (visible en las pantallas 
 
 #### 3.1.4.1.Mobile Applications Wireframes
 
+**Login and Register**
+
+**Login View Wireframe**
+
+<img src="resources/chapter-3/LoginViewWireframe.png" alt="login" style="margin-bottom: 5px;" width="250">
+
+**Register User Wireframe**
+
+<img src="resources/chapter-3/RegisterUserViewWireframe.png" alt="register-user-form" style="margin-bottom: 5px;" width="250">
+
+**Register Profile Wireframe**
+
+<img src="resources/chapter-3/RegisterProfileViewWireframe.png" alt="register-profile-form" style="margin-bottom: 5px;" width="250">
+
+**Home**
+
+**Home Wireframe**
+
+<img src="resources/chapter-3/HomeViewWireframe.png" alt="home" style="margin-bottom: 5px;" width="250">
+
+**Stops**
+
+**Stops View Wireframe**
+
+<img src="resources/chapter-3/StopsViewWireframe.png" alt="stop-section" style="margin-bottom: 5px;" width="250">
+
+**Create Stop Wireframe** 
+
+<img src="resources/chapter-3/CreateStopViewWireframe.png" alt="create-stop" style="margin-bottom: 5px;" width="250">
+
+**Routes**
+
+**Routes View Wireframe**
+
+<img src="resources/chapter-3/RoutesViewWireframe.png" alt="route-section" style="margin-bottom: 5px;" width="250">
+
+**Create Route Wireframe**
+
+<img src="resources/chapter-3/CreateRouteViewWireframe.png" alt="create-route" style="margin-bottom: 5px;" width="250">
+
+**Profile**
+
+**Profile View Wireframe**
+
+<img src="resources/chapter-3/ProfileViewWireframe.png" alt="profile-section" style="margin-bottom: 5px;" width="250">
+
+**Edit Profile Wireframe**
+
+<img src="resources/chapter-3/EditProfileWireframe.png" alt="edit-profile" style="margin-bottom: 5px;" width="250">
+
+**Edit Vehicle Wireframe**
+
+<img src="resources/chapter-3/EditVehicleWireframe.png" alt="edit-vehicle" style="margin-bottom: 5px;" width="250">
+
+
 #### 3.1.4.2.Mobile Applications Wireflow Diagrams
+
+<img src="resources/chapter-3/Wireflow-1.png" style="margin-bottom: 5px;" height="400">
+
+<img src="resources/chapter-3/Wireflow-2.png" style="margin-bottom: 5px;" height="400">
+
+<img src="resources/chapter-3/Wireflow-3.png" style="margin-bottom: 5px;" height="400">
+
 
 #### 3.1.4.3.Mobile Applications Mock-ups
 
