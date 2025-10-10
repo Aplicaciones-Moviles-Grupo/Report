@@ -111,6 +111,58 @@ Para la escritura de commits en el proyecto Eventify, se sigue la convencion 'Co
 
 #### 4.2.1.5.Execution Evidence for Sprint Review
 
+Durante este primer Sprint logramos realizar la implementación del Landing page, Backend y Mobile App, sin embargo este último por el momento se realizó de forma local.
+
+A continuación se presentan evidencias de ejecución de los 3 productos:
+
+
+**Landing Page**
+
+**Hero Section**: En esta sección se colocó un mensaje que atraiga la atención del visitante, junto con un boton call to action para posteriormente enviarlo a la aplicación movil desplegada. 
+
+<img src="resources/chapter-4/Hero%20Section.png" height=400>
+
+**How It Works Section**: En esta sección se le presenta como funciona la app para que el usuario obtenga información sobre las rutas y paraderos de los colectivos 
+
+<img src="resources/chapter-4/How-it-Work.png" height=400>
+
+**Advantages Section**: Se presentan los beneficios que ofrece la aplicación para facilitar la búsqueda de colectivos
+
+<img src="resources/chapter-4/Advantages%20Section.png" height=400>
+
+**FAQ Section**: Se muestran las preguntas frecuentes que realizan los visitantes cuando visitan por primera vez la página
+
+<img src="resources/chapter-4/FAQ%20Section.png" height=400>
+
+**Footer Section**: Finalmente en el footer se presenta información de contacto como redes sociales, numero de telefono, etc.
+
+<img src="resources/chapter-4/Footer%20Section.png" height=400>
+
+
+**Backend**
+
+<img src="resources/chapter-4/Backend-Execution-1.png" height=400>
+
+<img src="resources/chapter-4/Backend-Execution-2.png" height=400>
+
+<img src="resources/chapter-4/Backend-Execution-3.png" height=400>
+
+<img src="resources/chapter-4/Backend-Execution-4.png" height=400>
+
+<img src="resources/chapter-4/Backend-Execution-5.png" height=400>
+
+**Mobile App**
+
+<img src="resources/chapter-4/Mobile-App-Execution-1.png" height=400>
+
+<img src="resources/chapter-4/Mobile-App-Execution-2.png" height=400>
+
+<img src="resources/chapter-4/Mobile-App-Execution-3.png" height=400>
+
+<img src="resources/chapter-4/Mobile-App-Execution-4.png" height=400>
+
+
+
 #### 4.2.1.6.Services Documentation Evidence for Sprint Review
 
 #### 4.2.1.7.Software Deployment Evidence for Sprint Review
