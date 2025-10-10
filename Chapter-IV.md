@@ -103,7 +103,29 @@ Para la escritura de commits en el proyecto Eventify, se sigue la convencion 'Co
 
 #### 4.2.1.1.Sprint Planning 1
 
+En este primer sprint, el equipo se centró en el desarrollo y mejora de la aplicación móvil “Chapa Tu Ruta” en Android Studio.  
+El objetivo principal fue implementar las principales vistas funcionales y establecer la navegación entre ellas.  
+
+Las tareas se distribuyeron de la siguiente manera:
+
+- **Adrián Valerio**: Implementación de las vistas de **Login** y **Registro de usuario** (RegisterUserView y RegisterProfileView), además de la configuración del **AppNavHost** para gestionar la navegación.
+- **Yasser Renteria**: Desarrollo de la **pantalla de creación de rutas**, enfocada en permitir al conductor o usuario registrar rutas personalizadas dentro de la app móvil.
+- **Renzo Araujo**: Implementación de la **página de edición de perfil**, donde los usuarios pueden actualizar sus datos personales y de vehículo.
+- **Fabrizio Cutiri**: Creación de la **página principal (Home)** que sirve como punto de inicio después del inicio de sesión, mostrando las rutas y accesos a las demás funcionalidades.
+
+También se añadió el **logo oficial de la aplicación** en todas las vistas principales para unificar la identidad visual.
+
 #### 4.2.1.2.Sprint Backlog 1
+
+| ID | Historia de Usuario | Descripción | Prioridad | Responsable | Estado |
+|----|----------------------|-------------|------------|--------------|---------|
+| HU-01 | Inicio de Sesión | Como usuario, quiero iniciar sesión con mis credenciales para acceder a la app. | Alta | Adrián | Completado |
+| HU-02 | Registro de Usuario | Como nuevo usuario, quiero registrarme ingresando mis datos personales y del vehículo. | Alta | Adrián | Completado |
+| HU-03 | Crear Ruta | Como conductor, quiero registrar rutas para ofrecer mis servicios. | Media | Yasser | En desarrollo |
+| HU-04 | Editar Perfil | Como usuario, quiero editar mi información personal para mantenerla actualizada. | Media | Renzo | Completado |
+| HU-05 | Página Principal (Home) | Como usuario, quiero acceder a la pantalla principal después del login para ver y navegar entre secciones. | Alta | Fabrizio | Completado |
+| HU-06 | Navegación entre pantallas | Implementar navegación entre Login, Registro, Perfil, Home y Crear Ruta. | Alta | Adrián | Completado |
+| HU-07 | Integrar logo institucional | Añadir el logo oficial de la app en todas las vistas principales. | Media | Todo el equipo | Completado |
 
 #### 4.2.1.3.Development Evidence for Sprint Review
 
