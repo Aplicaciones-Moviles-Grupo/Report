@@ -288,6 +288,59 @@ Todas las cadenas visibles al usuario deben almacenarse en res/values/strings.xm
 ```
 
 ### 4.1.4.Software Deployment Configuration
+**Landing Page**
+
+Para el despliegue de la **Landing Page**, se utilizó **GitHub Pages**, la funcionalidad integrada de GitHub que permite publicar sitios web estáticos de manera sencilla y gratuita.
+
+### Proceso de implementación
+
+- **Creación del repositorio:**  
+  Desde la cuenta de GitHub, se seleccionó la opción **"New Repository"** para crear un nuevo repositorio donde se alojará el proyecto.
+
+- **Configuración del repositorio:**  
+  Se asignó un nombre identificativo al repositorio y se configuró con visibilidad **pública**, requisito necesario para que GitHub Pages pueda realizar el despliegue del sitio.
+
+**Configuración del despliegue con GitHub Pages**
+
+Para proceder con el despliegue de la **Landing Page**, se creó una nueva rama denominada `feature/chapter-IV-deployment`, con el objetivo de mantener aislados los cambios relacionados con la configuración del entorno de publicación.  
+A continuación, se ejecutó el comando `git branch` para verificar las ramas activas en el repositorio, confirmando que la rama actual de trabajo era la recién creada.
+
+Posteriormente, se instaló el paquete **gh-pages** mediante el siguiente comando:
+
+```bash
+npm install gh-pages --save-dev
+```
+![img_1.png](img_1.png)
+
+**Ejecución del despliegue**
+
+Una vez instalada la dependencia **gh-pages** y configurado el script de despliegue en el archivo `package.json`, se procedió a ejecutar el comando:
+
+```bash
+npm run deploy
+```
+![img_2.png](img_2.png)
+**Configuración de github Pages**
+
+Una vez ejecutado el despliegue con `npm run deploy`, el sitio quedó alojado en la rama **`gh-pages`** del repositorio.  
+Para finalizar la configuración, se accedió a la pestaña **Settings → Pages** dentro del repositorio de GitHub.
+
+### Detalles de la configuración
+
+- **Fuente de despliegue (Source):**  
+  Se seleccionó la opción **"Deploy from a branch"**, indicando que el sitio será publicado directamente desde una rama del repositorio.
+
+- **Rama de publicación (Branch):**  
+  Se estableció la rama **`gh-pages`** como la fuente del sitio, con el directorio raíz **`/(root)`**, lo que permite a GitHub Pages leer directamente los archivos estáticos generados en la carpeta `dist` durante el proceso de build.
+
+- **URL del sitio:**  
+  GitHub genera automáticamente la URL de acceso público:  
+  👉 [https://aplicaciones-moviles-grupo.github.io/landing-page-original/](https://aplicaciones-moviles-grupo.github.io/landing-page-original/)
+
+Esta configuración asegura que la **Landing Page** se mantenga disponible en línea y que cualquier actualización futura en el código pueda desplegarse fácilmente con un nuevo `npm run deploy`.
+
+![img_3.png](img_3.png)
+
 
 ## 4.2.Landing Page & Mobile Application Implementation
 
@@ -319,6 +372,8 @@ También se añadió el **logo oficial de la aplicación** en todas las vistas p
 | HU-06 | Navegación entre pantallas | Implementar navegación entre Login, Registro, Perfil, Home y Crear Ruta. | Alta | Fabrizio | Completado |
 
 #### 4.2.1.3.Development Evidence for Sprint Review
+
+**Mobile Application**<br>
 
 <table>
   <tr>
@@ -519,6 +574,69 @@ También se añadió el **logo oficial de la aplicación** en todas las vistas p
 </table>
 
 
+**LANDING PAGE**<br>
+En el desarrollo de la **Landing Page**, la implementación estuvo a cargo de un único integrante del equipo.  
+Por esta razón, el proyecto se trabajó **exclusivamente en su entorno local**, sin requerir colaboración simultánea en línea.  
+Esta decisión se tomó por **comodidad y eficiencia**, dado que el alcance del proyecto era reducido y no implicaba la necesidad de integración con otros desarrolladores.
+
+Posteriormente, el proyecto fue desplegado en **GitHub Pages** para su publicación, permitiendo que el resto del equipo y los evaluadores pudieran visualizar la versión final directamente desde la web.
+
+<table><thead>
+  <tr>
+    <th>&nbsp;&nbsp;&nbsp;<br>Repository&nbsp;&nbsp;&nbsp;</th>
+    <th>&nbsp;&nbsp;&nbsp;<br>Branch&nbsp;&nbsp;&nbsp;</th>
+    <th>&nbsp;&nbsp;&nbsp;<br>Commit ID&nbsp;&nbsp;&nbsp;</th>
+    <th>&nbsp;&nbsp;&nbsp;<br>Commit<br>&nbsp;&nbsp;&nbsp;<br>Message&nbsp;&nbsp;&nbsp;</th>
+    <th>&nbsp;&nbsp;&nbsp;<br>Commit<br>&nbsp;&nbsp;&nbsp;<br>Message Body&nbsp;&nbsp;&nbsp;</th>
+    <th>&nbsp;&nbsp;&nbsp;<br>Committed on&nbsp;&nbsp;&nbsp;(Date)&nbsp;&nbsp;&nbsp;</th>
+  </tr></thead>
+<tbody>
+  <tr>
+<td rowspan="10">
+	<h5>Landing Page</h5>
+	<a href="https://aplicaciones-moviles-grupo.github.io/landing-page-original" target="_blank" rel="noopener noreferrer">https://aplicaciones-moviles-grupo.github.io/landing-page-original</a>
+	<br>
+</td>
+    <td><br>main</td>
+    <td><br>9d66d7fd7ccd87ec117c25cb8dcc7bb561dad065</td>
+    <td><br>first commit</td>
+    <td><br>first commit</td>
+    <td><br>Oct 8, 10:38 PM GMT-5</td>
+  </tr>
+</tbody></table>
+
+**BACKEND**<br>
+<table><thead>
+  <tr>
+    <th>&nbsp;&nbsp;&nbsp;<br>Repository&nbsp;&nbsp;&nbsp;</th>
+    <th>&nbsp;&nbsp;&nbsp;<br>Branch&nbsp;&nbsp;&nbsp;</th>
+    <th>&nbsp;&nbsp;&nbsp;<br>Commit ID&nbsp;&nbsp;&nbsp;</th>
+    <th>&nbsp;&nbsp;&nbsp;<br>Commit<br>&nbsp;&nbsp;&nbsp;<br>Message&nbsp;&nbsp;&nbsp;</th>
+    <th>&nbsp;&nbsp;&nbsp;<br>Commit<br>&nbsp;&nbsp;&nbsp;<br>Message Body&nbsp;&nbsp;&nbsp;</th>
+    <th>&nbsp;&nbsp;&nbsp;<br>Committed on&nbsp;&nbsp;&nbsp;(Date)&nbsp;&nbsp;&nbsp;</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td rowspan="10">
+	    <h5>back-end</h5>
+	      <a href="https://github.com/Aplicaciones-Moviles-Grupo/back-end" target="_blank" rel="noopener noreferrer">https://github.com/Aplicaciones-Moviles-Grupo/back-end</a>
+	      <br>
+    </td>
+    <td><br>main</td>
+    <td><br>fc929b77270f95aba6a35387a96a7503c3523529</td>
+    <td><br>first commit</td>
+    <td><br>first commit</td>
+    <td><br>Oct 6, 2025</td>
+  </tr>
+ <tr>
+   <td><br>main</td>
+    <td><br>cf7d59caa7536a1f3aa87852fa8ef0b899349d49</td>
+    <td><br>feature: update database connection settings for production environment</td>
+    <td><br>feature: update database connection settings for production environment</td>
+    <td><br>Oct 8, 2025</td>
+  </tr>
+</tbody></table>
+
 #### 4.2.1.4.Testing Suite Evidence for Sprint Review
 
 Se realizaron pruebas manuales de navegación entre pantallas utilizando el **emulador de Android Studio**, verificando que:
@@ -600,6 +718,65 @@ Tras finalizar el Sprint 1, hemos logrado implementar los endpoints principales 
 
 
 #### 4.2.1.7.Software Deployment Evidence for Sprint Review
+
+**Evidencias del despliegue de la Landing Page**
+
+A continuación, se presentan las evidencias del **despliegue de la Landing Page**, desarrollada con **Vue 3**, **Vite** y **JavaScript**.  
+El proyecto fue construido aplicando componentes dinámicos y estilos personalizados, y posteriormente publicado mediante la funcionalidad de **GitHub Pages**, la cual permite alojar sitios web estáticos directamente desde un repositorio.
+
+Durante el proceso se generó la carpeta `dist/` con los archivos optimizados para producción, y se configuró el despliegue automático hacia la rama `gh-pages`.  
+De esta manera, la página quedó disponible públicamente, mostrando la integración entre **Vue**, **Vite** y las configuraciones de despliegue en **GitHub Pages**.
+
+**url:** <a href="https://aplicaciones-moviles-grupo.github.io/landing-page-original">https://aplicaciones-moviles-grupo.github.io/landing-page-original</a>
+
+
+![img_4.png](img_4.png)
+**Como trabajamos**<br>
+![img_5.png](img_5.png)
+![img_6.png](img_6.png)
+![img_7.png](img_7.png)
+
+**Evidencias del despliegue del Back End**<br>
+**Despliegue del Web Service**
+
+Para el **despliegue del Web Service**, se utilizó la plataforma **Railway**, la cual se integró directamente con el repositorio de **GitHub**.  
+Esta conexión permitió automatizar el proceso de despliegue, de modo que cada cambio o actualización en el código del repositorio se reflejara automáticamente en el entorno en línea.
+
+Railway ofrece una configuración sencilla y flexible, ideal para proyectos con backend ligero o servicios web basados en APIs.  
+A través de su panel, se vinculó el repositorio del proyecto, se configuraron las variables de entorno necesarias y se ejecutó el despliegue con un solo clic, sin necesidad de herramientas externas o autenticaciones adicionales desde el IDE.
+
+![img_8.png](img_8.png)
+
+**Actualización del despliegue en Railway**
+
+En la imagen se muestra el panel de control de **Railway**, donde se registran los cambios aplicados al proyecto del **Web Service**.  
+El sistema indica que se realizaron **dos actualizaciones** relacionadas con la configuración del entorno de despliegue:
+
+- **Branch:**  
+  Se confirma que la rama activa para el despliegue es `main`, lo que significa que Railway tomará automáticamente el código más reciente de esta rama cada vez que se realice un nuevo commit o push en GitHub.
+
+- **Repo:**  
+  Se muestra el repositorio vinculado al servicio, en este caso **`Aplicaciones-Moviles-Grupo/back-end`**, el cual contiene el código fuente del backend.
+
+El mensaje **“back-end was updated”** confirma que Railway detectó cambios en el repositorio y actualizó el entorno de producción de forma automática.  
+Esta funcionalidad garantiza una **integración continua** entre GitHub y Railway, permitiendo que cada modificación validada en la rama principal se despliegue sin intervención manual adicional. 
+![img_9.png](img_9.png)
+
+**Evidencia de despliegue en Railway**
+
+La imagen muestra el entorno de **producción** en **Railway**, donde el **backend** fue desplegado correctamente.
+
+- **Estado:** El mensaje *“Deployment successful”* confirma que el despliegue se realizó sin errores.
+- **Origen:** El código se obtuvo automáticamente desde la rama `main` del repositorio **`Aplicaciones-Moviles-Grupo/back-end`**, mediante integración con **GitHub**.
+- **Configuración:** El servicio usa un **Dockerfile** para su construcción y ejecuta el comando `./Frock-backend` al iniciar.
+
+Con esto se valida que el **Web Service** se encuentra activo y funcionando en producción con un flujo automatizado de despliegue continuo.
+![img_10.png](img_10.png)
+
+**Despliegue del Web Service en Railway**
+
+finalmente, se muestra la URL pública generada por **Railway** para acceder al **Web Service** desplegado.
+![img_11.png](img_11.png)
 
 #### 4.2.1.8.Team Collaboration Insights during Sprint
 El equipo mantuvo reuniones periódicas mediante **Discord** y **Meet** para coordinar tareas y compartir avances.  
