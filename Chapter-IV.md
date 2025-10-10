@@ -124,33 +124,46 @@ En Kotlin, la sangría debe ser de 4 espacios por bloque. No se recomienda el us
 Kotlin
 
 Kotlin es el lenguaje principal utilizado en el proyecto. Las siguientes pautas aseguran consistencia y legibilidad en el código:
-
+```
+fun calculateDistance(origin: Location, destination: Location): Float {
+    val result = FloatArray(1)
+    Location.distanceBetween(
+        origin.latitude,
+        origin.longitude,
+        destination.latitude,
+        destination.longitude,
+        result
+    )
+    return result[0]
+}
+```
 **Uso de val y var**
 
 Siempre que sea posible, utilizar val en lugar de var para definir variables inmutables, siguiendo el principio de inmutabilidad recomendado por Google (s.f.).
-
+```
 val userName = "Adrian"
 var userAge = 21
-
+```
 
 **Formato de funciones y clases**
 
 Las llaves de apertura deben ir en la misma línea que la declaración, y la llave de cierre en su propia línea.
-
+```
 class UserRepository {
     fun getUserById(id: String): User {
         return userDao.getUser(id)
     }
 }
-
+```
 
 **Espaciado**
 
 Se debe incluir un espacio después de los dos puntos en las declaraciones de tipos y entre operadores.
 
+```
 val distance: Float = 23.5f
 val sum = x + y
-
+```
 
 **Imports**
 
@@ -172,13 +185,14 @@ Los nombres de las funciones composables deben usar PascalCase y terminar con la
 fun LoginScreen(navController: NavController)
 
 @Composable
+```
 fun RouteCard(routeName: String, onClick: () -> Unit)
-
+```
 
 **Estructura y legibilidad**
 
 Cada Composable debe tener una estructura clara y con espaciado adecuado para mejorar la legibilidad.
-
+```
 @Composable
 fun HomeScreen() {
     Column(
@@ -195,19 +209,19 @@ fun HomeScreen() {
         }
     }
 }
-
+```
 
 **Uso de colores y temas**
 
 Los colores y estilos deben provenir del archivo de tema ubicado en core/ui/theme/, respetando las convenciones de Material Design 3.
-
+```
 Button(
     onClick = { /* TODO */ },
     colors = ButtonDefaults.buttonColors(containerColor = PrimaryColor)
 ) {
     Text("Register", color = Color.White)
 }
-
+```
 
 **Clean Architecture**
 
@@ -215,27 +229,27 @@ El proyecto sigue la arquitectura en capas Domain, Data, y Presentation, donde c
 
 Domain Layer
 Contiene los casos de uso (use cases) y las entidades del negocio.
-
+```
 class GetUserUseCase(private val repository: UserRepository) {
     suspend operator fun invoke(id: String): User {
         return repository.getUserById(id)
     }
 }
-
+```
 
 **Data Layer**
 Gestiona las fuentes de datos (API, base de datos local).
-
+```
 class UserRepositoryImpl(private val api: UserApi) : UserRepository {
     override suspend fun getUserById(id: String): User {
         return api.getUser(id)
     }
 }
-
+```
 
 **Presentation Layer**
 Maneja la lógica de interfaz (ViewModel + Composables).
-
+```
 @HiltViewModel
 class LoginViewModel @Inject constructor(
     private val loginUseCase: LoginUseCase
@@ -250,7 +264,7 @@ class LoginViewModel @Inject constructor(
         }
     }
 }
-
+```
 
 **XML (Resources)**
 
@@ -259,18 +273,19 @@ Aunque Jetpack Compose reemplaza gran parte del XML, se mantendrán recursos par
 **Nombres de archivos**
 
 Deben escribirse en snake_case, en minúsculas.
-
+```
 ic_logo_app.xml
 background_primary.xml
 colors.xml
 strings.xml
-
+```
 **Cadenas**
 
 Todas las cadenas visibles al usuario deben almacenarse en res/values/strings.xml.
-
+```
 <string name="app_name">ChapaTuRuta</string>
 <string name="login_button">Iniciar sesión</string>
+```
 
 ### 4.1.4.Software Deployment Configuration
 
