@@ -108,7 +108,33 @@ la accesibilidad, la estructura y la comprensión del contenido del documento.
 y atributos, se decidió emplear únicamente minúsculas para mantener la claridad y uniformidad del código. Asimismo, 
 se adoptó la convención kebab-case para garantizar coherencia en la nomenclatura y facilitar el mantenimiento del proyecto.
 
+**CSS**<br>
+**CSS**
+
+En el desarrollo de los estilos se siguieron las **convenciones BEM** y las **guías de estilo recomendadas**, con el propósito de mantener un código estructurado, legible y fácil de mantener. Además, se emplearon **variables personalizadas en `:root`** para definir la paleta de colores y las transiciones del sitio, lo que permite una gestión más eficiente del diseño y facilita futuras modificaciones.
+
+### Principales características implementadas
+
+- **Uso de variables CSS personalizadas:**  
+  En el selector `:root` se declararon múltiples variables (`--cl-orange`, `--cl-purple`, `--cl-green`, etc.) para estandarizar la paleta de colores y asegurar coherencia visual en toda la interfaz.
+
+- **Compatibilidad con modo claro y oscuro:**  
+  Se utilizó la regla `@media (prefers-color-scheme: light)` para ajustar automáticamente los colores del sitio según la preferencia del usuario, mejorando la accesibilidad y experiencia visual.
+
+- **Tipografía y legibilidad:**  
+  Se definió una jerarquía tipográfica clara empleando fuentes del sistema y ajustes de renderizado (`-webkit-font-smoothing`, `-moz-osx-font-smoothing`) para optimizar la legibilidad en diferentes dispositivos.
+
+- **Diseño responsivo:**  
+  Se incluyeron márgenes dinámicos (`--sideMargin`, `--sideMarginMobile`) y transiciones suaves (`--n-out`, `--n-in-out`) para adaptar el contenido a distintos tamaños de pantalla, manteniendo una apariencia consistente.
+
+- **Transiciones y efectos interactivos:**  
+  Los botones (`button`) cuentan con **transiciones suaves y efectos hover**, aportando dinamismo y una mejor experiencia de usuario.
+
+En conjunto, este enfoque garantiza un diseño moderno, coherente y adaptable, alineado con las buenas prácticas de desarrollo frontend.
+
 ### 4.1.4.Software Deployment Configuration
+
+
 
 ## 4.2.Landing Page & Mobile Application Implementation
 
