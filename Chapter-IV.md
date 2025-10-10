@@ -132,6 +132,31 @@ En el desarrollo de los estilos se siguieron las **convenciones BEM** y las **gu
 
 En conjunto, este enfoque garantiza un diseño moderno, coherente y adaptable, alineado con las buenas prácticas de desarrollo frontend.
 
+**JavaScript**
+
+Para la parte funcional del proyecto se utilizó **JavaScript** junto con el **framework Vue 3** y el **empaquetador Vite**, lo que permitió un desarrollo modular, rápido y eficiente.  
+El código principal inicializa la aplicación, configura dependencias y registra los componentes visuales.
+
+### Principales características implementadas
+
+- **Inicialización del proyecto con Vue 3:**  
+  La aplicación se crea mediante la función `createApp(App)`, que establece la estructura base del proyecto y monta la interfaz en el elemento raíz identificado como `#app`.
+
+- **Integración del framework PrimeVue:**  
+  Se incorporó **PrimeVue** como biblioteca principal de componentes UI, configurada con el **tema Aura** para garantizar una estética moderna y coherente.  
+  La personalización del tema se definió a través de opciones como `prefix`, `darkModeSelector` y `cssLayer`, adaptando la integración al diseño del sitio.
+
+- **Internacionalización (i18n):**  
+  Se implementó el módulo `i18n.js` para manejar la **traducción de contenidos** entre diferentes idiomas, optimizando la experiencia del usuario en contextos multilingües.
+
+- **Registro de componentes globales:**  
+  Los componentes `Button` y `SelectButton` de PrimeVue fueron registrados globalmente bajo los nombres `pb-Button` y `pb-SelectButton`, facilitando su reutilización en distintas secciones del proyecto.
+
+- **Importación modular de estilos:**  
+  Los estilos globales se administran a través del archivo `style.css`, que se integra en la aplicación para mantener la coherencia visual junto con las configuraciones de tema y tipografía.
+
+En conjunto, este enfoque permite mantener un código **escalable, limpio y orientado a componentes**, alineado con las mejores prácticas de desarrollo frontend moderno.
+
 ### 4.1.4.Software Deployment Configuration
 
 
