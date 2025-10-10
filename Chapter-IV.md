@@ -94,6 +94,19 @@ Para la escritura de commits en el proyecto Eventify, se sigue la convencion 'Co
 ```
 
 ### 4.1.3.Source Code Style Guide & Conventions
+Para el desarrollo de Chapa Tu Ruta, se han adoptado las siguientes guías de estilo y convenciones de codificación para
+asegurar la consistencia y calidad del código en todo el proyecto:<br>
+**HTML**<br>
+Durante el desarrollo en HTML se aplicaron las Convenciones de Codificación establecidas para este lenguaje, integrando 
+además el uso del framework Vue junto con Vite para optimizar el rendimiento y la organización del proyecto. 
+Los aspectos más relevantes implementados son:
+
+* Empleo de etiquetas semánticas: Se utilizaron elementos como header, nav, main y footer con el propósito de mejorar 
+la accesibilidad, la estructura y la comprensión del contenido del documento.
+
+* Estructura e indentación: Aunque HTML permite el uso indistinto de mayúsculas y minúsculas en los nombres de etiquetas
+y atributos, se decidió emplear únicamente minúsculas para mantener la claridad y uniformidad del código. Asimismo, 
+se adoptó la convención kebab-case para garantizar coherencia en la nomenclatura y facilitar el mantenimiento del proyecto.
 
 ### 4.1.4.Software Deployment Configuration
 
