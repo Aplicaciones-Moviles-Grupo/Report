@@ -197,6 +197,35 @@ npm install gh-pages --save-dev
 ```
 ![img_1.png](img_1.png)
 
+**Ejecución del despliegue**
+
+Una vez instalada la dependencia **gh-pages** y configurado el script de despliegue en el archivo `package.json`, se procedió a ejecutar el comando:
+
+```bash
+npm run deploy
+```
+![img_2.png](img_2.png)
+**Configuración de github Pages**
+
+Una vez ejecutado el despliegue con `npm run deploy`, el sitio quedó alojado en la rama **`gh-pages`** del repositorio.  
+Para finalizar la configuración, se accedió a la pestaña **Settings → Pages** dentro del repositorio de GitHub.
+
+### Detalles de la configuración
+
+- **Fuente de despliegue (Source):**  
+  Se seleccionó la opción **"Deploy from a branch"**, indicando que el sitio será publicado directamente desde una rama del repositorio.
+
+- **Rama de publicación (Branch):**  
+  Se estableció la rama **`gh-pages`** como la fuente del sitio, con el directorio raíz **`/(root)`**, lo que permite a GitHub Pages leer directamente los archivos estáticos generados en la carpeta `dist` durante el proceso de build.
+
+- **URL del sitio:**  
+  GitHub genera automáticamente la URL de acceso público:  
+  👉 [https://aplicaciones-moviles-grupo.github.io/landing-page-original/](https://aplicaciones-moviles-grupo.github.io/landing-page-original/)
+
+Esta configuración asegura que la **Landing Page** se mantenga disponible en línea y que cualquier actualización futura en el código pueda desplegarse fácilmente con un nuevo `npm run deploy`.
+
+![img_3.png](img_3.png)
+
 ## 4.2.Landing Page & Mobile Application Implementation
 
 ### 4.2.1.Sprint 1
