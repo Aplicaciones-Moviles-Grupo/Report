@@ -95,6 +95,183 @@ Para la escritura de commits en el proyecto Eventify, se sigue la convencion 'Co
 
 ### 4.1.3.Source Code Style Guide & Conventions
 
+**Nomenclatura General**
+
+Para el desarrollo de la aplicación móvil en **Android Studio** utilizando **Kotlin** y **Jetpack Compose** bajo el patrón **Clean Architecture**, se aplicarán convenciones de nomenclatura establecidas por **Google Kotlin Style Guide** y **Jetpack Compose Guidelines**.  
+
+Los nombres deben ser claros, expresivos y en inglés. Se empleará **camelCase** para variables y funciones, **PascalCase** para clases y componentes de UI, y **snake_case** solo para recursos XML.
+
+Ejemplos:
+
+```kotlin
+// Variables y funciones (camelCase)
+val userName: String
+fun getUserProfile()
+
+// Clases y componentes (PascalCase)
+class LoginViewModel
+@Composable
+fun HomeScreen()
+
+// Recursos XML (snake_case)
+ic_user_avatar.png
+activity_main.xml
+```
+
+**Sangría**
+
+En Kotlin, la sangría debe ser de 4 espacios por bloque. No se recomienda el uso de tabulaciones, de acuerdo con las convenciones oficiales de Android Developers.
+Kotlin
+
+Kotlin es el lenguaje principal utilizado en el proyecto. Las siguientes pautas aseguran consistencia y legibilidad en el código:
+
+**Uso de val y var**
+
+Siempre que sea posible, utilizar val en lugar de var para definir variables inmutables, siguiendo el principio de inmutabilidad recomendado por Google (s.f.).
+
+val userName = "Adrian"
+var userAge = 21
+
+
+**Formato de funciones y clases**
+
+Las llaves de apertura deben ir en la misma línea que la declaración, y la llave de cierre en su propia línea.
+
+class UserRepository {
+    fun getUserById(id: String): User {
+        return userDao.getUser(id)
+    }
+}
+
+
+**Espaciado**
+
+Se debe incluir un espacio después de los dos puntos en las declaraciones de tipos y entre operadores.
+
+val distance: Float = 23.5f
+val sum = x + y
+
+
+**Imports**
+
+No se deben utilizar imports comodín (import com.example.*). Se deben importar solo las clases necesarias.
+
+import com.frock.chapaturuta.core.ui.theme.PrimaryColor
+import androidx.compose.material3.Text
+
+
+**Jetpack Compose**
+
+Compose se usa para la interfaz de usuario. Las convenciones aseguran consistencia visual y estructural.
+
+**Nomenclatura de Composables**
+
+Los nombres de las funciones composables deben usar PascalCase y terminar con la palabra Screen o Component dependiendo de su función.
+
+@Composable
+fun LoginScreen(navController: NavController)
+
+@Composable
+fun RouteCard(routeName: String, onClick: () -> Unit)
+
+
+**Estructura y legibilidad**
+
+Cada Composable debe tener una estructura clara y con espaciado adecuado para mejorar la legibilidad.
+
+@Composable
+fun HomeScreen() {
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(16.dp),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Text(text = "Welcome to ChapaTuRuta!", style = MaterialTheme.typography.titleLarge)
+        Spacer(modifier = Modifier.height(20.dp))
+        Button(onClick = { /* Navigate to routes */ }) {
+            Text("Explore Routes")
+        }
+    }
+}
+
+
+**Uso de colores y temas**
+
+Los colores y estilos deben provenir del archivo de tema ubicado en core/ui/theme/, respetando las convenciones de Material Design 3.
+
+Button(
+    onClick = { /* TODO */ },
+    colors = ButtonDefaults.buttonColors(containerColor = PrimaryColor)
+) {
+    Text("Register", color = Color.White)
+}
+
+
+**Clean Architecture**
+
+El proyecto sigue la arquitectura en capas Domain, Data, y Presentation, donde cada capa tiene una responsabilidad definida:
+
+Domain Layer
+Contiene los casos de uso (use cases) y las entidades del negocio.
+
+class GetUserUseCase(private val repository: UserRepository) {
+    suspend operator fun invoke(id: String): User {
+        return repository.getUserById(id)
+    }
+}
+
+
+**Data Layer**
+Gestiona las fuentes de datos (API, base de datos local).
+
+class UserRepositoryImpl(private val api: UserApi) : UserRepository {
+    override suspend fun getUserById(id: String): User {
+        return api.getUser(id)
+    }
+}
+
+
+**Presentation Layer**
+Maneja la lógica de interfaz (ViewModel + Composables).
+
+@HiltViewModel
+class LoginViewModel @Inject constructor(
+    private val loginUseCase: LoginUseCase
+) : ViewModel() {
+    var uiState by mutableStateOf(LoginUiState())
+        private set
+
+    fun onLoginClicked() {
+        viewModelScope.launch {
+            uiState = uiState.copy(isLoading = true)
+            loginUseCase(uiState.email, uiState.password)
+        }
+    }
+}
+
+
+**XML (Resources)**
+
+Aunque Jetpack Compose reemplaza gran parte del XML, se mantendrán recursos para íconos, cadenas y temas.
+
+**Nombres de archivos**
+
+Deben escribirse en snake_case, en minúsculas.
+
+ic_logo_app.xml
+background_primary.xml
+colors.xml
+strings.xml
+
+**Cadenas**
+
+Todas las cadenas visibles al usuario deben almacenarse en res/values/strings.xml.
+
+<string name="app_name">ChapaTuRuta</string>
+<string name="login_button">Iniciar sesión</string>
+
 ### 4.1.4.Software Deployment Configuration
 
 ## 4.2.Landing Page & Mobile Application Implementation
