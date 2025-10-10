@@ -173,8 +173,21 @@ En el desarrollo de la aplicación móvil se siguieron las directrices de la **G
 En conjunto, estas prácticas permiten mantener una arquitectura sólida, modular y alineada con las mejores prácticas de desarrollo en Kotlin para Android.
 
 ### 4.1.4.Software Deployment Configuration
+**Landing Page**
 
+Para el despliegue de la **Landing Page**, se utilizó **GitHub Pages**, la funcionalidad integrada de GitHub que permite publicar sitios web estáticos de manera sencilla y gratuita.
 
+### Proceso de implementación
+
+- **Creación del repositorio:**  
+  Desde la cuenta de GitHub, se seleccionó la opción **"New Repository"** para crear un nuevo repositorio donde se alojará el proyecto.
+
+- **Configuración del repositorio:**  
+  Se asignó un nombre identificativo al repositorio y se configuró con visibilidad **pública**, requisito necesario para que GitHub Pages pueda realizar el despliegue del sitio.
+
+Este proceso permite alojar y visualizar la landing page directamente desde GitHub, facilitando su acceso, mantenimiento y actualización continua.
+
+![img.png](img.png)
 
 ## 4.2.Landing Page & Mobile Application Implementation
 
