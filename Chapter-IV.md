@@ -302,6 +302,12 @@ Posteriormente, el proyecto fue desplegado en **GitHub Pages** para su publicaci
 
 #### 4.2.1.4.Testing Suite Evidence for Sprint Review
 
+En este **Sprint**, se presentarán los archivos con extensión **`.feature`**, los cuales documentan los **user tasks** desarrollados durante esta etapa.  
+Estos archivos siguen el formato **Gherkin**, utilizado para describir de forma clara y estructurada los escenarios de comportamiento esperados del sistema.
+
+Cada `.feature` corresponde a una funcionalidad o historia de usuario implementada, e incluye sus respectivos escenarios y criterios de aceptación.  
+Todos los archivos han sido **subidos al repositorio del proyecto**, donde pueden consultarse para revisar el avance, validación y trazabilidad de los requerimientos implementados.
+
 #### 4.2.1.5.Execution Evidence for Sprint Review
 
 Durante este primer Sprint logramos realizar la implementación del Landing page, Backend y Mobile App, sin embargo este último por el momento se realizó de forma local.
