@@ -157,6 +157,21 @@ El código principal inicializa la aplicación, configura dependencias y registr
 
 En conjunto, este enfoque permite mantener un código **escalable, limpio y orientado a componentes**, alineado con las mejores prácticas de desarrollo frontend moderno.
 
+**Kotlin (Android Studio)**
+
+En el desarrollo de la aplicación móvil se siguieron las directrices de la **Google Kotlin Style Guide**, con el objetivo de mantener un código limpio, coherente y fácil de mantener dentro del entorno de **Android Studio**.
+
+### Principales características implementadas
+
+- **Convenciones de nomenclatura:**  
+  Se aplicó la convención **PascalCase** para la definición de clases y métodos, mientras que los atributos y variables de instancia se nombraron utilizando **lowerCamelCase**, garantizando uniformidad y legibilidad en todo el código.
+
+- **Estructura y organización del proyecto:**  
+  El proyecto se diseñó bajo la metodología de **Clean Architecture**, complementada con los principios de **Domain Driven Design (DDD)**.  
+  La estructura se organizó en **Bounded Contexts**, y cada uno de ellos se dividió en capas bien definidas, tales como **Repositorios**, **Casos de Uso**, **Dominios** y **UI**, lo que favorece la separación de responsabilidades y la escalabilidad del sistema.
+
+En conjunto, estas prácticas permiten mantener una arquitectura sólida, modular y alineada con las mejores prácticas de desarrollo en Kotlin para Android.
+
 ### 4.1.4.Software Deployment Configuration
 
 
