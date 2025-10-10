@@ -42,6 +42,57 @@ Para la documentación del proyecto se emplearon las siguientes herramientas:
 
 ### 4.1.2.Source Code Management
 
+La gestión del código fuente es una parte fundamental en el desarrollo colaborativo de software, ya que permite un control eficiente sobre las modificaciones realizadas en el proyecto a lo largo de su ciclo de vida. En esta sección del informe, se describe el sistema de control de versiones implementado en el proyecto Chapa Tu Ruta, utilizando GitHub como plataforma principal. Además, se detallan las convenciones de trabajo adoptadas por el equipo, como el modelo GitFlow, el versionado semántico (Semantic Versioning) y las convenciones de commit mediante Conventional Commits. Estas prácticas aseguran un desarrollo ordenado y una integración continua efectiva entre los miembros del equipo.
+
+**URL de los Repositorios:**
+- Organización: [https://github.com/Aplicaciones-Moviles-Grupo](https://github.com/Aplicaciones-Moviles-Grupo)
+- Reporte: [https://github.com/Aplicaciones-Moviles-Grupo/Report](https://github.com/Aplicaciones-Moviles-Grupo/Report)
+- Landing Page: [https://github.com/Aplicaciones-Moviles-Grupo/landing-page-original](https://github.com/Aplicaciones-Moviles-Grupo/landing-page-original)
+- Backend: [https://github.com/Aplicaciones-Moviles-Grupo/back-end](https://github.com/Aplicaciones-Moviles-Grupo/back-end)
+- Aplicación Movil: [https://github.com/Aplicaciones-Moviles-Grupo/ChapaTuRuta-MobileApp](https://github.com/Aplicaciones-Moviles-Grupo/ChapaTuRuta-MobileApp)
+
+**Estructura de Ramas:**
+
+Para mantener un flujo organizado en el desarrollo y facilitar la colaboración, se ha implementado el modelo GitFlow, creando las siguientes ramas:
+
+- Main Branch: Rama principal (main) que contiene las versiones estables del proyecto. Todas las demás ramas derivan de esta.
+- Develop: Rama secundaria donde se integran todas las características nuevas antes de fusionarse a la rama main.
+- Feature Branches: Estas ramas se crean a partir de develop y son en base a las características del proyecto. Una vez se termina de trabajar en la rama, se hace merge hacia develop.
+
+**Convenciones de commits:**
+
+Para la escritura de commits en el proyecto Eventify, se sigue la convencion 'Conventional Commits', el cual cuenta con un formato estándar para facilitar la lectura y entendimiento del historial de cambios dentro del proyecto.
+```
+    <type>[optional scope]: <description>
+    
+    [optional body]
+    
+    [optional footer(s)]
+```
+- Type:
+    - feat: Añadir una nueva característica.
+    - fix: Correción de errores.
+    - docs: Modificaciones en la documentación.
+    - style: Cambios que no afectan la lógica del código.
+    - refactor: Modificaciones que no añaden características y/o errores.
+    - test: Adición/Modificación de pruebas.
+
+
+- Scope: Brinda información extra acerca del área del codigo afectado.
+```
+   feat(auth): add register functionality.
+```
+**Ejemplos básicos de commits:**
+```
+   feat(login): add organizer authentication module.
+```
+```
+   fix(payment): resolve payment security issue.
+```
+```
+   docs(README): update index instructions.
+```
+
 ### 4.1.3.Source Code Style Guide & Conventions
 
 ### 4.1.4.Software Deployment Configuration
