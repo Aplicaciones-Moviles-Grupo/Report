@@ -435,6 +435,7 @@ Supervisión del estado y movimiento de los colectivos registrados. Esto incluye
 | EP03    | Gestión y visualización de paraderos de colectivos | **Como** usuario, <br/> **Quiero** acceder a funcionalidades para visualizar, filtrar y gestionar los paraderos en el sistema <br/> **Para** facilitar la ubicación de puntos de acceso al servicio y asegurar que la información esté siempre actualizada y organizada.          |
 | EP04    | Gestión de perfil de usuario                       | **Como** usuario, <br/> **Quiero** crear y mantener mi perfil actualizado <br/> **Para** presentarme adecuadamente dentro de la aplicación.                                                                                                                                       |
 | EP05    | Acceso y autenticación de usuarios                 | **Como** nuevo usuario <br/> **Quiero** registrarme e iniciar sesión en la plataforma <br/> **Para** acceder a las funcionalidades de la aplicación.                                                                                                                              |
+| EP06    | Desarrollo de API Backend                 | **Como** equipo de desarrollo  <br/> **Quiero** implementar los endpoints del API Backend  <br/> **Para** permitir la integración entre el frontend y el backend, facilitando todas las operaciones del sistema de gestión de rutas de colectivos..                                                                                                                              |
 
 <table border="1" cellspacing="0" cellpadding="5">
   <tr>
@@ -1416,6 +1417,279 @@ Entonces debo visualizar una línea que conecte ambos pines, representando el re
   </tr>
 </table>
 
+**Technical Stories**
+
+<table border="1" cellspacing="0" cellpadding="5">
+  <tr>
+    <td><b>Story ID</b></td>
+    <td><b>User</b></td>
+    <td><b>Priority</b></td>
+    <td><b>Epic</b></td>
+  </tr>
+  <tr>
+    <td>TS01</td>
+    <td>Sistema</td>
+    <td>Alta</td>
+    <td>EP06</td>
+  </tr>
+  <tr>
+    <td><b>Title</b></td>
+    <td colspan="3">Implementar endpoints de autenticación</td>
+  </tr>
+  <tr>
+    <td colspan="4" align="center"><b>Description</b></td>
+  </tr>
+  <tr>
+    <td colspan="4">Como desarrollador backend, quiero implementar los endpoints de autenticación (login, registro, logout), para permitir que los usuarios accedan de forma segura a la plataforma.</td>
+  </tr>
+  <tr>
+    <td colspan="4" align="center"><b>Acceptance Criteria</b></td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Escenario 1: Endpoint POST /auth/login implementado</b><br>
+      Dado que el endpoint está disponible,<br>
+      Cuando se envía una solicitud POST con credenciales válidas,<br>
+      Entonces el sistema debe retornar un token JWT y código 200.<br><br>
+  <b>Escenario 2: Endpoint POST /auth/register implementado</b><br>
+  Dado que el endpoint está disponible,<br>
+  Cuando se envía una solicitud POST con datos de nuevo usuario,<br>
+  Entonces el sistema debe crear el usuario y retornar código 201.<br><br>
+  
+  <b>Escenario 3: Endpoint POST /auth/logout implementado</b><br>
+  Dado que el usuario tiene una sesión activa,<br>
+  Cuando se envía una solicitud POST /auth/logout,<br>
+  Entonces el sistema debe invalidar el token y retornar código 200.
+</td>
+  </tr>
+</table>
+
+<table border="1" cellspacing="0" cellpadding="5">
+  <tr>
+    <td><b>Story ID</b></td>
+    <td><b>User</b></td>
+    <td><b>Priority</b></td>
+    <td><b>Epic</b></td>
+  </tr>
+  <tr>
+    <td>TS02</td>
+    <td>Sistema</td>
+    <td>Alta</td>
+    <td>EP06</td>
+  </tr>
+  <tr>
+    <td><b>Title</b></td>
+    <td colspan="3">Implementar endpoints de gestión de usuarios</td>
+  </tr>
+  <tr>
+    <td colspan="4" align="center"><b>Description</b></td>
+  </tr>
+  <tr>
+    <td colspan="4">Como desarrollador backend, quiero implementar los endpoints CRUD de usuarios, para permitir la administración completa de perfiles de usuario.</td>
+  </tr>
+  <tr>
+    <td colspan="4" align="center"><b>Acceptance Criteria</b></td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Escenario 1: Endpoint GET /users implementado</b><br>
+      Dado que el endpoint está disponible,<br>
+      Cuando se solicita la lista de usuarios,<br>
+      Entonces el sistema debe retornar todos los usuarios con código 200.<br><br>
+  <b>Escenario 2: Endpoint GET /users/{id} implementado</b><br>
+  Dado que existe un usuario con el ID especificado,<br>
+  Cuando se solicita el detalle del usuario,<br>
+  Entonces el sistema debe retornar la información del usuario con código 200.<br><br>
+  
+  <b>Escenario 3: Endpoints PUT y DELETE implementados</b><br>
+  Dado que los endpoints están disponibles,<br>
+  Cuando se actualiza o elimina un usuario,<br>
+  Entonces el sistema debe procesar la operación correctamente.
+</td>
+  </tr>
+</table>
+
+<table border="1" cellspacing="0" cellpadding="5">
+  <tr>
+    <td><b>Story ID</b></td>
+    <td><b>User</b></td>
+    <td><b>Priority</b></td>
+    <td><b>Epic</b></td>
+  </tr>
+  <tr>
+    <td>TS03</td>
+    <td>Sistema</td>
+    <td>Media</td>
+    <td>EP06</td>
+  </tr>
+  <tr>
+    <td><b>Title</b></td>
+    <td colspan="3">Implementar endpoints de gestión de compañías</td>
+  </tr>
+  <tr>
+    <td colspan="4" align="center"><b>Description</b></td>
+  </tr>
+  <tr>
+    <td colspan="4">Como desarrollador backend, quiero implementar los endpoints CRUD de compañías, para permitir la administración de las empresas de transporte.</td>
+  </tr>
+  <tr>
+    <td colspan="4" align="center"><b>Acceptance Criteria</b></td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Escenario 1: Endpoint POST /companies implementado</b><br>
+      Dado que el endpoint está disponible,<br>
+      Cuando se envía una solicitud con datos de nueva compañía,<br>
+      Entonces el sistema debe crear la compañía y retornar código 201.<br><br>
+  <b>Escenario 2: Endpoints GET /companies implementados</b><br>
+  Dado que existen compañías en el sistema,<br>
+  Cuando se solicita la lista o detalle de compañías,<br>
+  Entonces el sistema debe retornar la información con código 200.<br><br>
+  
+  <b>Escenario 3: Endpoints PUT y DELETE implementados</b><br>
+  Dado que los endpoints están disponibles,<br>
+  Cuando se actualiza o elimina una compañía,<br>
+  Entonces el sistema debe procesar la operación correctamente.
+</td>
+  </tr>
+</table>
+
+<table border="1" cellspacing="0" cellpadding="5">
+  <tr>
+    <td><b>Story ID</b></td>
+    <td><b>User</b></td>
+    <td><b>Priority</b></td>
+    <td><b>Epic</b></td>
+  </tr>
+  <tr>
+    <td>TS04</td>
+    <td>Sistema</td>
+    <td>Alta</td>
+    <td>EP06</td>
+  </tr>
+  <tr>
+    <td><b>Title</b></td>
+    <td colspan="3">Implementar endpoints de información geográfica</td>
+  </tr>
+  <tr>
+    <td colspan="4" align="center"><b>Description</b></td>
+  </tr>
+  <tr>
+    <td colspan="4">Como desarrollador backend, quiero implementar los endpoints de datos geográficos (países, estados, ciudades), para proporcionar información de ubicación a la aplicación.</td>
+  </tr>
+  <tr>
+    <td colspan="4" align="center"><b>Acceptance Criteria</b></td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Escenario 1: Endpoints GET de geografía implementados</b><br>
+      Dado que los endpoints están disponibles,<br>
+      Cuando se solicita información de países, estados o ciudades,<br>
+      Entonces el sistema debe retornar los datos geográficos con código 200.<br><br>
+  <b>Escenario 2: Filtrado por relaciones implementado</b><br>
+  Dado que se solicitan estados de un país,<br>
+  Cuando se envía GET /countries/{id}/states,<br>
+  Entonces el sistema debe retornar solo los estados del país especificado.
+</td>
+  </tr>
+</table>
+
+<table border="1" cellspacing="0" cellpadding="5">
+  <tr>
+    <td><b>Story ID</b></td>
+    <td><b>User</b></td>
+    <td><b>Priority</b></td>
+    <td><b>Epic</b></td>
+  </tr>
+  <tr>
+    <td>TS05</td>
+    <td>Sistema</td>
+    <td>Alta</td>
+    <td>EP06</td>
+  </tr>
+  <tr>
+    <td><b>Title</b></td>
+    <td colspan="3">Implementar endpoints de gestión de rutas</td>
+  </tr>
+  <tr>
+    <td colspan="4" align="center"><b>Description</b></td>
+  </tr>
+  <tr>
+    <td colspan="4">Como desarrollador backend, quiero implementar los endpoints CRUD de rutas de colectivos, para permitir la creación, consulta, actualización y eliminación de rutas.</td>
+  </tr>
+  <tr>
+    <td colspan="4" align="center"><b>Acceptance Criteria</b></td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Escenario 1: Endpoint POST /routes implementado</b><br>
+      Dado que el endpoint está disponible,<br>
+      Cuando se envía una solicitud con datos de nueva ruta,<br>
+      Entonces el sistema debe crear la ruta y retornar código 201.<br><br>
+  <b>Escenario 2: Endpoint GET /routes con filtros implementado</b><br>
+  Dado que existen rutas en el sistema,<br>
+  Cuando se solicitan rutas con filtros de búsqueda,<br>
+  Entonces el sistema debe retornar las rutas filtradas con código 200.<br><br>
+  
+  <b>Escenario 3: Endpoints GET /routes/{id}, PUT y DELETE implementados</b><br>
+  Dado que los endpoints están disponibles,<br>
+  Cuando se consulta, actualiza o elimina una ruta,<br>
+  Entonces el sistema debe procesar la operación correctamente.<br><br>
+  
+  <b>Escenario 4: Activación y desactivación de rutas</b><br>
+  Dado que el endpoint PATCH /routes/{id}/status está disponible,<br>
+  Cuando se cambia el estado de disponibilidad de una ruta,<br>
+  Entonces el sistema debe actualizar el estado y retornar código 200.
+</td>
+  </tr>
+</table>
+
+<table border="1" cellspacing="0" cellpadding="5">
+  <tr>
+    <td><b>Story ID</b></td>
+    <td><b>User</b></td>
+    <td><b>Priority</b></td>
+    <td><b>Epic</b></td>
+  </tr>
+  <tr>
+    <td>TS06</td>
+    <td>Sistema</td>
+    <td>Alta</td>
+    <td>EP06</td>
+  </tr>
+  <tr>
+    <td><b>Title</b></td>
+    <td colspan="3">Implementar endpoints de gestión de paradas</td>
+  </tr>
+  <tr>
+    <td colspan="4" align="center"><b>Description</b></td>
+  </tr>
+  <tr>
+    <td colspan="4">Como desarrollador backend, quiero implementar los endpoints CRUD de paradas, para permitir la administración de puntos de parada de las rutas.</td>
+  </tr>
+  <tr>
+    <td colspan="4" align="center"><b>Acceptance Criteria</b></td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Escenario 1: Endpoint POST /stops implementado</b><br>
+      Dado que el endpoint está disponible,<br>
+      Cuando se envía una solicitud con datos de nueva parada,<br>
+      Entonces el sistema debe crear la parada con coordenadas y retornar código 201.<br><br>
+  <b>Escenario 2: Endpoint GET /stops implementado</b><br>
+  Dado que existen paradas en el sistema,<br>
+  Cuando se solicita la lista de paradas,<br>
+  Entonces el sistema debe retornar todas las paradas con código 200.<br><br>
+  
+  <b>Escenario 3: Endpoints PUT y DELETE implementados</b><br>
+  Dado que los endpoints están disponibles,<br>
+  Cuando se actualiza o elimina una parada,<br>
+  Entonces el sistema debe procesar la operación y actualizar las rutas asociadas.
+</td>
+  </tr>
+</table>
+
+
 ### 2.4.2. Impact Mapping
 
 El Impact Mapping permite alinear los objetivos del proyecto con las necesidades de conductores de colectivos y pasajeros, mostrando cómo cada decisión impacta en la experiencia de ambos. Así, se convierte en una guía estratégica para diseñar soluciones que generen beneficios reales y respondan efectivamente a sus necesidades.
@@ -1450,6 +1724,12 @@ El Impact Mapping permite alinear los objetivos del proyecto con las necesidades
 | 21     | US20  | Registrar Usuario                                        | 3            |
 | 22     | US21  | Iniciar Sesión                                           | 3            |
 | 23     | US22  | Cerrar Sesión                                            | 3            |
+| 24    | TS01  | Endpoint de Autenticación                           | 5            |
+| 25     | TS01  | Endpoints de Gestión de Usuarios                                       | 8            |
+| 26     | TS02  | Endpoints de Gestión de Compañías                                           | 8            |
+| 27     | TS03  | Endpoints de Gestión Geográfica                                            | 8            |
+| 28     | TS04  | Endpoints de Gestión de Rutas                           | 13            |
+| 29     | TS05  | Endpoints de Gestión de Paradas                                        | 8            |
 
 
 ## 2.5. Strategic-Level Domain-Driven Design
@@ -1480,12 +1760,12 @@ En esta sesión aplicamos la técnica de Candidate Context Discovery para identi
 
 Este proceso nos llevo a crear los siguientes Bounded Contexts:
 
-| Bounded Context       | Descripción                                                                 | Eventos clave                                                   |
-|-----------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------|
-| IAM                   | Maneja la autenticación y autorización de los usuarios, asegurando accesos. | `Usuario Registrado`, `Usuario Autenticado`                     |
-| Profile               | Administra la información de perfil de conductores y pasajeros.             | `Perfil Creado`, `Perfil Actualizado`                           |
-| Gestión de Paraderos  | Permite crear, editar y eliminar paraderos, que sirven como puntos de ruta. | `Paradero Creado`, `Paradero Actualizado`, `Paradero Eliminado` |
-| Gestión de Rutas      | Administra la creación, edición y eliminación de rutas con paraderos.       | `Ruta Creada`, `Ruta Actualizada`, `Ruta Eliminada`             |
+| Bounded Context   | Descripción                                                                 | Eventos clave                                                   |
+|-------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------|
+| IAM               | Maneja la autenticación y autorización de los usuarios, asegurando accesos. | `Usuario Registrado`, `Usuario Autenticado`                     |
+| Profile           | Administra la información de perfil de conductores y pasajeros.             | `Perfil Creado`, `Perfil Actualizado`                           |
+| Stops Management  | Permite crear, editar y eliminar paraderos, que sirven como puntos de ruta. | `Paradero Creado`, `Paradero Actualizado`, `Paradero Eliminado` |
+| Routes Management | Administra la creación, edición y eliminación de rutas con paraderos.       | `Ruta Creada`, `Ruta Actualizada`, `Ruta Eliminada`             |
 
 
 #### 2.5.1.2. Domain Message Flow Modeling
@@ -1531,29 +1811,29 @@ En esta sección se presentan los Bounded Context Canvases correspondientes a lo
 * Se propone el uso de un Anti-Corruption Layer (ACL) en Profile, ya que esto garantiza que cambios en IAM no afecten directamente al contexto Profile.
 
 
-**Profile – Rutas (Conformist)**
+**Profile – Routes (Conformist)**
 
-* El contexto de Rutas necesita información de los conductores o usuarios para registrar qué persona creó y administra una ruta.
+* El contexto de Routes necesita información de los conductores o usuarios para registrar qué persona creó y administra una ruta.
 
 * Profile es Upstream, ya que provee los datos del usuario.
 
-* Rutas es Downstream, adoptando el modelo de Profile de forma directa.
+* Routes es Downstream, adoptando el modelo de Profile de forma directa.
 * La relación es de tipo Conformist, ya que Rutas depende del modelo definido en Profile
 
-**Profile – Paraderos (Conformist)**
+**Profile – Stops (Conformist)**
 
-De manera similar, el contexto de Paraderos depende de los datos de usuario para registrar quién creó, modificó o eliminó un paradero.
+De manera similar, el contexto de Stops depende de los datos de usuario para registrar quién creó, modificó o eliminó un paradero.
 
 * Profile es Upstream, como fuente de información de usuario.
 
-* Paraderos es Downstream, ajustándose al modelo de Profile.
-* La relación se establece como Conformist, ya que Paraderos adopta directamente el modelo de usuario de Profile para mantener coherencia e integridad en los datos.
+* Stops es Downstream, ajustándose al modelo de Profile.
+* La relación se establece como Conformist, ya que Stops adopta directamente el modelo de usuario de Profile para mantener coherencia e integridad en los datos.
 
-**Rutas – Paraderos (Customer/Supplier)**
+**Routes – Stops (Customer/Supplier)**
 
-El contexto de Rutas necesita consumir información de los paraderos para construir recorridos y definir los puntos de inicio, intermedio y final.
+El contexto de Rutas necesita consumir información de los Stops para construir recorridos y definir los puntos de inicio, intermedio y final.
 
-* En esta relación, Paraderos es Upstream (Supplier), ya que provee la información de los paraderos disponibles.
+* En esta relación, Stops es Upstream (Supplier), ya que provee la información de los Stops disponibles.
 
 * Rutas es Downstream (Customer), pues consume esa información para asociarla a una ruta.
 

@@ -1,512 +1,793 @@
-# Capítulo IV: Product Design
-## 4.1. Style Guidelines.
-  
-En 
-  esta sección, el equipo establece un repositorio organizado y central de elementos comunes (assets, fonts, colores, iconografía) para mantener una presentación visual consistente y enfocada, alineada con el espíritu de **Chapa tu Ruta**: dinámico, confiable y cercano a la cultura popular peruana.
-### 4.1.1. General Style Guidelines.
-#### Branding
-  - Identidad visual vibrante y accesible, con un estilo animoso que transmita **movimiento**, **eficiencia** y **optimismo urbano**.
-    - Iconografía reconocible e intuitiva: íconos simples, grandes, fáciles de asociar a acciones comunes (ej. casa, rutas, búsqueda).
+# Capítulo IV: Product Implementation & Validation
 
-      ![Arrows](resources/chapter-4/Arrow.png)
+## 4.1.Software Configuration Management
+
+### 4.1.1.Software Development Environment Configuration
+
+Para asegurar una colaboración eficiente y mantener la calidad en el desarrollo de **Chapa Tu Ruta**, se ha definido un entorno de desarrollo común para todos los miembros del equipo. A continuación, se listan los productos de software utilizados en las distintas etapas del ciclo de vida del producto digital, indicando su propósito y su enlace de referencia o descarga correspondiente.
+
+**Product UX/UI Design**
+
+Para el diseño de la experiencia de usuario y la interfaz de la Landing page de Eventify, se utilizaron las siguientes herramientas:
+
+- Figma: Se empleó para la creación de wireframes, mock-ups y prototipos de la aplicación web.[https://www.figma.com/es-es/](https://www.figma.com/es-es/)
+- UXPressia: Utilizada para elaborar User Personas, Empathy Maps, Journey Maps e Impact Maps. [https://uxpressia.com/](https://uxpressia.com/)
+- Miro: Se utilizó para la creación de Event Storming, Domain Message Flow Modelling, Bounded Context Canvases. [https://miro.com/es/](https://miro.com/es/)
+
+**Software Development**
+
+Para el desarrollo del software del Landing Page, Backend y Mobile App, se adoptaron los siguientes productos:
+
+- WebStorm (Instalación local): Utilizado como entorno de desarrollo para trabajar con HTML, CSS y JavaScript. [https://www.jetbrains.com/es-es/webstorm/](https://www.jetbrains.com/es-es/webstorm/)
+- Android Studio (Instalación local): Este es un IDE para desarrollar aplicaciones móviles para Android, utilizando Kotlin y JetPack Compose. [https://developer.android.com/studio?hl=es-419](https://developer.android.com/studio?hl=es-419)
+- Rider(Instalación local): Utilizamos este IDE para desarrollar el backend de la aplicación. [https://www.jetbrains.com/es-es/rider](https://www.jetbrains.com/es-es/rider)
+- Git (Instalación local): Empleado para gestionar los cambios de código de manera local mediante commits y ramas. [https://git-scm.com/](https://git-scm.com/)
+- GitHub: Plataforma de repositorio remoto para la gestión de versiones del código, implementando el flujo GitFlow para garantizar un desarrollo organizado. [https://github.com/](https://github.com/)
+
+**Project Management and Collaboration**
+
+En la gestión de proyectos y colaboración del equipo se utilizaron:
+
+- **Trello:** Utilizado para la planificación y seguimiento de tareas, distribuidas en listas de "por hacer", "en progreso" y "hecho".
+- **WhatsApp:** Medio de comunicación instantánea para coordinar avances, resolver dudas rápidas y hacer recordatorios. [https://web.whatsapp.com/](https://web.whatsapp.com/)
+- **Google Meet:** Herramienta utilizada para realizar reuniones virtuales más formales, presentaciones de avances y coordinación general del equipo. [https://www.zoom.com/es](https://www.zoom.com/es)
+
+**Software Documentation**
+
+Para la documentación del proyecto se emplearon las siguientes herramientas:
+ 
+- Lucidchart: Utilizada para la creación de diagramas UML, wireflows y user flows que ayudan en la planificación y visualización del sistema. [https://www.lucidchart.com/pages](https://www.lucidchart.com/pages)
+- Visual Paradigm: Herramienta usada para modelar la arquitectura de software mediante diagramas C4. [https://online.visual-paradigm.com/drive/#proj=0&dashboard](https://online.visual-paradigm.com/drive/#proj=0&dashboard)
+
+
+### 4.1.2.Source Code Management
+
+La gestión del código fuente es una parte fundamental en el desarrollo colaborativo de software, ya que permite un control eficiente sobre las modificaciones realizadas en el proyecto a lo largo de su ciclo de vida. En esta sección del informe, se describe el sistema de control de versiones implementado en el proyecto Chapa Tu Ruta, utilizando GitHub como plataforma principal. Además, se detallan las convenciones de trabajo adoptadas por el equipo, como el modelo GitFlow, el versionado semántico (Semantic Versioning) y las convenciones de commit mediante Conventional Commits. Estas prácticas aseguran un desarrollo ordenado y una integración continua efectiva entre los miembros del equipo.
+
+**URL de los Repositorios:**
+- Organización: [https://github.com/Aplicaciones-Moviles-Grupo](https://github.com/Aplicaciones-Moviles-Grupo)
+- Reporte: [https://github.com/Aplicaciones-Moviles-Grupo/Report](https://github.com/Aplicaciones-Moviles-Grupo/Report)
+- Landing Page: [https://github.com/Aplicaciones-Moviles-Grupo/landing-page-original](https://github.com/Aplicaciones-Moviles-Grupo/landing-page-original)
+- Backend: [https://github.com/Aplicaciones-Moviles-Grupo/back-end](https://github.com/Aplicaciones-Moviles-Grupo/back-end)
+- Aplicación Movil: [https://github.com/Aplicaciones-Moviles-Grupo/ChapaTuRuta-MobileApp](https://github.com/Aplicaciones-Moviles-Grupo/ChapaTuRuta-MobileApp)
+
+**Estructura de Ramas:**
+
+Para mantener un flujo organizado en el desarrollo y facilitar la colaboración, se ha implementado el modelo GitFlow, creando las siguientes ramas:
+
+- Main Branch: Rama principal (main) que contiene las versiones estables del proyecto. Todas las demás ramas derivan de esta.
+- Develop: Rama secundaria donde se integran todas las características nuevas antes de fusionarse a la rama main.
+- Feature Branches: Estas ramas se crean a partir de develop y son en base a las características del proyecto. Una vez se termina de trabajar en la rama, se hace merge hacia develop.
+
+**Convenciones de commits:**
+
+Para la escritura de commits en el proyecto Eventify, se sigue la convencion 'Conventional Commits', el cual cuenta con un formato estándar para facilitar la lectura y entendimiento del historial de cambios dentro del proyecto.
+```
+    <type>[optional scope]: <description>
     
-      ![Car - Linear.png](resources%2Fchapter-4%2FCar%20-%20Linear.png)
+    [optional body]
     
-      ![Location.png](resources%2Fchapter-4%2FLocation.png)
-    
-      ![Notifications.png](resources%2Fchapter-4%2FNotifications.png)
-    
-      ![Time.png](resources%2Fchapter-4%2FTime.png)
-    
-      ![Security.png](resources%2Fchapter-4%2FSecurity.png)
-    
-      ![Settings.png](resources%2Fchapter-4%2FSettings.png)
-    
-      ![Users.png](resources%2Fchapter-4%2FUsers.png)
+    [optional footer(s)]
+```
+- Type:
+    - feat: Añadir una nueva característica.
+    - fix: Correción de errores.
+    - docs: Modificaciones en la documentación.
+    - style: Cambios que no afectan la lógica del código.
+    - refactor: Modificaciones que no añaden características y/o errores.
+    - test: Adición/Modificación de pruebas.
+
+
+- Scope: Brinda información extra acerca del área del codigo afectado.
+```
+   feat(auth): add register functionality.
+```
+**Ejemplos básicos de commits:**
+```
+   feat(login): add organizer authentication module.
+```
+```
+   fix(payment): resolve payment security issue.
+```
+```
+   docs(README): update index instructions.
+```
+
+### 4.1.3.Source Code Style Guide & Conventions
+
+**Nomenclatura General**
+
+Para el desarrollo de la aplicación móvil en **Android Studio** utilizando **Kotlin** y **Jetpack Compose** bajo el patrón **Clean Architecture**, se aplicarán convenciones de nomenclatura establecidas por **Google Kotlin Style Guide** y **Jetpack Compose Guidelines**.  
+
+Los nombres deben ser claros, expresivos y en inglés. Se empleará **camelCase** para variables y funciones, **PascalCase** para clases y componentes de UI, y **snake_case** solo para recursos XML.
+
+Ejemplos:
+
+```kotlin
+// Variables y funciones (camelCase)
+val userName: String
+fun getUserProfile()
+
+// Clases y componentes (PascalCase)
+class LoginViewModel
+@Composable
+fun HomeScreen()
+
+// Recursos XML (snake_case)
+ic_user_avatar.png
+activity_main.xml
+```
+
+**Sangría**
+
+En Kotlin, la sangría debe ser de 4 espacios por bloque. No se recomienda el uso de tabulaciones, de acuerdo con las convenciones oficiales de Android Developers.
+Kotlin
+
+Kotlin es el lenguaje principal utilizado en el proyecto. Las siguientes pautas aseguran consistencia y legibilidad en el código:
+```
+fun calculateDistance(origin: Location, destination: Location): Float {
+    val result = FloatArray(1)
+    Location.distanceBetween(
+        origin.latitude,
+        origin.longitude,
+        destination.latitude,
+        destination.longitude,
+        result
+    )
+    return result[0]
+}
+```
+**Uso de val y var**
+
+Siempre que sea posible, utilizar val en lugar de var para definir variables inmutables, siguiendo el principio de inmutabilidad recomendado por Google (s.f.).
+```
+val userName = "Adrian"
+var userAge = 21
+```
+
+**Formato de funciones y clases**
+
+Las llaves de apertura deben ir en la misma línea que la declaración, y la llave de cierre en su propia línea.
+```
+class UserRepository {
+    fun getUserById(id: String): User {
+        return userDao.getUser(id)
+    }
+}
+```
+
+**Espaciado**
+
+Se debe incluir un espacio después de los dos puntos en las declaraciones de tipos y entre operadores.
+
+```
+val distance: Float = 23.5f
+val sum = x + y
+```
+
+**Imports**
+
+No se deben utilizar imports comodín (import com.example.*). Se deben importar solo las clases necesarias.
+
+import com.frock.chapaturuta.core.ui.theme.PrimaryColor
+import androidx.compose.material3.Text
+
+
+**Jetpack Compose**
+
+Compose se usa para la interfaz de usuario. Las convenciones aseguran consistencia visual y estructural.
+
+**Nomenclatura de Composables**
+
+Los nombres de las funciones composables deben usar PascalCase y terminar con la palabra Screen o Component dependiendo de su función.
+
+@Composable
+fun LoginScreen(navController: NavController)
+
+@Composable
+```
+fun RouteCard(routeName: String, onClick: () -> Unit)
+```
+
+**Estructura y legibilidad**
+
+Cada Composable debe tener una estructura clara y con espaciado adecuado para mejorar la legibilidad.
+```
+@Composable
+fun HomeScreen() {
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(16.dp),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Text(text = "Welcome to ChapaTuRuta!", style = MaterialTheme.typography.titleLarge)
+        Spacer(modifier = Modifier.height(20.dp))
+        Button(onClick = { /* Navigate to routes */ }) {
+            Text("Explore Routes")
+        }
+    }
+}
+```
+
+**Uso de colores y temas**
+
+Los colores y estilos deben provenir del archivo de tema ubicado en core/ui/theme/, respetando las convenciones de Material Design 3.
+```
+Button(
+    onClick = { /* TODO */ },
+    colors = ButtonDefaults.buttonColors(containerColor = PrimaryColor)
+) {
+    Text("Register", color = Color.White)
+}
+```
+
+**Clean Architecture**
+
+El proyecto sigue la arquitectura en capas Domain, Data, y Presentation, donde cada capa tiene una responsabilidad definida:
+
+Domain Layer
+Contiene los casos de uso (use cases) y las entidades del negocio.
+```
+class GetUserUseCase(private val repository: UserRepository) {
+    suspend operator fun invoke(id: String): User {
+        return repository.getUserById(id)
+    }
+}
+```
+
+**Data Layer**
+Gestiona las fuentes de datos (API, base de datos local).
+```
+class UserRepositoryImpl(private val api: UserApi) : UserRepository {
+    override suspend fun getUserById(id: String): User {
+        return api.getUser(id)
+    }
+}
+```
 
-#### Typography
+**Presentation Layer**
+Maneja la lógica de interfaz (ViewModel + Composables).
+```
+@HiltViewModel
+class LoginViewModel @Inject constructor(
+    private val loginUseCase: LoginUseCase
+) : ViewModel() {
+    var uiState by mutableStateOf(LoginUiState())
+        private set
 
-  - Tipografías claras y sin serifas, de alta legibilidad para usuarios en movimiento.
-    - Priorizar estilos **negrita** o **semi-negrita** para botones y acciones principales.
-    - Jerarquías bien marcadas: **Títulos > Subtítulos > Texto general**.
+    fun onLoginClicked() {
+        viewModelScope.launch {
+            uiState = uiState.copy(isLoading = true)
+            loginUseCase(uiState.email, uiState.password)
+        }
+    }
+}
+```
 
+**XML (Resources)**
 
+Aunque Jetpack Compose reemplaza gran parte del XML, se mantendrán recursos para íconos, cadenas y temas.
 
-#### Colors
+**Nombres de archivos**
 
-- Paleta de colores fuertes (inspirada en tonos limeños y de transporte urbano):
-    - **Primarios**: Violeta energético, verde neón, azul eléctrico.
-    - **Secundarios**: Gris claro, blanco para fondos.
-    - **Accentos**: Rojo alerta, amarillo vibrante para notificaciones críticas o destacadas.
-      - Colores transmiten **agilidad, energía y confianza**.
+Deben escribirse en snake_case, en minúsculas.
+```
+ic_logo_app.xml
+background_primary.xml
+colors.xml
+strings.xml
+```
+**Cadenas**
 
-     ![Color Pallete.png](resources%2Fchapter-4%2FColor%20Pallete.png)
+Todas las cadenas visibles al usuario deben almacenarse en res/values/strings.xml.
+```
+<string name="app_name">ChapaTuRuta</string>
+<string name="login_button">Iniciar sesión</string>
+```
 
-#### Spacing
+### 4.1.4.Software Deployment Configuration
+**Landing Page**
 
-- Márgenes y paddings estandarizados:
-    - Separaciones interiores de **10px**, **20px**, **50px** según jerarquía visual.
-    - Áreas interactivas suficientemente amplias para facilidad de click y touch.
-  - Espacios que respiran pero mantienen sensación de **compacto y eficiente**.
+Para el despliegue de la **Landing Page**, se utilizó **GitHub Pages**, la funcionalidad integrada de GitHub que permite publicar sitios web estáticos de manera sencilla y gratuita.
 
-    ![Spectral.png](resources%2Fchapter-4%2FSpectral.png)
-
-#### Communication Tone
-
-  - Tono de comunicación:
-      - **Casual**, cercano pero respetuoso.
-      - **Entusiasta y positivo** ("¡Chapa tu ruta!", "¡Listo para salir!").
-      - Uso de lenguaje **amigable, directo, breve y familiar** para usuarios peruanos citadinos.
-
-#### Dimension Guidelines
-
-  - Componentes de UI manejan dimensiones estándar para consistencia:
-    - **Botones principales**: 100px de ancho mínimo.
-    - **Íconos**: 40px a 50px de ancho/alto.
-    - **Inputs de texto**: 280px de ancho por 70px de alto.
-    - **Tarjetas de información (rutas)**: 300px a 316px de ancho.
-    - **Mensajes de éxito/error**: 353px de ancho.
-
-    ![Spectral.png](resources%2Fchapter-4%2FSpectral.png)
-
-    ![Components.png](resources%2Fchapter-4%2FComponents.png)
-
-    ![Inputs and Selectors.png](resources%2Fchapter-4%2FInputs%20and%20Selectors.png)
-
-### 4.1.2. Web Style Guidelines.
-#### Design
-- Uso de layouts flexibles (Flexbox, Grid) para adaptarse sin perder claridad ni funcionalidad.
-- Elementos clave (botones, buscadores, rutas) visibles y accesibles en cualquier tamaño de pantalla.
-
-![design.png](resources%2Fchapter-4%2Fdesign.png)
-
-#### Navigation
-- Menús de navegación sencillos y visibles.
-- Uso de "sticky headers" para mantener acceso a funciones esenciales (búsqueda de rutas, mapa, perfil).
-- Efectos de transición suaves para cambios de página o secciones (fade, slide).
-![navigation (1).png](resources%2Fchapter-4%2Fnavigation%20%281%29.png)
-- 
-#### Interaction States
-- Estados de interacción claramente diferenciados:
-    - **Hover**: cambios sutiles de color o sombra para indicar interactividad.
-    - **Active/Pressed**: ligeras animaciones de hundimiento o cambio de tono.
-    - **Focus**: bordes destacados para accesibilidad al navegar con teclado.
-
-#### Visual Consistency
-- Mantener coherencia de estilos entre páginas:
-    - Botones, íconos y colores respetan el mismo sistema visual.
-    - Jerarquías de texto y espacios replican los lineamientos generales.
-    - Evitar cambios bruscos de estilo que confundan al usuario.
-
-#### Feedback & Notifications
-- Mensajes claros y breves en acciones del usuario:
-    - Confirmaciones (ej. "¡Ruta guardada exitosamente!").
-    - Errores (ej. "No pudimos encontrar esa ruta, intenta de nuevo.").
-- Uso de colores de la paleta oficial para comunicar estado (verde éxito, rojo error, amarillo advertencia).
-
-    ![exito.png](resources%2Fchapter-4%2Fexito.png)
-
-## 4.2. Information Architecture.
-
-### 4.2.1. Organization Systems
-Para organizar el contenido en las experiencias web y móvil de Frock, se aplicarán los siguientes sistemas de organización:
-
-**Jerárquico (Visual Hierarchy):**  
-Se utilizará para destacar información clave como rutas, paraderos y horarios. Por ejemplo, en el Landing Page, la sección "Sé parte de nosotros" tendrá un encabezado principal (#) seguido de subsecciones (##, ###) para registro y detalles de rutas.
-
-**Secuencial (Step-by-Step):**  
-Se implementará en procesos como el registro de usuarios o la creación de rutas, donde se guiará al usuario paso a paso (ejemplo: "1. Registro" → "2. Indica tu ruta").
-
-**Por Tópicos:**  
-La información se agrupará por temas como "Rutas", "Horarios", "Paraderos" y "Reseñas", facilitando la navegación intuitiva.
-
-**Según Audiencia:**  
-Se diferenciará entre conductores (quienes registran rutas y horarios) y pasajeros (quienes buscan información de viaje), adaptando el contenido a cada grupo.
-
-### 4.2.2. Labeling Systems
-Las etiquetas se diseñarán para ser claras y concisas, evitando confusión:
-
-**Ejemplos de Etiquetas:**
-- "Nombre comercial" (para registro de conductores).
-- "Desde / Hasta" (para definir rutas).
-- "Horarios: Lun-Vie 8:00 am" (formato uniforme).
-- "Editar" / "Agregar Ruta" (acciones destacadas con verbos).
-
-**Asociaciones:**  
-Se vincularán términos como "Paradero" con "Ruta" y "Horarios" para reforzar la relación entre componentes.
-
-### 4.2.3. SEO Tags and Meta Tags
-Se optimizará el contenido para motores de búsqueda con los siguientes tags:
-
-**Landing Page:**
-- **Title:** "Frock - Moderniza tu transporte colectivo"
-- **Meta Description:** "Conecta ciudades y distritos con rutas informales organizadas. Encuentra horarios, paraderos y reseñas en un solo lugar."
-- **Keywords:** transporte colectivo, rutas informales, paraderos, horarios, movilidad urbana.
-- **Author:** Equipo Frock.
-
-**Aplicación Web:**
-- **Title (Rutas):** "Mis Rutas | Frock"
-- **Meta Description:** "Administra y edita tus rutas registradas. Agrega nuevos trayectos y horarios fácilmente."
-
-### 4.2.4. Navigation Systems
-La navegación se basará en:
-
-**Menú Principal:**  
-Accesos directos a "Inicio", "Rutas", "Horarios", "Paraderos" y "Reseñas".
-
-**Breadcrumbs:**  
-Ruta de navegación como "Inicio > Mis Rutas > Editar Ruta".
-
-**Botones de Acción:**  
-Destacados con verbos ("Registrar", "Agregar Ruta", "Editar") y diseño consistente (color/contraste).
-
-**Flujo Secuencial:**  
-Para tareas críticas (ejemplo: registro de conductor → agregar ruta → confirmación).
-
-### 4.2.5. Searching Systems
-Para ayudar a los usuarios a encontrar información rápidamente:
-
-**Búsqueda por Filtros:**
-- Paraderos (dropdown con opciones como "La Torre").
-- Horarios (selector de rango horario).
-- Precios (slider de "50 a 100").
-
-**Resultados de Búsqueda:**  
-Mostrados en tarjetas con detalles clave: "De La Torre a Estación Dos | 7 asientos | 20 min".
-
-**Búsqueda Predictiva:**  
-Autocompletado al escribir nombres de paraderos o rutas.
-
-## 4.3. Landing Page UI Design.
-### 4.3.1. Landing Page Wireframe.
-#### Full langin page wireframe design
-![wireframe (1).png](resources%2Fchapter-4%2Flanding%2Fwireframe%20%281%29.png)
-#### a. Hero section wireframe
-![herosectionwireframe.png](resources/chapter-4/landing/wireframe_hero-section.png)
-#### b. Como funciona section wireframe
-![comofuncionawireframe.png](resources/chapter-4/landing/wireframe_como-funciona-section.png)
-#### c. Ventajas section wireframe
-![ventajaswireframe.png.png](resources/chapter-4/landing/wireframe_ventajas-section.png)
-#### d. FAQ section wireframe
-![faqwireframe.png.png](resources/chapter-4/landing/wireframe_faq-section.png)
-#### e. Footer section wireframe
-![footerwireframe.png.png](resources/chapter-4/landing/wireframe_footer-section.png)
-
-### 4.3.2. Landing Page Mock-up.
-#### Full landing page design
-![mockup.png](resources%2Fchapter-4%2Flanding%2Fmockup.png)
-#### a. Hero section design
-![herosectiondesign.png](resources/chapter-4/landing/design_hero-section.png)
-#### b. Como funciona section design
-![comofuncionadesign.png](resources/chapter-4/landing/design_como-funciona-section.png)
-#### c. Ventajas section design
-![ventajasdesign.png](resources/chapter-4/landing/design_ventajas-section.png)
-#### d. FAQ section design
-![faqdesign.png](resources/chapter-4/landing/design_faq-section.png)
-#### e. Footer section design
-![faqdesign.png](resources/chapter-4/landing/design_footer-section.png)
-## 4.4. Web Applications UX/UI Design.
-
-### 4.4.1. Web Applications Wireframes.
-
-![registro.png](resources%2Fchapter-4%2Fwireframes%2Fregistro.png)
-
-![ruta.png](resources%2Fchapter-4%2Fwireframes%2Fruta.png)
-
-![perfil.png](resources%2Fchapter-4%2Fwireframes%2Fperfil.png)
-
-![home.png](resources%2Fchapter-4%2Fwireframes%2Fhome.png)
-
-![descripcion.png](resources%2Fchapter-4%2Fwireframes%2Fdescripcion.png)
-
-### 4.4.2. Web Applications Wireflow Diagrams.
-
-### 4.4.2. Web Applications Mock-ups.
-![registro.png](resources%2Fchapter-4%2Fmockups%2Fregistro.png)
-
-![addRuta.png](resources%2Fchapter-4%2Fmockups%2FaddRuta.png)
-
-![perfil.png](resources%2Fchapter-4%2Fmockups%2Fperfil.png)
-
-![exito.png](resources%2Fchapter-4%2Fmockups%2Fexito.png)
-
-![home.png](resources%2Fchapter-4%2Fmockups%2Fhome.png)
-
-![Informacio-ruta.png](resources%2Fchapter-4%2Fmockups%2FInformacio-ruta.png)
-
-### 4.4.3. Web Applications User Flow Diagrams.
-
-## 4.5. Web Applications Prototyping.
-
-## 4.6. Domain-Driven Software Architecture.
-Los esquemas de contenedores ilustran los distintos componentes del sistema, tales como aplicaciones en línea, bases de datos, microservicios y la forma en que interactúan entre ellos. Estos esquemas ofrecen una perspectiva a nivel superior de la arquitectura del sistema, resaltando las obligaciones de cada contenedor y sus interrelaciones.
-
-### 4.6.1. Software Architecture Context Diagram.
-El diagrama de contexto del sistema muestra la relación entre el sistema y los actores externos, proporcionando una visión general de la arquitectura del sistema y sus interacciones con el entorno externo.
-
-![Software Architecture Context Diagram](assets/ContextN.PNG)
-
-### 4.6.2. Software Architecture Container Diagrams.
-Los esquemas de contenedores ilustran las distintas partes que conforman el sistema, tales como aplicaciones en línea, bases de datos, microservicios y la forma en que interactúan entre ellos. Estos esquemas ofrecen una panorámica detallada de la arquitectura del sistema, resaltando las obligaciones de cada contenedor y sus relaciones entre sí.
-
-![Software Architecture Container Diagram](assets/ContainerN.PNG)
-
-### 4.6.3. Software Architecture Components Diagrams.
-En esta sección, se presentan los diagramas de componentes de la arquitectura de software. Estos diagramas detallan los diferentes componentes que conforman el sistema, sus responsabilidades y cómo interactúan entre sí.
-
-#### Diagrama de componentes del Frontend
-
-![Analytics](assets/ComponentsF.PNG)
-
-#### Diagrama de componentes del Backend
-
-![Control](assets/ComponentsB.PNG)
-
-## 4.7. Software Object-Oriented Design.
-### 4.7.1. Class Diagrams.
-#### User Diagram
-
-![driver](assets/UsersD.PNG)
-
-La clase User representa tanto a pasajeros como a gestores de empresas de transporte en el sistema. Contiene información básica como nombre, email, contraseña encriptada y rol, además de funcionalidades para autenticación, actualización de perfil y cambio de contraseña. Es la entidad central que controla el acceso al sistema y establece las jerarquías de usuarios, permitiendo que los gestores administren empresas mientras los pasajeros utilizan los servicios de búsqueda y reserva de rutas.
-
-#### Routes Diagram
-
-![Route](assets/RoutesD.PNG)
-
-La clase Route define los servicios de transporte disponibles con sus características operativas como precio, duración estimada del viaje y la posibilidad de crear rutas compuestas mediante referencias a rutas padre. Proporciona funcionalidades para gestionar horarios, obtener las paradas que conecta en orden secuencial y calcular tiempos de llegada estimados. Es la entidad que representa el producto principal del sistema: el servicio de transporte entre diferentes ubicaciones.
-
-#### Company and Stops Diagram
-
-![Monitoring](assets/CompStopD.PNG)
-
-Las clases Company y Stop forman el núcleo operativo de la infraestructura de transporte. Company representa las empresas registradas en el sistema, cada una asociada a un gestor específico, almacenando información comercial como nombre y logotipo, mientras que Stop representa los puntos físicos donde operan estos servicios, incluyendo terminales y paradas con información detallada de ubicación, dirección, coordenadas de Google Maps y datos de contacto. Ambas entidades están estrechamente relacionadas ya que cada parada pertenece a una empresa específica, permitiendo que los gestores administren tanto sus rutas como la infraestructura física donde operan, creando un ecosistema completo de servicios de transporte bajo una marca comercial unificada.
-
-### 4.7.2. Class Dictionary.
-# Sistema de Gestión de Transporte - Diccionario de Clases
-
-## 1. Clase User
-Esta clase representa un usuario en el sistema, que puede ser un pasajero o un gestor de empresa de transporte.
-
-### Atributos
-- **`id`**: Identificador único del usuario
-- **`name`**: Nombre completo del usuario
-- **`email`**: Dirección de correo electrónico del usuario
-- **`password`**: Contraseña encriptada del usuario
-- **`role`**: Rol del usuario en el sistema (pasajero, gestor)
-- **`created_at`**: Fecha y hora de registro del usuario
-- **`fk_user_id`**: Identificador del usuario superior (para jerarquías)
-
-### Métodos
-- **`User(name, email, password, role)`**: Constructor para crear un nuevo usuario
-- **`updateProfile(name, email)`**: Actualiza la información del perfil del usuario
-- **`changePassword(newPassword)`**: Cambia la contraseña del usuario
-- **`authenticate(email, password)`**: Autentica las credenciales del usuario
+### Proceso de implementación
+
+- **Creación del repositorio:**  
+  Desde la cuenta de GitHub, se seleccionó la opción **"New Repository"** para crear un nuevo repositorio donde se alojará el proyecto.
+
+- **Configuración del repositorio:**  
+  Se asignó un nombre identificativo al repositorio y se configuró con visibilidad **pública**, requisito necesario para que GitHub Pages pueda realizar el despliegue del sitio.
+
+**Configuración del despliegue con GitHub Pages**
+
+Para proceder con el despliegue de la **Landing Page**, se creó una nueva rama denominada `feature/chapter-IV-deployment`, con el objetivo de mantener aislados los cambios relacionados con la configuración del entorno de publicación.  
+A continuación, se ejecutó el comando `git branch` para verificar las ramas activas en el repositorio, confirmando que la rama actual de trabajo era la recién creada.
+
+Posteriormente, se instaló el paquete **gh-pages** mediante el siguiente comando:
+
+```bash
+npm install gh-pages --save-dev
+```
+![img_1.png](img_1.png)
+
+**Ejecución del despliegue**
+
+Una vez instalada la dependencia **gh-pages** y configurado el script de despliegue en el archivo `package.json`, se procedió a ejecutar el comando:
+
+```bash
+npm run deploy
+```
+![img_2.png](img_2.png)
+**Configuración de github Pages**
+
+Una vez ejecutado el despliegue con `npm run deploy`, el sitio quedó alojado en la rama **`gh-pages`** del repositorio.  
+Para finalizar la configuración, se accedió a la pestaña **Settings → Pages** dentro del repositorio de GitHub.
+
+### Detalles de la configuración
+
+- **Fuente de despliegue (Source):**  
+  Se seleccionó la opción **"Deploy from a branch"**, indicando que el sitio será publicado directamente desde una rama del repositorio.
+
+- **Rama de publicación (Branch):**  
+  Se estableció la rama **`gh-pages`** como la fuente del sitio, con el directorio raíz **`/(root)`**, lo que permite a GitHub Pages leer directamente los archivos estáticos generados en la carpeta `dist` durante el proceso de build.
+
+- **URL del sitio:**  
+  GitHub genera automáticamente la URL de acceso público:  
+  👉 [https://aplicaciones-moviles-grupo.github.io/landing-page-original/](https://aplicaciones-moviles-grupo.github.io/landing-page-original/)
+
+Esta configuración asegura que la **Landing Page** se mantenga disponible en línea y que cualquier actualización futura en el código pueda desplegarse fácilmente con un nuevo `npm run deploy`.
+
+![img_3.png](img_3.png)
+
+
+## 4.2.Landing Page & Mobile Application Implementation
+
+### 4.2.1.Sprint 1
+
+#### 4.2.1.1.Sprint Planning 1
+
+En este primer sprint, el equipo se centró en el desarrollo y mejora de la aplicación móvil “Chapa Tu Ruta” en Android Studio.  
+El objetivo principal fue implementar las principales vistas funcionales y establecer la navegación entre ellas.  
+
+Las tareas se distribuyeron de la siguiente manera:
+
+- **Adrián Valerio**: Implementación de las vistas de **Login** y **Registro de usuario** (RegisterUserView y RegisterProfileView), además de la configuración del **AppNavHost** para gestionar la navegación.
+- **Yasser Renteria**: Desarrollo de la **pantalla de creación de rutas**, enfocada en permitir al conductor o usuario registrar rutas personalizadas dentro de la app móvil.
+- **Renzo Araujo**: Implementación de la **página de edición de perfil**, donde los usuarios pueden actualizar sus datos personales y de vehículo.
+- **Fabrizio Cutiri**: Creación de la **página principal (Home)** que sirve como punto de inicio después del inicio de sesión, mostrando las rutas y accesos a las demás funcionalidades.
+
+También se añadió el **logo oficial de la aplicación** en todas las vistas principales para unificar la identidad visual.
+
+#### 4.2.1.2.Sprint Backlog 1
+
+| ID | Historia de Usuario | Descripción | Prioridad | Responsable | Estado |
+|----|----------------------|-------------|------------|--------------|---------|
+| HU-01 | Inicio de Sesión | Como usuario, quiero iniciar sesión con mis credenciales para acceder a la app. | Alta | Adrián | Completado |
+| HU-02 | Registro de Usuario | Como nuevo usuario, quiero registrarme ingresando mis datos personales y del vehículo. | Alta | Adrián | Completado |
+| HU-03 | Crear Ruta | Como conductor, quiero registrar rutas para ofrecer mis servicios. | Media | Yasser | En desarrollo |
+| HU-04 | Editar Perfil | Como usuario, quiero editar mi información personal para mantenerla actualizada. | Media | Renzo | Completado |
+| HU-05 | Página Principal (Home) | Como usuario, quiero acceder a la pantalla principal después del login para ver y navegar entre secciones. | Alta | Fabrizio | Completado |
+| HU-06 | Navegación entre pantallas | Implementar navegación entre Login, Registro, Perfil, Home y Crear Ruta. | Alta | Fabrizio | Completado |
+
+#### 4.2.1.3.Development Evidence for Sprint Review
+
+**Mobile Application**<br>
+
+<table>
+  <tr>
+    <td align ="center" > <strong>Repository</strong></td>
+    <td  align ="center" > <strong>Branch</strong></td>
+    <td  align ="center" > <strong>Commit ID</strong></td>
+    <td  align ="center" > <strong>Commit message</strong></td>
+    <td  align ="center" > <strong>Commit Masagge body</strong></td>
+    <td  align ="center" > <strong>Commit on (date)</strong></td>
+  </tr>
+
+  <tr>
+    <td rowspan="27" align="center"> https://github.com/Aplicaciones-Moviles-Grupo/ChapaTuRuta-MobileApp </td>
+    <td align="center"> feature/auth-pages</td>
+    <td align="center"> 66487f2afc89c882577b8e92685db43c8efb177d</td>
+    <td align="center"> feat: add LoginView UI with email and password fields</td>
+    <td align="center"> ---</td>
+    <td align="center"> 09/10/2025</td>
+  </tr>
+
+  <tr>
+    <td align="center">feature/auth-pages</td>
+    <td align="center" > b87a5475155f686be3926e95bb0cb78e802e8fcf</td>
+    <td align="center"> feat: implement RegisterUserView for account creation</td>
+    <td align="center"> ---</td>
+    <td align="center"> 09/10/2025</td>
+  </tr>
+
+  <tr>
+    <td align="center"> feature/auth-pages</td>
+    <td align="center">caa18cc86f6e1a8af8a3fc3aa45c040f26fdc65a</td>
+    <td align="center"> feat: create RegisterProfileView for user and vehicle information</td>
+    <td align="center"> ---</td>
+    <td align="center"> 09/10/2025</td>
+  </tr>
+
+  <tr>
+    <td align="center"> feature/auth-pages</td>
+    <td align="center"> 609cb3566f24c9bb12057bcae7fc863a58281c88</td>
+    <td align="center"> feat: add app navigation trough auth pages</td>
+    <td align="center"> ---</td>
+    <td align="center">09/10/2025</td>
+  </tr>
+
+  <tr>
+    <td align="center"> feature/auth-pages</td>
+    <td align="center"> 405689e121163c44e21b4f308a1daf616c1bf4ab</td>
+    <td align="center"> chore: add chapaturuta logo in LoginView</td>
+    <td align="center"> ---</td>
+    <td align="center">09/10/2025</td>
+  </tr>
+
+  <tr>
+    <td align="center"> feature/auth-pages</td>
+    <td align="center"> 5a5f1f78e4740aed4efd928d48964c15f7eab143</td>
+    <td align="center">chore: add chapaturuta logo in RegisterProfileView</td>
+    <td align="center"> ---</td>
+    <td align="center"> 09/10/2025</td>
+  </tr>
+
+  <tr>
+    <td align="center"> feature/auth-pages</td>
+    <td align="center"> 40e3ba253984c2fcffcf2c72d487484cf9285a1a</td>
+    <td align="center"> chore: add chapaturuta logo in RegisterUserView</td>
+    <td align="center"> ---</td>
+    <td align="center"> 09/10/2025</td>
+  </tr>
+
+  <tr>
+    <td align="center"> feature/auth-pages</td>
+    <td align="center"> 6436ec9ab34c796d6771bd2fa2a060e03851acab</td>
+    <td align="center"> chore: add chapaturuta logo file</td>
+    <td align="center"> ---</td>
+    <td align="center"> 09/10/2025</td>
+  </tr>
+
+  <tr>
+    <td align="center"> feature/home</td>
+    <td align="center">17cd59d784361edeb29dc54149b3d7f0d3434613</td>
+    <td align="center"> feat(quote): implement methods to update and delete quote orders and services</td>
+    <td align="center"> ---</td>
+    <td align="center">09/10/2025</td>
+  </tr>
+
+  <tr>
+      <td align="center"> feature/home</td>
+      <td align="center">e0cd5ab7b01728e98e0970074778ae7f8e47b946</td>
+      <td align="center"> feat(task): create task service api.</td>
+      <td align="center"> ---</td>
+      <td align="center">09/10/2025</td>
+  </tr>
+
+  <tr>
+      <td align="center"> feature/home</td>
+      <td align="center">4431b8d3813c931938917855a7ce4f101adb07b1</td>
+      <td align="center"> feat(task): create task entity..</td>
+      <td align="center"> ---</td>
+      <td align="center">09/10/2025</td>
+  </tr>
+<tr>
+      <td align="center"> feature/home</td>
+      <td align="center">13effac1e4b0455aa5d1fc57e33157375a2351f3</td>
+      <td align="center"> feat(task): create task board entity..</td>
+      <td align="center"> ---</td>
+      <td align="center">09/10/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/home</td>
+      <td align="center">e4ae6ad750816498a130df50cad7af0ed1a20c23</td>
+      <td align="center"> feat(home): add home composable view</td>
+      <td align="center"> ---</td>
+      <td align="center">09/10/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/home</td>
+      <td align="center">9ce54864a86ca661acde64eb4d2cbb0ba621dd2a</td>
+      <td align="center"> feat(root): add main composable</td>
+      <td align="center"> ---</td>
+      <td align="center">09/10/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/home</td>
+      <td align="center">b6aa1266cd9582cb8544efe6cd29eca8040aaa3c</td>
+      <td align="center"> refactor(navigation): move appnav composable to navigation package</td>
+      <td align="center"> ---</td>
+      <td align="center">09/10/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/home</td>
+      <td align="center">ea8acfe9ff3274a249c915c826c4aa6dc69e1310</td>
+      <td align="center"> feat(ui): add route card composable</td>
+      <td align="center"> ---</td>
+      <td align="center">09/10/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/home</td>
+      <td align="center">a978e0a08754ae83eb9d1167ddc04d181deeb4b0</td>
+      <td align="center"> feat(ui): add stop card composable</td>
+      <td align="center"> ---</td>
+      <td align="center">09/10/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/home</td>
+      <td align="center">c3ae6b7501544e324e03b0e66f6501b08b31aed2</td>
+      <td align="center"> feat(ui): add vehicle card composable</td>
+      <td align="center"> ---</td>
+      <td align="center">09/10/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/home</td>
+      <td align="center">c98af691595bc30d49a9169765d1bbd21425ca0c</td>
+      <td align="center"> feat(home): update home view composable</td>
+      <td align="center"> ---</td>
+      <td align="center">09/10/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/home</td>
+      <td align="center">7b024b225417b9dff7f662a6fd78959015f27ff4</td>
+      <td align="center"> chore: add drawable images</td>
+      <td align="center"> ---</td>
+      <td align="center">09/10/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/home</td>
+      <td align="center">9cf8ec946fb863db03bcd7bf8c6dee0611955ea1</td>
+      <td align="center"> feat(navigation): add navigation to main composable</td>
+      <td align="center"> ---</td>
+      <td align="center">09/10/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/stops_and_routes</td>
+      <td align="center">a7b50b5750847b03dd189d45b2111ccebbba8512</td>
+      <td align="center"> feat: added Route view</td>
+      <td align="center"> ---</td>
+      <td align="center">09/10/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/stops_and_routes</td>
+      <td align="center">a7b50b5750847b03dd189d45b2111ccebbba8512</td>
+      <td align="center"> feat: added Stops view</td>
+      <td align="center"> ---</td>
+      <td align="center">09/10/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/stops_and_routes</td>
+      <td align="center">313c3857d9f07d6c07dfbd0c651790e7e39a3933</td>
+      <td align="center"> chore: added a function in components cards</td>
+      <td align="center"> ---</td>
+      <td align="center">09/10/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/stops_and_routes</td>
+      <td align="center">697265af12e3772009451502593de357aa94046e</td>
+      <td align="center"> chore: added a function and images</td>
+      <td align="center"> ---</td>
+      <td align="center">09/10/2025</td>
+  </tr>
+</table>
+
+
+**LANDING PAGE**<br>
+En el desarrollo de la **Landing Page**, la implementación estuvo a cargo de un único integrante del equipo.  
+Por esta razón, el proyecto se trabajó **exclusivamente en su entorno local**, sin requerir colaboración simultánea en línea.  
+Esta decisión se tomó por **comodidad y eficiencia**, dado que el alcance del proyecto era reducido y no implicaba la necesidad de integración con otros desarrolladores.
+
+Posteriormente, el proyecto fue desplegado en **GitHub Pages** para su publicación, permitiendo que el resto del equipo y los evaluadores pudieran visualizar la versión final directamente desde la web.
+
+<table><thead>
+  <tr>
+    <th>&nbsp;&nbsp;&nbsp;<br>Repository&nbsp;&nbsp;&nbsp;</th>
+    <th>&nbsp;&nbsp;&nbsp;<br>Branch&nbsp;&nbsp;&nbsp;</th>
+    <th>&nbsp;&nbsp;&nbsp;<br>Commit ID&nbsp;&nbsp;&nbsp;</th>
+    <th>&nbsp;&nbsp;&nbsp;<br>Commit<br>&nbsp;&nbsp;&nbsp;<br>Message&nbsp;&nbsp;&nbsp;</th>
+    <th>&nbsp;&nbsp;&nbsp;<br>Commit<br>&nbsp;&nbsp;&nbsp;<br>Message Body&nbsp;&nbsp;&nbsp;</th>
+    <th>&nbsp;&nbsp;&nbsp;<br>Committed on&nbsp;&nbsp;&nbsp;(Date)&nbsp;&nbsp;&nbsp;</th>
+  </tr></thead>
+<tbody>
+  <tr>
+<td rowspan="10">
+	<h5>Landing Page</h5>
+	<a href="https://aplicaciones-moviles-grupo.github.io/landing-page-original" target="_blank" rel="noopener noreferrer">https://aplicaciones-moviles-grupo.github.io/landing-page-original</a>
+	<br>
+</td>
+    <td><br>main</td>
+    <td><br>9d66d7fd7ccd87ec117c25cb8dcc7bb561dad065</td>
+    <td><br>first commit</td>
+    <td><br>first commit</td>
+    <td><br>Oct 8, 10:38 PM GMT-5</td>
+  </tr>
+</tbody></table>
+
+**BACKEND**<br>
+<table><thead>
+  <tr>
+    <th>&nbsp;&nbsp;&nbsp;<br>Repository&nbsp;&nbsp;&nbsp;</th>
+    <th>&nbsp;&nbsp;&nbsp;<br>Branch&nbsp;&nbsp;&nbsp;</th>
+    <th>&nbsp;&nbsp;&nbsp;<br>Commit ID&nbsp;&nbsp;&nbsp;</th>
+    <th>&nbsp;&nbsp;&nbsp;<br>Commit<br>&nbsp;&nbsp;&nbsp;<br>Message&nbsp;&nbsp;&nbsp;</th>
+    <th>&nbsp;&nbsp;&nbsp;<br>Commit<br>&nbsp;&nbsp;&nbsp;<br>Message Body&nbsp;&nbsp;&nbsp;</th>
+    <th>&nbsp;&nbsp;&nbsp;<br>Committed on&nbsp;&nbsp;&nbsp;(Date)&nbsp;&nbsp;&nbsp;</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td rowspan="10">
+	    <h5>back-end</h5>
+	      <a href="https://github.com/Aplicaciones-Moviles-Grupo/back-end" target="_blank" rel="noopener noreferrer">https://github.com/Aplicaciones-Moviles-Grupo/back-end</a>
+	      <br>
+    </td>
+    <td><br>main</td>
+    <td><br>fc929b77270f95aba6a35387a96a7503c3523529</td>
+    <td><br>first commit</td>
+    <td><br>first commit</td>
+    <td><br>Oct 6, 2025</td>
+  </tr>
+ <tr>
+   <td><br>main</td>
+    <td><br>cf7d59caa7536a1f3aa87852fa8ef0b899349d49</td>
+    <td><br>feature: update database connection settings for production environment</td>
+    <td><br>feature: update database connection settings for production environment</td>
+    <td><br>Oct 8, 2025</td>
+  </tr>
+</tbody></table>
+
+#### 4.2.1.4.Testing Suite Evidence for Sprint Review
+
+Se realizaron pruebas manuales de navegación entre pantallas utilizando el **emulador de Android Studio**, verificando que:
+- Las rutas definidas en `AppNavHost` funcionen correctamente.  
+- La navegación de **Login → Register → Profile → Home** se ejecute sin errores.  
+- Los datos ingresados en los formularios de registro y edición se mantengan estables durante la sesión.
 
 ---
 
-## 2. Clase Company
-Esta clase representa una empresa de transporte registrada en el sistema.
+#### 4.2.1.5.Execution Evidence for Sprint Review
 
-### Atributos
-- **`id`**: Identificador único de la empresa
-- **`name`**: Nombre comercial de la empresa de transporte
-- **`logo_url`**: URL del logotipo de la empresa
-- **`fk_user_id`**: Identificador del gestor propietario de la empresa
+Durante este primer Sprint logramos realizar la implementación del Landing page, Backend y Mobile App, sin embargo este último por el momento se realizó de forma local.
 
-### Métodos
-- **`Company(name, logo_url, fk_user_id)`**: Constructor para registrar una nueva empresa
-- **`updateCompanyInfo(name, logo_url)`**: Actualiza la información de la empresa
-- **`getRoutes()`**: Obtiene todas las rutas operadas por la empresa
-- **`getStops()`**: Obtiene todas las paradas gestionadas por la empresa
+A continuación se presentan evidencias de ejecución de los 3 productos:
 
----
 
-## 3. Clase Route
-Esta clase representa una ruta de transporte con sus características principales.
+**Landing Page**
 
-### Atributos
-- **`id`**: Identificador único de la ruta
-- **`price`**: Precio del pasaje para esta ruta
-- **`duration_min`**: Duración estimada del viaje en minutos
-- **`fk_id_route`**: Referencia a ruta padre (para rutas compuestas)
+**Hero Section**: En esta sección se colocó un mensaje que atraiga la atención del visitante, junto con un boton call to action para posteriormente enviarlo a la aplicación movil desplegada. 
 
-### Métodos
-- **`Route(price, duration_min)`**: Constructor para crear una nueva ruta
-- **`updateRouteInfo(price, duration_min)`**: Actualiza información de la ruta
-- **`getSchedules()`**: Obtiene todos los horarios disponibles para la ruta
-- **`getStops()`**: Obtiene todas las paradas de la ruta en orden
-- **`calculateEstimatedArrival(departure_time)`**: Calcula hora estimada de llegada
+<img src="resources/chapter-4/Hero%20Section.png" height=400>
 
----
+**How It Works Section**: En esta sección se le presenta como funciona la app para que el usuario obtenga información sobre las rutas y paraderos de los colectivos 
 
-## 4. Clase Stop
-Esta clase representa una parada o terminal de transporte.
+<img src="resources/chapter-4/How-it-Work.png" height=400>
 
-### Atributos
-- **`id`**: Identificador único de la parada
-- **`name`**: Nombre de la parada o terminal
-- **`google_maps_url`**: URL de Google Maps para la ubicación
-- **`image_url`**: URL de imagen representativa de la parada
-- **`phone`**: Número de teléfono de contacto de la parada
-- **`fk_company`**: Identificador de la empresa que gestiona la parada
-- **`address`**: Dirección física de la parada
-- **`reference`**: Referencias adicionales para ubicar la parada
-- **`fk_id_locality`**: Identificador de la localidad donde se ubica
+**Advantages Section**: Se presentan los beneficios que ofrece la aplicación para facilitar la búsqueda de colectivos
 
-### Métodos
-- **`Stop(name, address, phone, fk_company, fk_id_locality)`**: Constructor para crear parada
-- **`updateStopInfo(name, address, phone)`**: Actualiza información de la parada
-- **`getLocation()`**: Obtiene coordenadas geográficas de la parada
-- **`getRoutesFromStop()`**: Obtiene rutas que parten desde esta parada
+<img src="resources/chapter-4/Advantages%20Section.png" height=400>
 
----
+**FAQ Section**: Se muestran las preguntas frecuentes que realizan los visitantes cuando visitan por primera vez la página
 
-## 5. Clase Schedule
-Esta clase representa los horarios de operación de una ruta en específica.
+<img src="resources/chapter-4/FAQ%20Section.png" height=400>
 
-### Atributos
-- **`id`**: Identificador único del horario
-- **`day`**: Día de la semana para este horario
-- **`time_from`**: Hora de inicio del servicio
-- **`time_to`**: Hora de fin del servicio
-- **`is_available`**: Indica si el horario está disponible
-- **`fk_id_route`**: Identificador de la ruta asociada
+**Footer Section**: Finalmente en el footer se presenta información de contacto como redes sociales, numero de telefono, etc.
 
-### Métodos
-- **`Schedule(day, time_from, time_to, fk_id_route)`**: Constructor para crear horario
-- **`updateSchedule(time_from, time_to, is_available)`**: Actualiza el horario
-- **`checkAvailability(requested_time)`**: Verifica disponibilidad en hora específica
-- **`toggleAvailability()`**: Activa/desactiva la disponibilidad del horario
+<img src="resources/chapter-4/Footer%20Section.png" height=400>
 
----
 
-## 6. Clase Locality
-Esta clase representa una localidad dentro de un distrito.
+**Backend**
 
-### Atributos
-- **`id`**: Identificador único de la localidad
-- **`name`**: Nombre de la localidad
-- **`fk_id_district`**: Identificador del distrito al que pertenece
+<img src="resources/chapter-4/Backend-Execution-1.png" height=400>
 
-### Métodos
-- **`Locality(name, fk_id_district)`**: Constructor para crear localidad
-- **`updateName(name)`**: Actualiza el nombre de la localidad
-- **`getStops()`**: Obtiene todas las paradas ubicadas en esta localidad
-- **`getDistrict()`**: Obtiene información del distrito padre
+<img src="resources/chapter-4/Backend-Execution-2.png" height=400>
 
----
+<img src="resources/chapter-4/Backend-Execution-3.png" height=400>
 
-## 7. Clase District
-Esta clase representa un distrito dentro de una provincia.
+<img src="resources/chapter-4/Backend-Execution-4.png" height=400>
 
-### Atributos
-- **`id`**: Identificador único del distrito
-- **`name`**: Nombre del distrito
-- **`fk_id_province`**: Identificador de la provincia a la que pertenece
+<img src="resources/chapter-4/Backend-Execution-5.png" height=400>
 
-### Métodos
-- **`District(name, fk_id_province)`**: Constructor para crear distrito
-- **`updateName(name)`**: Actualiza el nombre del distrito
-- **`getLocalities()`**: Obtiene todas las localidades del distrito
-- **`getProvince()`**: Obtiene información de la provincia padre
+**Mobile App**
 
----
+<img src="resources/chapter-4/Mobile-App-Execution-1.png" height=400>
 
-## 8. Clase Province
-Esta clase representa una provincia dentro de una región.
+<img src="resources/chapter-4/Mobile-App-Execution-2.png" height=400>
 
-### Atributos
-- **`id`**: Identificador único de la provincia
-- **`name`**: Nombre de la provincia
-- **`fk_id_region`**: Identificador de la región a la que pertenece
+<img src="resources/chapter-4/Mobile-App-Execution-3.png" height=400>
 
-### Métodos
-- **`Province(name, fk_id_region)`**: Constructor para crear provincia
-- **`updateName(name)`**: Actualiza el nombre de la provincia
-- **`getDistricts()`**: Obtiene todos los distritos de la provincia
-- **`getRegion()`**: Obtiene información de la región padre
+<img src="resources/chapter-4/Mobile-App-Execution-4.png" height=400>
 
----
 
-## 9. Clase Region
-Esta clase representa la división geográfica de mayor nivel en el sistema.
 
-### Atributos
-- **`id`**: Identificador único de la región
-- **`name`**: Nombre de la región
+#### 4.2.1.6.Services Documentation Evidence for Sprint Review
 
-### Métodos
-- **`Region(name)`**: Constructor para crear región
-- **`updateName(name)`**: Actualiza el nombre de la región
-- **`getProvinces()`**: Obtiene todas las provincias de la región
-- **`getFullGeographicHierarchy()`**: Obtiene la jerarquía geográfica completa
+Tras finalizar el Sprint 1, hemos logrado implementar los endpoints principales de nuestra API backend, estableciendo una base sólida para la comunicación entre el frontend y la base de datos. Durante este sprint nos enfocamos en desarrollar la funcionalidad core del sistema, implementando los bounded contexts de Stops, Companies y Geographic con sus respectivos controladores y servicios. A continuación, presentamos la evidencia de los avances alcanzados durante este período de desarrollo.
 
----
+*Companies* : Este bounded context maneja la información de las compañías o empresas de transporte. Proporciona funcionalidades para registrar nuevas empresas, consultar su información, actualizarla y eliminarla. También permite verificar qué compañía está asociada a un usuario específico, siendo esencial para el control de acceso y la gestión empresarial del sistema.
 
-## 10. Clase Itinerary
-Esta clase representa itinerarios que agrupan múltiples rutas.
+![login](./assets/SCompany.PNG)
 
-### Atributos
-- **`id`**: Identificador único del itinerario
-- **`fk_id_itinerary`**: Referencia a itinerario padre (para itinerarios anidados)
-- **`fk_id_route`**: Identificador de la ruta asociada
+*Geographic*: Este bounded context administra la información geográfica y territorial del sistema. Maneja una jerarquía de ubicaciones que incluye regiones, provincias, distritos y localidades. Permite consultar la información geográfica a diferentes niveles y establecer relaciones entre las divisiones territoriales, proporcionando el contexto geográfico necesario para ubicar paradas y rutas de transporte.
 
-### Métodos
-- **`Itinerary(fk_id_route)`**: Constructor para crear itinerario
-- **`addRoute(route_id)`**: Agrega una ruta al itinerario
-- **`removeRoute(route_id)`**: Remueve una ruta del itinerario
-- **`calculateTotalDuration()`**: Calcula duración total del itinerario
-- **`calculateTotalPrice()`**: Calcula precio total del itinerario
+![inicio](./assets/SGeo.PNG)
+
+*Stops*: Este bounded context se encarga de administrar las paradas o estaciones de transporte público. Permite crear, consultar, actualizar y eliminar paradas, así como buscarlas por diferentes criterios como compañía, localidad o nombre. Es fundamental para el sistema de rutas y ubicaciones del transporte.
+
+![paraderos](./assets/SStop.PNG)
+
+
+#### 4.2.1.7.Software Deployment Evidence for Sprint Review
+
+**Evidencias del despliegue de la Landing Page**
+
+A continuación, se presentan las evidencias del **despliegue de la Landing Page**, desarrollada con **Vue 3**, **Vite** y **JavaScript**.  
+El proyecto fue construido aplicando componentes dinámicos y estilos personalizados, y posteriormente publicado mediante la funcionalidad de **GitHub Pages**, la cual permite alojar sitios web estáticos directamente desde un repositorio.
+
+Durante el proceso se generó la carpeta `dist/` con los archivos optimizados para producción, y se configuró el despliegue automático hacia la rama `gh-pages`.  
+De esta manera, la página quedó disponible públicamente, mostrando la integración entre **Vue**, **Vite** y las configuraciones de despliegue en **GitHub Pages**.
+
+**url:** <a href="https://aplicaciones-moviles-grupo.github.io/landing-page-original">https://aplicaciones-moviles-grupo.github.io/landing-page-original</a>
+
+
+![img_4.png](img_4.png)
+**Como trabajamos**<br>
+![img_5.png](img_5.png)
+![img_6.png](img_6.png)
+![img_7.png](img_7.png)
+
+**Evidencias del despliegue del Back End**<br>
+**Despliegue del Web Service**
+
+Para el **despliegue del Web Service**, se utilizó la plataforma **Railway**, la cual se integró directamente con el repositorio de **GitHub**.  
+Esta conexión permitió automatizar el proceso de despliegue, de modo que cada cambio o actualización en el código del repositorio se reflejara automáticamente en el entorno en línea.
+
+Railway ofrece una configuración sencilla y flexible, ideal para proyectos con backend ligero o servicios web basados en APIs.  
+A través de su panel, se vinculó el repositorio del proyecto, se configuraron las variables de entorno necesarias y se ejecutó el despliegue con un solo clic, sin necesidad de herramientas externas o autenticaciones adicionales desde el IDE.
+
+![img_8.png](img_8.png)
+
+**Actualización del despliegue en Railway**
+
+En la imagen se muestra el panel de control de **Railway**, donde se registran los cambios aplicados al proyecto del **Web Service**.  
+El sistema indica que se realizaron **dos actualizaciones** relacionadas con la configuración del entorno de despliegue:
+
+- **Branch:**  
+  Se confirma que la rama activa para el despliegue es `main`, lo que significa que Railway tomará automáticamente el código más reciente de esta rama cada vez que se realice un nuevo commit o push en GitHub.
+
+- **Repo:**  
+  Se muestra el repositorio vinculado al servicio, en este caso **`Aplicaciones-Moviles-Grupo/back-end`**, el cual contiene el código fuente del backend.
+
+El mensaje **“back-end was updated”** confirma que Railway detectó cambios en el repositorio y actualizó el entorno de producción de forma automática.  
+Esta funcionalidad garantiza una **integración continua** entre GitHub y Railway, permitiendo que cada modificación validada en la rama principal se despliegue sin intervención manual adicional. 
+![img_9.png](img_9.png)
+
+**Evidencia de despliegue en Railway**
+
+La imagen muestra el entorno de **producción** en **Railway**, donde el **backend** fue desplegado correctamente.
+
+- **Estado:** El mensaje *“Deployment successful”* confirma que el despliegue se realizó sin errores.
+- **Origen:** El código se obtuvo automáticamente desde la rama `main` del repositorio **`Aplicaciones-Moviles-Grupo/back-end`**, mediante integración con **GitHub**.
+- **Configuración:** El servicio usa un **Dockerfile** para su construcción y ejecuta el comando `./Frock-backend` al iniciar.
+
+Con esto se valida que el **Web Service** se encuentra activo y funcionando en producción con un flujo automatizado de despliegue continuo.
+![img_10.png](img_10.png)
+
+**Despliegue del Web Service en Railway**
+
+finalmente, se muestra la URL pública generada por **Railway** para acceder al **Web Service** desplegado.
+![img_11.png](img_11.png)
+
+#### 4.2.1.8.Team Collaboration Insights during Sprint
+El equipo mantuvo reuniones periódicas mediante **Discord** y **Meet** para coordinar tareas y compartir avances.  
+La colaboración fue efectiva al dividir las vistas según especialidad y mantener coherencia visual con el tema `AppTheme`.
+
+Se destaca la integración exitosa del flujo completo de navegación móvil y la consolidación de la identidad visual de la aplicación.
 
 ---
 
-## 11. Clase StopsRoute
-Esta clase representa los pasos o paradas de una ruta específica.
-
-### Atributos
-- **`id`**: Identificador único del paso de ruta
-- **`fk_id_route`**: Identificador de la ruta
-- **`fk_id_stop`**: Identificador de la parada
-
-### Métodos
-- **`StepRoute(fk_id_route, fk_id_stop)`**: Constructor para crear paso de ruta
-- **`updateStopOrder(new_order)`**: Actualiza el orden de la parada en la ruta
-- **`getRouteDetails()`**: Obtiene detalles de la ruta asociada
-- **`getStopDetails()`**: Obtiene detalles de la parada asociada
-
----
-
-## 12. Clase ItineraryRoute
-Esta clase representa la relación entre itinerarios y rutas.
-
-### Atributos
-- **`id`**: Identificador único de la relación
-- **`fk_id_itinerary`**: Identificador del itinerario
-- **`fk_id_route`**: Identificador de la ruta
-
-### Métodos
-- **`ItineraryRoute(fk_id_itinerary, fk_id_route)`**: Constructor para crear relación
-- **`removeFromItinerary()`**: Remueve la ruta del itinerario
-- **`getItineraryDetails()`**: Obtiene detalles del itinerario
-- **`getRouteDetails()`**: Obtiene detalles de la ruta
-
----
-
-## Servicios Principales del Sistema
-
-### RouteSearchService
-Servicio especializado para búsqueda y filtrado de rutas disponibles en el sistema.
-
-### ReservationService  
-Servicio encargado de la gestión integral de reservas de pasajeros.
-
-### GeographicService
-Servicio para el manejo de la jerarquía geográfica completa (región → provincia → distrito → localidad).
-
-### CompanyManagementService
-Servicio para la gestión integral de empresas de transporte y todos sus recursos asociados.
-
-## 4.8. Database Design.
-### 4.8.1. Database Diagram.
-![unnamed-2025-06-20T19_28_39 (1)](https://github.com/user-attachments/assets/7e6c5c6e-8460-4c64-8bce-b09cb415b85e)
+**Resumen del Sprint 1:**
+- Se implementaron las vistas principales del aplicativo móvil.
+- Se estableció el flujo completo de navegación.
+- Se hizo el despliegue de la landing page
+- Se alcanzó el 100% de las metas planificadas para el sprint.
