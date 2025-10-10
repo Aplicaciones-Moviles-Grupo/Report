@@ -185,9 +185,17 @@ Para el despliegue de la **Landing Page**, se utilizó **GitHub Pages**, la func
 - **Configuración del repositorio:**  
   Se asignó un nombre identificativo al repositorio y se configuró con visibilidad **pública**, requisito necesario para que GitHub Pages pueda realizar el despliegue del sitio.
 
-Este proceso permite alojar y visualizar la landing page directamente desde GitHub, facilitando su acceso, mantenimiento y actualización continua.
+**Configuración del despliegue con GitHub Pages**
 
-![img.png](img.png)
+Para proceder con el despliegue de la **Landing Page**, se creó una nueva rama denominada `feature/chapter-IV-deployment`, con el objetivo de mantener aislados los cambios relacionados con la configuración del entorno de publicación.  
+A continuación, se ejecutó el comando `git branch` para verificar las ramas activas en el repositorio, confirmando que la rama actual de trabajo era la recién creada.
+
+Posteriormente, se instaló el paquete **gh-pages** mediante el siguiente comando:
+
+```bash
+npm install gh-pages --save-dev
+```
+![img_1.png](img_1.png)
 
 ## 4.2.Landing Page & Mobile Application Implementation
 
