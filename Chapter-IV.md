@@ -124,12 +124,19 @@ También se añadió el **logo oficial de la aplicación** en todas las vistas p
 | HU-03 | Crear Ruta | Como conductor, quiero registrar rutas para ofrecer mis servicios. | Media | Yasser | En desarrollo |
 | HU-04 | Editar Perfil | Como usuario, quiero editar mi información personal para mantenerla actualizada. | Media | Renzo | Completado |
 | HU-05 | Página Principal (Home) | Como usuario, quiero acceder a la pantalla principal después del login para ver y navegar entre secciones. | Alta | Fabrizio | Completado |
-| HU-06 | Navegación entre pantallas | Implementar navegación entre Login, Registro, Perfil, Home y Crear Ruta. | Alta | Adrián | Completado |
+| HU-06 | Navegación entre pantallas | Implementar navegación entre Login, Registro, Perfil, Home y Crear Ruta. | Alta | Fabrizio | Completado |
 | HU-07 | Integrar logo institucional | Añadir el logo oficial de la app en todas las vistas principales. | Media | Todo el equipo | Completado |
 
 #### 4.2.1.3.Development Evidence for Sprint Review
 
 #### 4.2.1.4.Testing Suite Evidence for Sprint Review
+
+Se realizaron pruebas manuales de navegación entre pantallas utilizando el **emulador de Android Studio**, verificando que:
+- Las rutas definidas en `AppNavHost` funcionen correctamente.  
+- La navegación de **Login → Register → Profile → Home** se ejecute sin errores.  
+- Los datos ingresados en los formularios de registro y edición se mantengan estables durante la sesión.
+
+---
 
 #### 4.2.1.5.Execution Evidence for Sprint Review
 
@@ -190,3 +197,16 @@ A continuación se presentan evidencias de ejecución de los 3 productos:
 #### 4.2.1.7.Software Deployment Evidence for Sprint Review
 
 #### 4.2.1.8.Team Collaboration Insights during Sprint
+El equipo mantuvo reuniones periódicas mediante **Discord** para coordinar tareas y compartir avances.  
+La colaboración fue efectiva al dividir las vistas según especialidad y mantener coherencia visual con el tema `AppTheme`.
+
+Se destaca la integración exitosa del flujo completo de navegación móvil y la consolidación de la identidad visual de la aplicación.
+
+---
+
+✅ **Resumen del Sprint 2:**
+- Se implementaron las vistas principales del aplicativo móvil.
+- Se estableció el flujo completo de navegación.
+- Se integró el logo institucional en todas las pantallas.
+- Se realizaron pruebas en emulador y dispositivos físicos.
+- Se alcanzó el 100% de las metas planificadas para el sprint.
