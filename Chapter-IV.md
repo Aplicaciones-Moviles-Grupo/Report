@@ -268,6 +268,38 @@ Posteriormente, el proyecto fue desplegado en **GitHub Pages** para su publicaci
   </tr>
 </tbody></table>
 
+**BACKEND**<br>
+<table><thead>
+  <tr>
+    <th>&nbsp;&nbsp;&nbsp;<br>Repository&nbsp;&nbsp;&nbsp;</th>
+    <th>&nbsp;&nbsp;&nbsp;<br>Branch&nbsp;&nbsp;&nbsp;</th>
+    <th>&nbsp;&nbsp;&nbsp;<br>Commit ID&nbsp;&nbsp;&nbsp;</th>
+    <th>&nbsp;&nbsp;&nbsp;<br>Commit<br>&nbsp;&nbsp;&nbsp;<br>Message&nbsp;&nbsp;&nbsp;</th>
+    <th>&nbsp;&nbsp;&nbsp;<br>Commit<br>&nbsp;&nbsp;&nbsp;<br>Message Body&nbsp;&nbsp;&nbsp;</th>
+    <th>&nbsp;&nbsp;&nbsp;<br>Committed on&nbsp;&nbsp;&nbsp;(Date)&nbsp;&nbsp;&nbsp;</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td rowspan="10">
+	    <h5>back-end</h5>
+	      <a href="https://github.com/Aplicaciones-Moviles-Grupo/back-end" target="_blank" rel="noopener noreferrer">https://github.com/Aplicaciones-Moviles-Grupo/back-end</a>
+	      <br>
+    </td>
+    <td><br>main</td>
+    <td><br>fc929b77270f95aba6a35387a96a7503c3523529</td>
+    <td><br>first commit</td>
+    <td><br>first commit</td>
+    <td><br>Oct 6, 2025</td>
+  </tr>
+ <tr>
+   <td><br>main</td>
+    <td><br>cf7d59caa7536a1f3aa87852fa8ef0b899349d49</td>
+    <td><br>feature: update database connection settings for production environment</td>
+    <td><br>feature: update database connection settings for production environment</td>
+    <td><br>Oct 8, 2025</td>
+  </tr>
+</tbody></table>
+
 #### 4.2.1.4.Testing Suite Evidence for Sprint Review
 
 #### 4.2.1.5.Execution Evidence for Sprint Review
