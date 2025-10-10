@@ -308,6 +308,7 @@ Estos archivos siguen el formato **Gherkin**, utilizado para describir de forma 
 Cada `.feature` corresponde a una funcionalidad o historia de usuario implementada, e incluye sus respectivos escenarios y criterios de aceptación.  
 Todos los archivos han sido **subidos al repositorio del proyecto**, donde pueden consultarse para revisar el avance, validación y trazabilidad de los requerimientos implementados.
 
+
 #### 4.2.1.5.Execution Evidence for Sprint Review
 
 Durante este primer Sprint logramos realizar la implementación del Landing page, Backend y Mobile App, sin embargo este último por el momento se realizó de forma local.
@@ -365,5 +366,64 @@ A continuación se presentan evidencias de ejecución de los 3 productos:
 #### 4.2.1.6.Services Documentation Evidence for Sprint Review
 
 #### 4.2.1.7.Software Deployment Evidence for Sprint Review
+
+**Evidencias del despliegue de la Landing Page**
+
+A continuación, se presentan las evidencias del **despliegue de la Landing Page**, desarrollada con **Vue 3**, **Vite** y **JavaScript**.  
+El proyecto fue construido aplicando componentes dinámicos y estilos personalizados, y posteriormente publicado mediante la funcionalidad de **GitHub Pages**, la cual permite alojar sitios web estáticos directamente desde un repositorio.
+
+Durante el proceso se generó la carpeta `dist/` con los archivos optimizados para producción, y se configuró el despliegue automático hacia la rama `gh-pages`.  
+De esta manera, la página quedó disponible públicamente, mostrando la integración entre **Vue**, **Vite** y las configuraciones de despliegue en **GitHub Pages**.
+
+**url:** <a href="https://aplicaciones-moviles-grupo.github.io/landing-page-original">https://aplicaciones-moviles-grupo.github.io/landing-page-original</a>
+
+
+![img_4.png](img_4.png)
+**Como trabajamos**<br>
+![img_5.png](img_5.png)
+![img_6.png](img_6.png)
+![img_7.png](img_7.png)
+
+**Evidencias del despliegue del Back End**<br>
+**Despliegue del Web Service**
+
+Para el **despliegue del Web Service**, se utilizó la plataforma **Railway**, la cual se integró directamente con el repositorio de **GitHub**.  
+Esta conexión permitió automatizar el proceso de despliegue, de modo que cada cambio o actualización en el código del repositorio se reflejara automáticamente en el entorno en línea.
+
+Railway ofrece una configuración sencilla y flexible, ideal para proyectos con backend ligero o servicios web basados en APIs.  
+A través de su panel, se vinculó el repositorio del proyecto, se configuraron las variables de entorno necesarias y se ejecutó el despliegue con un solo clic, sin necesidad de herramientas externas o autenticaciones adicionales desde el IDE.
+
+![img_8.png](img_8.png)
+
+**Actualización del despliegue en Railway**
+
+En la imagen se muestra el panel de control de **Railway**, donde se registran los cambios aplicados al proyecto del **Web Service**.  
+El sistema indica que se realizaron **dos actualizaciones** relacionadas con la configuración del entorno de despliegue:
+
+- **Branch:**  
+  Se confirma que la rama activa para el despliegue es `main`, lo que significa que Railway tomará automáticamente el código más reciente de esta rama cada vez que se realice un nuevo commit o push en GitHub.
+
+- **Repo:**  
+  Se muestra el repositorio vinculado al servicio, en este caso **`Aplicaciones-Moviles-Grupo/back-end`**, el cual contiene el código fuente del backend.
+
+El mensaje **“back-end was updated”** confirma que Railway detectó cambios en el repositorio y actualizó el entorno de producción de forma automática.  
+Esta funcionalidad garantiza una **integración continua** entre GitHub y Railway, permitiendo que cada modificación validada en la rama principal se despliegue sin intervención manual adicional. 
+![img_9.png](img_9.png)
+
+**Evidencia de despliegue en Railway**
+
+La imagen muestra el entorno de **producción** en **Railway**, donde el **backend** fue desplegado correctamente.
+
+- **Estado:** El mensaje *“Deployment successful”* confirma que el despliegue se realizó sin errores.
+- **Origen:** El código se obtuvo automáticamente desde la rama `main` del repositorio **`Aplicaciones-Moviles-Grupo/back-end`**, mediante integración con **GitHub**.
+- **Configuración:** El servicio usa un **Dockerfile** para su construcción y ejecuta el comando `./Frock-backend` al iniciar.
+
+Con esto se valida que el **Web Service** se encuentra activo y funcionando en producción con un flujo automatizado de despliegue continuo.
+![img_10.png](img_10.png)
+
+**Despliegue del Web Service en Railway**
+
+finalmente, se muestra la URL pública generada por **Railway** para acceder al **Web Service** desplegado.
+![img_11.png](img_11.png)
 
 #### 4.2.1.8.Team Collaboration Insights during Sprint
