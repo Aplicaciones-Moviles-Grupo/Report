@@ -385,6 +385,21 @@ A continuación se presentan evidencias de ejecución de los 3 productos:
 
 #### 4.2.1.6.Services Documentation Evidence for Sprint Review
 
+Tras finalizar el Sprint 1, hemos logrado implementar los endpoints principales de nuestra API backend, estableciendo una base sólida para la comunicación entre el frontend y la base de datos. Durante este sprint nos enfocamos en desarrollar la funcionalidad core del sistema, implementando los bounded contexts de Stops, Companies y Geographic con sus respectivos controladores y servicios. A continuación, presentamos la evidencia de los avances alcanzados durante este período de desarrollo.
+
+*Companies* : Este bounded context maneja la información de las compañías o empresas de transporte. Proporciona funcionalidades para registrar nuevas empresas, consultar su información, actualizarla y eliminarla. También permite verificar qué compañía está asociada a un usuario específico, siendo esencial para el control de acceso y la gestión empresarial del sistema.
+
+![login](./assets/SCompany.PNG)
+
+*Geographic*: Este bounded context administra la información geográfica y territorial del sistema. Maneja una jerarquía de ubicaciones que incluye regiones, provincias, distritos y localidades. Permite consultar la información geográfica a diferentes niveles y establecer relaciones entre las divisiones territoriales, proporcionando el contexto geográfico necesario para ubicar paradas y rutas de transporte.
+
+![inicio](./assets/SGeo.PNG)
+
+*Stops*: Este bounded context se encarga de administrar las paradas o estaciones de transporte público. Permite crear, consultar, actualizar y eliminar paradas, así como buscarlas por diferentes criterios como compañía, localidad o nombre. Es fundamental para el sistema de rutas y ubicaciones del transporte.
+
+![paraderos](./assets/SStop.PNG)
+
+
 #### 4.2.1.7.Software Deployment Evidence for Sprint Review
 
 #### 4.2.1.8.Team Collaboration Insights during Sprint
