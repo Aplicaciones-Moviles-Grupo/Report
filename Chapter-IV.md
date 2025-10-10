@@ -320,6 +320,205 @@ También se añadió el **logo oficial de la aplicación** en todas las vistas p
 
 #### 4.2.1.3.Development Evidence for Sprint Review
 
+<table>
+  <tr>
+    <td align ="center" > <strong>Repository</strong></td>
+    <td  align ="center" > <strong>Branch</strong></td>
+    <td  align ="center" > <strong>Commit ID</strong></td>
+    <td  align ="center" > <strong>Commit message</strong></td>
+    <td  align ="center" > <strong>Commit Masagge body</strong></td>
+    <td  align ="center" > <strong>Commit on (date)</strong></td>
+  </tr>
+
+  <tr>
+    <td rowspan="27" align="center"> https://github.com/Aplicaciones-Moviles-Grupo/ChapaTuRuta-MobileApp </td>
+    <td align="center"> feature/auth-pages</td>
+    <td align="center"> 66487f2afc89c882577b8e92685db43c8efb177d</td>
+    <td align="center"> feat: add LoginView UI with email and password fields</td>
+    <td align="center"> ---</td>
+    <td align="center"> 09/10/2025</td>
+  </tr>
+
+  <tr>
+    <td align="center">feature/auth-pages</td>
+    <td align="center" > b87a5475155f686be3926e95bb0cb78e802e8fcf</td>
+    <td align="center"> feat: implement RegisterUserView for account creation</td>
+    <td align="center"> ---</td>
+    <td align="center"> 09/10/2025</td>
+  </tr>
+
+  <tr>
+    <td align="center"> feature/auth-pages</td>
+    <td align="center">caa18cc86f6e1a8af8a3fc3aa45c040f26fdc65a</td>
+    <td align="center"> feat: create RegisterProfileView for user and vehicle information</td>
+    <td align="center"> ---</td>
+    <td align="center"> 09/10/2025</td>
+  </tr>
+
+  <tr>
+    <td align="center"> feature/auth-pages</td>
+    <td align="center"> 609cb3566f24c9bb12057bcae7fc863a58281c88</td>
+    <td align="center"> feat: add app navigation trough auth pages</td>
+    <td align="center"> ---</td>
+    <td align="center">09/10/2025</td>
+  </tr>
+
+  <tr>
+    <td align="center"> feature/auth-pages</td>
+    <td align="center"> 405689e121163c44e21b4f308a1daf616c1bf4ab</td>
+    <td align="center"> chore: add chapaturuta logo in LoginView</td>
+    <td align="center"> ---</td>
+    <td align="center">09/10/2025</td>
+  </tr>
+
+  <tr>
+    <td align="center"> feature/auth-pages</td>
+    <td align="center"> 5a5f1f78e4740aed4efd928d48964c15f7eab143</td>
+    <td align="center">chore: add chapaturuta logo in RegisterProfileView</td>
+    <td align="center"> ---</td>
+    <td align="center"> 09/10/2025</td>
+  </tr>
+
+  <tr>
+    <td align="center"> feature/auth-pages</td>
+    <td align="center"> 40e3ba253984c2fcffcf2c72d487484cf9285a1a</td>
+    <td align="center"> chore: add chapaturuta logo in RegisterUserView</td>
+    <td align="center"> ---</td>
+    <td align="center"> 09/10/2025</td>
+  </tr>
+
+  <tr>
+    <td align="center"> feature/auth-pages</td>
+    <td align="center"> 6436ec9ab34c796d6771bd2fa2a060e03851acab</td>
+    <td align="center"> chore: add chapaturuta logo file</td>
+    <td align="center"> ---</td>
+    <td align="center"> 09/10/2025</td>
+  </tr>
+
+  <tr>
+    <td align="center"> feature/home</td>
+    <td align="center">17cd59d784361edeb29dc54149b3d7f0d3434613</td>
+    <td align="center"> feat(quote): implement methods to update and delete quote orders and services</td>
+    <td align="center"> ---</td>
+    <td align="center">09/10/2025</td>
+  </tr>
+
+  <tr>
+      <td align="center"> feature/home</td>
+      <td align="center">e0cd5ab7b01728e98e0970074778ae7f8e47b946</td>
+      <td align="center"> feat(task): create task service api.</td>
+      <td align="center"> ---</td>
+      <td align="center">09/10/2025</td>
+  </tr>
+
+  <tr>
+      <td align="center"> feature/home</td>
+      <td align="center">4431b8d3813c931938917855a7ce4f101adb07b1</td>
+      <td align="center"> feat(task): create task entity..</td>
+      <td align="center"> ---</td>
+      <td align="center">09/10/2025</td>
+  </tr>
+<tr>
+      <td align="center"> feature/home</td>
+      <td align="center">13effac1e4b0455aa5d1fc57e33157375a2351f3</td>
+      <td align="center"> feat(task): create task board entity..</td>
+      <td align="center"> ---</td>
+      <td align="center">09/10/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/home</td>
+      <td align="center">e4ae6ad750816498a130df50cad7af0ed1a20c23</td>
+      <td align="center"> feat(home): add home composable view</td>
+      <td align="center"> ---</td>
+      <td align="center">09/10/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/home</td>
+      <td align="center">9ce54864a86ca661acde64eb4d2cbb0ba621dd2a</td>
+      <td align="center"> feat(root): add main composable</td>
+      <td align="center"> ---</td>
+      <td align="center">09/10/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/home</td>
+      <td align="center">b6aa1266cd9582cb8544efe6cd29eca8040aaa3c</td>
+      <td align="center"> refactor(navigation): move appnav composable to navigation package</td>
+      <td align="center"> ---</td>
+      <td align="center">09/10/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/home</td>
+      <td align="center">ea8acfe9ff3274a249c915c826c4aa6dc69e1310</td>
+      <td align="center"> feat(ui): add route card composable</td>
+      <td align="center"> ---</td>
+      <td align="center">09/10/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/home</td>
+      <td align="center">a978e0a08754ae83eb9d1167ddc04d181deeb4b0</td>
+      <td align="center"> feat(ui): add stop card composable</td>
+      <td align="center"> ---</td>
+      <td align="center">09/10/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/home</td>
+      <td align="center">c3ae6b7501544e324e03b0e66f6501b08b31aed2</td>
+      <td align="center"> feat(ui): add vehicle card composable</td>
+      <td align="center"> ---</td>
+      <td align="center">09/10/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/home</td>
+      <td align="center">c98af691595bc30d49a9169765d1bbd21425ca0c</td>
+      <td align="center"> feat(home): update home view composable</td>
+      <td align="center"> ---</td>
+      <td align="center">09/10/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/home</td>
+      <td align="center">7b024b225417b9dff7f662a6fd78959015f27ff4</td>
+      <td align="center"> chore: add drawable images</td>
+      <td align="center"> ---</td>
+      <td align="center">09/10/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/home</td>
+      <td align="center">9cf8ec946fb863db03bcd7bf8c6dee0611955ea1</td>
+      <td align="center"> feat(navigation): add navigation to main composable</td>
+      <td align="center"> ---</td>
+      <td align="center">09/10/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/stops_and_routes</td>
+      <td align="center">a7b50b5750847b03dd189d45b2111ccebbba8512</td>
+      <td align="center"> feat: added Route view</td>
+      <td align="center"> ---</td>
+      <td align="center">09/10/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/stops_and_routes</td>
+      <td align="center">a7b50b5750847b03dd189d45b2111ccebbba8512</td>
+      <td align="center"> feat: added Stops view</td>
+      <td align="center"> ---</td>
+      <td align="center">09/10/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/stops_and_routes</td>
+      <td align="center">313c3857d9f07d6c07dfbd0c651790e7e39a3933</td>
+      <td align="center"> chore: added a function in components cards</td>
+      <td align="center"> ---</td>
+      <td align="center">09/10/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/stops_and_routes</td>
+      <td align="center">697265af12e3772009451502593de357aa94046e</td>
+      <td align="center"> chore: added a function and images</td>
+      <td align="center"> ---</td>
+      <td align="center">09/10/2025</td>
+  </tr>
+</table>
+
+
 #### 4.2.1.4.Testing Suite Evidence for Sprint Review
 
 Se realizaron pruebas manuales de navegación entre pantallas utilizando el **emulador de Android Studio**, verificando que:
