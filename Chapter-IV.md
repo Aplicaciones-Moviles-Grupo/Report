@@ -800,6 +800,213 @@ Se destaca la integración exitosa del flujo completo de navegación móvil y la
 
 #### 4.2.2.3.Development Evidence for Sprint Review
 
+**Mobile Application**<br>
+
+<table>
+  <tr>
+    <td align ="center" > <strong>Repository</strong></td>
+    <td  align ="center" > <strong>Branch</strong></td>
+    <td  align ="center" > <strong>Commit ID</strong></td>
+    <td  align ="center" > <strong>Commit message</strong></td>
+    <td  align ="center" > <strong>Commit Masagge body</strong></td>
+    <td  align ="center" > <strong>Commit on (date)</strong></td>
+  </tr>
+
+  <tr>
+    <td rowspan="27" align="center"> https://github.com/Aplicaciones-Moviles-Grupo/ChapaTuRuta-MobileApp </td>
+    <td align="center"> feature/auth-functional</td>
+    <td align="center"> cf5a17e27a8436632e7924372248c13ac6a9cc4a</td>
+    <td align="center"> feat(auth): implements data store and interceptor for token</td>
+    <td align="center"> ---</td>
+    <td align="center"> 08/11/2025</td>
+  </tr>
+
+  <tr>
+    <td align="center">feature/auth-functional</td>
+    <td align="center" > 78e8e976905c11c332e5f717cd8192d984de4b27</td>
+    <td align="center"> feat(auth): add sign in, sign up and user dto</td>
+    <td align="center"> ---</td>
+    <td align="center"> 08/11/2025</td>
+  </tr>
+
+  <tr>
+    <td align="center"> feature/auth-functional</td>
+    <td align="center">1f9d96d1244123eb6f5b25833b1040261076cdfd</td>
+    <td align="center"> feat(auth): add remote and repository modules</td>
+    <td align="center"> ---</td>
+    <td align="center"> 08/11/2025</td>
+  </tr>
+
+  <tr>
+    <td align="center"> feature/auth-functional</td>
+    <td align="center"> a82c99d594970ee87e53186250a6054733592540</td>
+    <td align="center"> feat(auth): add auth service and repository</td>
+    <td align="center"> ---</td>
+    <td align="center">08/11/2025</td>
+  </tr>
+
+  <tr>
+    <td align="center"> feature/auth-functional</td>
+    <td align="center"> 789b0952f6e61e23628d1780013ae2e4fc33f286</td>
+    <td align="center"> feat(auth): add login view presentation</td>
+    <td align="center"> ---</td>
+    <td align="center">08/11/2025</td>
+  </tr>
+
+  <tr>
+    <td align="center"> feature/auth-functional</td>
+    <td align="center"> 4344eb9a8fdd367587f5fa71ad45d086ae19a610</td>
+    <td align="center">feat(auth): update register user and profile presentation views</td>
+    <td align="center"> ---</td>
+    <td align="center"> 08/11/2025</td>
+  </tr>
+
+  <tr>
+    <td align="center"> feature/auth-functional</td>
+    <td align="center"> e6519a751abc29bca63b8e3f4132bc8454459bc9</td>
+    <td align="center"> feat(auth): add my application hilt android app</td>
+    <td align="center"> ---</td>
+    <td align="center"> 08/11/2025</td>
+  </tr>
+
+  <tr>
+    <td align="center"> feature/auth-functional</td>
+    <td align="center"> dab781e6ae3e87e8c64aae25a5c5fad616eb7989</td>
+    <td align="center"> feat(manifest): add permissions into manifest</td>
+    <td align="center"> ---</td>
+    <td align="center"> 08/11/2025</td>
+  </tr>
+
+  <tr>
+    <td align="center"> feature/profile-functional</td>
+    <td align="center">a345bda1a32895bcac49d1aa46a256f01bbce1c8</td>
+    <td align="center"> feat(profile): add profile repository and service</td>
+    <td align="center"> ---</td>
+    <td align="center">10/11/2025</td>
+  </tr>
+
+  <tr>
+      <td align="center"> feature/profile-functional</td>
+      <td align="center">092a1237c7eb7ee4d32fa2e17a5850455a6bae0b</td>
+      <td align="center"> feat(profile): implement profile viewmodel</td>
+      <td align="center"> ---</td>
+      <td align="center">10/11/2025</td>
+  </tr>
+
+  <tr>
+      <td align="center"> feature/profile-functional</td>
+      <td align="center">8ab1ad2f01a0d8a0f47ee0b247e4ac70b1a1e541</td>
+      <td align="center"> feat(profile): add vehicle dto, model and ui state</td>
+      <td align="center"> ---</td>
+      <td align="center">10/11/2025</td>
+  </tr>
+<tr>
+      <td align="center"> feature/profile-functional</td>
+      <td align="center">268742b9fd0cf23c3c4e9cffdc0bffc6072faa9a</td>
+      <td align="center"> feat(profile): add profile to remote and repository modules</td>
+      <td align="center"> ---</td>
+      <td align="center">10/11/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/profile-functional</td>
+      <td align="center">57800996ffea22b12eff14a2b3d6e9aea602f4f1</td>
+      <td align="center"> feat(profile): add views for profile and vehicle</td>
+      <td align="center"> ---</td>
+      <td align="center">10/11/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/profile-functional</td>
+      <td align="center">a8360e5096091a2c14abb3de1d88431199dc1bbb</td>
+      <td align="center"> feat(profile):feat(profile): add navigation for profile context</td>
+      <td align="center"> ---</td>
+      <td align="center">10/11/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/stops-functional</td>
+      <td align="center">07210aecfedaec3a3f885b2dc5a38cd27f72c2fe</td>
+      <td align="center"> feat(stops): add google maps implementation</td>
+      <td align="center"> ---</td>
+      <td align="center">11/11/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/stops-functional</td>
+      <td align="center">5b2a915aae400d7ecbad5ccdcda1604a0b925b2e</td>
+      <td align="center"> feat(geocoding): add geocoding external service</td>
+      <td align="center"> ---</td>
+      <td align="center">11/11/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/stops-functional</td>
+      <td align="center">5b4850e71183e8e9c69e77724919024d83a0971e</td>
+      <td align="center"> feat(logo): add logo chapa tu ruta</td>
+      <td align="center"> ---</td>
+      <td align="center">11/11/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/stops-functional</td>
+      <td align="center">f6f8ec2f0a976daa02b3a3eadca207fbad510dde</td>
+      <td align="center"> feat(stops): add stop repository and service in modules</td>
+      <td align="center"> ---</td>
+      <td align="center">11/11/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/stops-functional</td>
+      <td align="center">c6bf532245c9229c5b54dd0dd989706681b24a18</td>
+      <td align="center"> feat(stops): add stop viewmodel</td>
+      <td align="center"> ---</td>
+      <td align="center">11/11/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/stops-functional</td>
+      <td align="center">a888524e69a72e201e6c8db7affd03778645488f</td>
+      <td align="center"> feat(stops): add stop context to navigation</td>
+      <td align="center"> ---</td>
+      <td align="center">11/11/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/home</td>
+      <td align="center">7bf26a893f425c3339422dc9a1b6e743dc13ca2a</td>
+      <td align="center"> feat(routes): add google maps utils implementation</td>
+      <td align="center"> ---</td>
+      <td align="center">12/11/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/stops_and_routes</td>
+      <td align="center">bc9608338c835937204300a0382c7150d4833096</td>
+      <td align="center"> feat(routes): add directions api external service</td>
+      <td align="center"> ---</td>
+      <td align="center">12/11/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/stops_and_routes</td>
+      <td align="center">a20aaa0dae3c5696ca86f3e54fec4ab123ef4ca9</td>
+      <td align="center"> feat(routes): add route service and repository</td>
+      <td align="center"> ---</td>
+      <td align="center">12/11/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/stops_and_routes</td>
+      <td align="center">1c9385635e03ea29cb7dcf088b63103724af7af4</td>
+      <td align="center"> feat(routes): implements route service and repository into modules</td>
+      <td align="center"> ---</td>
+      <td align="center">12/11/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/stops_and_routes</td>
+      <td align="center">b053401d28b39734cc810fd2204cfc73a42e9097</td>
+      <td align="center"> feat(routes): add route models and viewmodel</td>
+      <td align="center"> ---</td>
+      <td align="center">12/11/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/stops_and_routes</td>
+      <td align="center">2fc85011fcaea9f644f82e54c70a5873586a1d4f</td>
+      <td align="center"> feat(routes): add navigation for route context</td>
+      <td align="center"> ---</td>
+      <td align="center">12/11/2025</td>
+  </tr>
+</table>
+
 #### 4.2.2.4.Testing Suite Evidence for Sprint Review
 
 #### 4.2.2.5.Execution Evidence for Sprint Review
