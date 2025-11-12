@@ -791,3 +791,23 @@ Se destaca la integración exitosa del flujo completo de navegación móvil y la
 - Se estableció el flujo completo de navegación.
 - Se hizo el despliegue de la landing page
 - Se alcanzó el 100% de las metas planificadas para el sprint.
+
+### 4.2.2.Sprint 2
+
+#### 4.2.2.1.Sprint Planning 2
+
+#### 4.2.2.2.Sprint Backlog 2
+
+#### 4.2.2.3.Development Evidence for Sprint Review
+
+#### 4.2.2.4.Testing Suite Evidence for Sprint Review
+
+#### 4.2.2.5.Execution Evidence for Sprint Review
+
+#### 4.2.2.6.Services Documentation Evidence for Sprint Review
+
+#### 4.2.2.7.Software Deployment Evidence for Sprint Review
+
+#### 4.2.2.8.Team Collaboration Insights during Sprint
+
+
