@@ -1090,4 +1090,16 @@ Para este sprint 2 se ha desarrollado todo el app movil en Android Studio, usand
 
 #### 4.2.2.8.Team Collaboration Insights during Sprint
 
+**Pulse**
 
+<img src="resources/chapter-4/sprint-2/insights-pulse.png" alt="" height="500">
+<br>
+
+**Contributors**
+
+<img src="resources/chapter-4/sprint-2/insights-contributors.png" alt="" height="500">
+<br>
+
+**Network**
+
+<img src="resources/chapter-4/sprint-2/insights-network.png" alt="" height="500">
