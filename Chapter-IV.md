@@ -964,42 +964,42 @@ Se destaca la integración exitosa del flujo completo de navegación móvil y la
       <td align="center">11/11/2025</td>
   </tr>
   <tr>
-      <td align="center"> feature/home</td>
+      <td align="center"> feature/routes-functional</td>
       <td align="center">7bf26a893f425c3339422dc9a1b6e743dc13ca2a</td>
       <td align="center"> feat(routes): add google maps utils implementation</td>
       <td align="center"> ---</td>
       <td align="center">12/11/2025</td>
   </tr>
   <tr>
-      <td align="center"> feature/stops_and_routes</td>
+      <td align="center"> feature/routes-functional</td>
       <td align="center">bc9608338c835937204300a0382c7150d4833096</td>
       <td align="center"> feat(routes): add directions api external service</td>
       <td align="center"> ---</td>
       <td align="center">12/11/2025</td>
   </tr>
   <tr>
-      <td align="center"> feature/stops_and_routes</td>
+      <td align="center"> feature/routes-functional</td>
       <td align="center">a20aaa0dae3c5696ca86f3e54fec4ab123ef4ca9</td>
       <td align="center"> feat(routes): add route service and repository</td>
       <td align="center"> ---</td>
       <td align="center">12/11/2025</td>
   </tr>
   <tr>
-      <td align="center"> feature/stops_and_routes</td>
+      <td align="center"> feature/routes-functional</td>
       <td align="center">1c9385635e03ea29cb7dcf088b63103724af7af4</td>
       <td align="center"> feat(routes): implements route service and repository into modules</td>
       <td align="center"> ---</td>
       <td align="center">12/11/2025</td>
   </tr>
   <tr>
-      <td align="center"> feature/stops_and_routes</td>
+      <td align="center"> feature/routes-functional</td>
       <td align="center">b053401d28b39734cc810fd2204cfc73a42e9097</td>
       <td align="center"> feat(routes): add route models and viewmodel</td>
       <td align="center"> ---</td>
       <td align="center">12/11/2025</td>
   </tr>
   <tr>
-      <td align="center"> feature/stops_and_routes</td>
+      <td align="center"> feature/routes-functional</td>
       <td align="center">2fc85011fcaea9f644f82e54c70a5873586a1d4f</td>
       <td align="center"> feat(routes): add navigation for route context</td>
       <td align="center"> ---</td>
@@ -1011,9 +1011,82 @@ Se destaca la integración exitosa del flujo completo de navegación móvil y la
 
 #### 4.2.2.5.Execution Evidence for Sprint Review
 
+Para este sprint 2 se ha desarrollado todo el app movil en Android Studio, usando Kotlin y JetpackCompose. Además, se realizaron algunos cambios al backend.
+
+**Mobile Application - Kotlin & Jetpack Compose**
+
+
+**Login**
+<p align="center">
+  <img src="resources/chapter-4/execution-evidence-sprint-2/login-view.png" alt="" height="500">
+  <img src="resources/chapter-4/execution-evidence-sprint-2/home-view.png" alt="" height="500">
+</p>
+
+**Stops**
+
+<p align="center">
+  <img src="resources/chapter-4/execution-evidence-sprint-2/stops-view.png" alt="" height="500">
+  <img src="resources/chapter-4/execution-evidence-sprint-2/create-stop-1.png" alt="" height="500">
+</p>
+<p align="center">
+  <img src="resources/chapter-4/execution-evidence-sprint-2/create-stop-2.png" alt="" height="500">
+  <img src="resources/chapter-4/execution-evidence-sprint-2/create-stop-3.png" alt="" height="500">
+</p>
+
+**Routes**
+
+<p align="center">
+  <img src="resources/chapter-4/execution-evidence-sprint-2/routes-view.png" alt="" height="500">
+  <img src="resources/chapter-4/execution-evidence-sprint-2/routes-view-2.png" alt="" height="500">
+</p>
+<p align="center">
+  <img src="resources/chapter-4/execution-evidence-sprint-2/create-route-1.png" alt="" height="500">
+  <img src="resources/chapter-4/execution-evidence-sprint-2/create-route-2.png" alt="" height="500">
+</p>
+
+<p align="center">
+  <img src="resources/chapter-4/execution-evidence-sprint-2/create-route-3.png" alt="" height="500">
+  <img src="resources/chapter-4/execution-evidence-sprint-2/create-route-4.png" alt="" height="500">
+</p>
+
+**Profiles**
+
+<p align="center">
+  <img src="resources/chapter-4/execution-evidence-sprint-2/profile-view.png" alt="" height="500">
+  <img src="resources/chapter-4/execution-evidence-sprint-2/edit-profile-1.png" alt="" height="500">
+</p>
+<p align="center">
+  <img src="resources/chapter-4/execution-evidence-sprint-2/edit-profile-2.png" alt="" height="500">
+  <img src="resources/chapter-4/execution-evidence-sprint-2/edit-profile-3.png" alt="" height="500">
+</p>
+<p align="center">
+  <img src="resources/chapter-4/execution-evidence-sprint-2/edit-profile-4.png" alt="" height="500">
+</p>
+<br>
+<br>
+
+**Backend**
+
+<p align="center">
+  <img src="resources/chapter-4/execution-evidence-sprint-2/backend-execution-1.png" alt="" height="600">
+</p>
+<p align="center">
+  <img src="resources/chapter-4/execution-evidence-sprint-2/backend-execution-2.png" alt="" height="500">
+</p>
+<p align="center">
+  <img src="resources/chapter-4/execution-evidence-sprint-2/backend-execution-3.png" alt="" height="500">
+</p>
+<p align="center">
+  <img src="resources/chapter-4/execution-evidence-sprint-2/backend-execution-4.png" alt="" height="350">
+</p>
+
+
 #### 4.2.2.6.Services Documentation Evidence for Sprint Review
 
+
+
 #### 4.2.2.7.Software Deployment Evidence for Sprint Review
+
 
 #### 4.2.2.8.Team Collaboration Insights during Sprint
 
