@@ -48,7 +48,7 @@ La gestión del código fuente es una parte fundamental en el desarrollo colabor
 - Organización: [https://github.com/Aplicaciones-Moviles-Grupo](https://github.com/Aplicaciones-Moviles-Grupo)
 - Reporte: [https://github.com/Aplicaciones-Moviles-Grupo/Report](https://github.com/Aplicaciones-Moviles-Grupo/Report)
 - Landing Page: [https://github.com/Aplicaciones-Moviles-Grupo/landing-page-original](https://github.com/Aplicaciones-Moviles-Grupo/landing-page-original)
-- Backend: [https://github.com/Aplicaciones-Moviles-Grupo/back-end](https://github.com/Aplicaciones-Moviles-Grupo/back-end)
+- Backend: [https://github.com/Aplicaciones-Moviles-Grupo/ChapaTuRutaBackend](https://github.com/Aplicaciones-Moviles-Grupo/ChapaTuRutaBackend)
 - Aplicación Movil: [https://github.com/Aplicaciones-Moviles-Grupo/ChapaTuRuta-MobileApp](https://github.com/Aplicaciones-Moviles-Grupo/ChapaTuRuta-MobileApp)
 
 **Estructura de Ramas:**
@@ -791,3 +791,515 @@ Se destaca la integración exitosa del flujo completo de navegación móvil y la
 - Se estableció el flujo completo de navegación.
 - Se hizo el despliegue de la landing page
 - Se alcanzó el 100% de las metas planificadas para el sprint.
+
+### 4.2.2.Sprint 2
+
+Durante este Sprint nos enfocamos en desarrollar toda la aplicación en Android Studio, usando Kotlin con JetPackCompose.
+
+#### 4.2.2.1.Sprint Planning 2
+
+|            Sprint #            |                                                                                                                                                                             Sprint 2                                                                                                                                                                             |
+|:------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| **Sprint Planning Background** |                                                                                                                                                                                                                                                                                                                                                                  |
+|              Date              |                                                                                                                                                                             03/11/25                                                                                                                                                                             |
+|              Time              |                                                                                                                                                                           19:00 horas                                                                                                                                                                            |
+|            Location            |                                                                                                                                                                         Reunión Virtual                                                                                                                                                                          |
+|          Prepared By           |                                                                                                                                                                 Fabrizio Alexander Cutiri Agüero                                                                                                                                                                 |
+|           Attendees            |                                                                                                                               - Yasser Renteria Palacios   <br> - Renzo José Araujo Ingunza  <br> - Adrian Emanuel Valerio Garcia                                                                                                                                |
+|    Sprint 1 Review Summary     |                                                                                Durante el sprint 1 se realizó el despliegue del landing page, backend y se desarrollo las pantallas de la aplicación movil en Android Studio. Además se implementó la navegación entre pantallas.                                                                                |
+| Sprint 1 Retrospective Summary |                               En el sprint 1 se visualizó oportunidades de mejora para el backend, de tal forma que guarde relación con las pantallas presentadas en la aplicación. Además de mejorar el diseño de las pantallas de la aplicación donde se presentan el uso de GoogleMaps, para que estos ocupen toda la pantalla.                               |
+| **Sprint Goal & User Stories** |                                                                                                                                                                                                                                                                                                                                                                  |
+|         Sprint 2 Goal          | Nuestro objetivo en este Sprint 2 es mejorar el backend presentado anteriormente. Además mejorar el uso de los Mapas de Google Maps en las pantallas de Rutas y Paraderos. Por último, completar el desarrollo total de la aplicación de Android Studio, implementando los servicios externos de GoogleMaps, tales como MapsSDK, Geocoding API y Directions API. |
+|       Sprint 2 Velocity        |                                                                                                                                                                    Velocidad de 85 - Sprint 2                                                                                                                                                                    |
+|      Sum of Story Points       |                                                                                                                                                                    Sprint 2 - 79 Story Points                                                                                                                                                                    |
+
+
+#### 4.2.2.2.Sprint Backlog 2
+
+#### 4.2.2.3.Development Evidence for Sprint Review
+
+**Mobile Application**<br>
+
+<table>
+  <tr>
+    <td align ="center" > <strong>Repository</strong></td>
+    <td  align ="center" > <strong>Branch</strong></td>
+    <td  align ="center" > <strong>Commit ID</strong></td>
+    <td  align ="center" > <strong>Commit message</strong></td>
+    <td  align ="center" > <strong>Commit Masagge body</strong></td>
+    <td  align ="center" > <strong>Commit on (date)</strong></td>
+  </tr>
+
+  <tr>
+    <td rowspan="27" align="center"> https://github.com/Aplicaciones-Moviles-Grupo/ChapaTuRuta-MobileApp </td>
+    <td align="center"> feature/auth-functional</td>
+    <td align="center"> cf5a17e27a8436632e7924372248c13ac6a9cc4a</td>
+    <td align="center"> feat(auth): implements data store and interceptor for token</td>
+    <td align="center"> ---</td>
+    <td align="center"> 08/11/2025</td>
+  </tr>
+
+  <tr>
+    <td align="center">feature/auth-functional</td>
+    <td align="center" > 78e8e976905c11c332e5f717cd8192d984de4b27</td>
+    <td align="center"> feat(auth): add sign in, sign up and user dto</td>
+    <td align="center"> ---</td>
+    <td align="center"> 08/11/2025</td>
+  </tr>
+
+  <tr>
+    <td align="center"> feature/auth-functional</td>
+    <td align="center">1f9d96d1244123eb6f5b25833b1040261076cdfd</td>
+    <td align="center"> feat(auth): add remote and repository modules</td>
+    <td align="center"> ---</td>
+    <td align="center"> 08/11/2025</td>
+  </tr>
+
+  <tr>
+    <td align="center"> feature/auth-functional</td>
+    <td align="center"> a82c99d594970ee87e53186250a6054733592540</td>
+    <td align="center"> feat(auth): add auth service and repository</td>
+    <td align="center"> ---</td>
+    <td align="center">08/11/2025</td>
+  </tr>
+
+  <tr>
+    <td align="center"> feature/auth-functional</td>
+    <td align="center"> 789b0952f6e61e23628d1780013ae2e4fc33f286</td>
+    <td align="center"> feat(auth): add login view presentation</td>
+    <td align="center"> ---</td>
+    <td align="center">08/11/2025</td>
+  </tr>
+
+  <tr>
+    <td align="center"> feature/auth-functional</td>
+    <td align="center"> 4344eb9a8fdd367587f5fa71ad45d086ae19a610</td>
+    <td align="center">feat(auth): update register user and profile presentation views</td>
+    <td align="center"> ---</td>
+    <td align="center"> 08/11/2025</td>
+  </tr>
+
+  <tr>
+    <td align="center"> feature/auth-functional</td>
+    <td align="center"> e6519a751abc29bca63b8e3f4132bc8454459bc9</td>
+    <td align="center"> feat(auth): add my application hilt android app</td>
+    <td align="center"> ---</td>
+    <td align="center"> 08/11/2025</td>
+  </tr>
+
+  <tr>
+    <td align="center"> feature/auth-functional</td>
+    <td align="center"> dab781e6ae3e87e8c64aae25a5c5fad616eb7989</td>
+    <td align="center"> feat(manifest): add permissions into manifest</td>
+    <td align="center"> ---</td>
+    <td align="center"> 08/11/2025</td>
+  </tr>
+
+  <tr>
+    <td align="center"> feature/profile-functional</td>
+    <td align="center">a345bda1a32895bcac49d1aa46a256f01bbce1c8</td>
+    <td align="center"> feat(profile): add profile repository and service</td>
+    <td align="center"> ---</td>
+    <td align="center">10/11/2025</td>
+  </tr>
+
+  <tr>
+      <td align="center"> feature/profile-functional</td>
+      <td align="center">092a1237c7eb7ee4d32fa2e17a5850455a6bae0b</td>
+      <td align="center"> feat(profile): implement profile viewmodel</td>
+      <td align="center"> ---</td>
+      <td align="center">10/11/2025</td>
+  </tr>
+
+  <tr>
+      <td align="center"> feature/profile-functional</td>
+      <td align="center">8ab1ad2f01a0d8a0f47ee0b247e4ac70b1a1e541</td>
+      <td align="center"> feat(profile): add vehicle dto, model and ui state</td>
+      <td align="center"> ---</td>
+      <td align="center">10/11/2025</td>
+  </tr>
+<tr>
+      <td align="center"> feature/profile-functional</td>
+      <td align="center">268742b9fd0cf23c3c4e9cffdc0bffc6072faa9a</td>
+      <td align="center"> feat(profile): add profile to remote and repository modules</td>
+      <td align="center"> ---</td>
+      <td align="center">10/11/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/profile-functional</td>
+      <td align="center">57800996ffea22b12eff14a2b3d6e9aea602f4f1</td>
+      <td align="center"> feat(profile): add views for profile and vehicle</td>
+      <td align="center"> ---</td>
+      <td align="center">10/11/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/profile-functional</td>
+      <td align="center">a8360e5096091a2c14abb3de1d88431199dc1bbb</td>
+      <td align="center"> feat(profile):feat(profile): add navigation for profile context</td>
+      <td align="center"> ---</td>
+      <td align="center">10/11/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/stops-functional</td>
+      <td align="center">07210aecfedaec3a3f885b2dc5a38cd27f72c2fe</td>
+      <td align="center"> feat(stops): add google maps implementation</td>
+      <td align="center"> ---</td>
+      <td align="center">11/11/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/stops-functional</td>
+      <td align="center">5b2a915aae400d7ecbad5ccdcda1604a0b925b2e</td>
+      <td align="center"> feat(geocoding): add geocoding external service</td>
+      <td align="center"> ---</td>
+      <td align="center">11/11/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/stops-functional</td>
+      <td align="center">5b4850e71183e8e9c69e77724919024d83a0971e</td>
+      <td align="center"> feat(logo): add logo chapa tu ruta</td>
+      <td align="center"> ---</td>
+      <td align="center">11/11/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/stops-functional</td>
+      <td align="center">f6f8ec2f0a976daa02b3a3eadca207fbad510dde</td>
+      <td align="center"> feat(stops): add stop repository and service in modules</td>
+      <td align="center"> ---</td>
+      <td align="center">11/11/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/stops-functional</td>
+      <td align="center">c6bf532245c9229c5b54dd0dd989706681b24a18</td>
+      <td align="center"> feat(stops): add stop viewmodel</td>
+      <td align="center"> ---</td>
+      <td align="center">11/11/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/stops-functional</td>
+      <td align="center">a888524e69a72e201e6c8db7affd03778645488f</td>
+      <td align="center"> feat(stops): add stop context to navigation</td>
+      <td align="center"> ---</td>
+      <td align="center">11/11/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/routes-functional</td>
+      <td align="center">7bf26a893f425c3339422dc9a1b6e743dc13ca2a</td>
+      <td align="center"> feat(routes): add google maps utils implementation</td>
+      <td align="center"> ---</td>
+      <td align="center">12/11/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/routes-functional</td>
+      <td align="center">bc9608338c835937204300a0382c7150d4833096</td>
+      <td align="center"> feat(routes): add directions api external service</td>
+      <td align="center"> ---</td>
+      <td align="center">12/11/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/routes-functional</td>
+      <td align="center">a20aaa0dae3c5696ca86f3e54fec4ab123ef4ca9</td>
+      <td align="center"> feat(routes): add route service and repository</td>
+      <td align="center"> ---</td>
+      <td align="center">12/11/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/routes-functional</td>
+      <td align="center">1c9385635e03ea29cb7dcf088b63103724af7af4</td>
+      <td align="center"> feat(routes): implements route service and repository into modules</td>
+      <td align="center"> ---</td>
+      <td align="center">12/11/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/routes-functional</td>
+      <td align="center">b053401d28b39734cc810fd2204cfc73a42e9097</td>
+      <td align="center"> feat(routes): add route models and viewmodel</td>
+      <td align="center"> ---</td>
+      <td align="center">12/11/2025</td>
+  </tr>
+  <tr>
+      <td align="center"> feature/routes-functional</td>
+      <td align="center">2fc85011fcaea9f644f82e54c70a5873586a1d4f</td>
+      <td align="center"> feat(routes): add navigation for route context</td>
+      <td align="center"> ---</td>
+      <td align="center">12/11/2025</td>
+  </tr>
+</table>
+
+#### 4.2.2.4.Testing Suite Evidence for Sprint Review
+
+#### 4.2.2.5.Execution Evidence for Sprint Review
+
+Para este sprint 2 se ha desarrollado todo el app movil en Android Studio, usando Kotlin y JetpackCompose. Además, se realizaron algunos cambios al backend.
+
+**Mobile Application - Kotlin & Jetpack Compose**
+
+
+**Login**
+<p align="center">
+  <img src="resources/chapter-4/execution-evidence-sprint-2/login-view.png" alt="" height="500">
+  <img src="resources/chapter-4/execution-evidence-sprint-2/home-view.png" alt="" height="500">
+</p>
+
+**Stops**
+
+<p align="center">
+  <img src="resources/chapter-4/execution-evidence-sprint-2/stops-view.png" alt="" height="500">
+  <img src="resources/chapter-4/execution-evidence-sprint-2/create-stop-1.png" alt="" height="500">
+</p>
+<p align="center">
+  <img src="resources/chapter-4/execution-evidence-sprint-2/create-stop-2.png" alt="" height="500">
+  <img src="resources/chapter-4/execution-evidence-sprint-2/create-stop-3.png" alt="" height="500">
+</p>
+
+**Routes**
+
+<p align="center">
+  <img src="resources/chapter-4/execution-evidence-sprint-2/routes-view.png" alt="" height="500">
+  <img src="resources/chapter-4/execution-evidence-sprint-2/routes-view-2.png" alt="" height="500">
+</p>
+<p align="center">
+  <img src="resources/chapter-4/execution-evidence-sprint-2/create-route-1.png" alt="" height="500">
+  <img src="resources/chapter-4/execution-evidence-sprint-2/create-route-2.png" alt="" height="500">
+</p>
+
+<p align="center">
+  <img src="resources/chapter-4/execution-evidence-sprint-2/create-route-3.png" alt="" height="500">
+  <img src="resources/chapter-4/execution-evidence-sprint-2/create-route-4.png" alt="" height="500">
+</p>
+
+**Profiles**
+
+<p align="center">
+  <img src="resources/chapter-4/execution-evidence-sprint-2/profile-view.png" alt="" height="500">
+  <img src="resources/chapter-4/execution-evidence-sprint-2/edit-profile-1.png" alt="" height="500">
+</p>
+<p align="center">
+  <img src="resources/chapter-4/execution-evidence-sprint-2/edit-profile-2.png" alt="" height="500">
+  <img src="resources/chapter-4/execution-evidence-sprint-2/edit-profile-3.png" alt="" height="500">
+</p>
+<p align="center">
+  <img src="resources/chapter-4/execution-evidence-sprint-2/edit-profile-4.png" alt="" height="500">
+</p>
+<br>
+<br>
+
+**Backend**
+
+<p align="center">
+  <img src="resources/chapter-4/execution-evidence-sprint-2/backend-execution-1.png" alt="" height="600">
+</p>
+<p align="center">
+  <img src="resources/chapter-4/execution-evidence-sprint-2/backend-execution-2.png" alt="" height="500">
+</p>
+<p align="center">
+  <img src="resources/chapter-4/execution-evidence-sprint-2/backend-execution-3.png" alt="" height="500">
+</p>
+<p align="center">
+  <img src="resources/chapter-4/execution-evidence-sprint-2/backend-execution-4.png" alt="" height="350">
+</p>
+
+
+#### 4.2.2.6.Services Documentation Evidence for Sprint Review
+
+En esta sección del informe se presentan todos los endpoints desarrollados en el backend, detallando que funcion realizan cada uno.
+
+Link del backend desplegado: [https://chapaturutabackend.onrender.com/swagger/index.html](https://chapaturutabackend.onrender.com/swagger/index.html)
+
+<table> 
+  <tr>
+    <td> <strong>Action </strong></td>
+    <td> <strong>End Point </strong></td>
+    <td align="center"> <strong>Funciones</strong> </td>
+  </tr>
+
+  <tr>
+    <td> POST</td>
+    <td> /api/v1/auth/sign-in</td>
+    <td> Permite iniciar sesión al usuario y genera el token</td>
+  </tr>
+  <tr>
+    <td> POST</td>
+    <td> /api/v1/auth/sign-up</td>
+    <td> Permite registrar a un usuario</td>
+  </tr>
+  <tr>
+    <td> GET</td>
+    <td> /api/v1/users/{userId}/profile</td>
+    <td> Obtiene el perfil asociado a un usuario</td>
+  </tr>
+  <tr>
+    <td> GET</td>
+    <td> /api/v1/users/{id}</td>
+    <td> Obtiene un usuario por su Id</td>
+  </tr>
+  <tr>
+    <td> GET</td>
+    <td> /api/v1/drivers/{driverId}/routes</td>
+    <td> Obtiene la lista de rutas asociadas a un perfil de conductor</td>
+  </tr>
+  <tr>
+    <td> GET</td>
+    <td> /api/v1/drivers/{profileId}/vehicle/{id}</td>
+    <td> Obtiene el vehiculo de un conductor mediante su Id</td>
+  </tr>
+  <tr>
+    <td> PUT</td>
+    <td> /api/v1/drivers/{profileId}/vehicle/{id}</td>
+    <td> Actualiza el vehiculo de un conductor mediante su Id</td>
+  </tr>
+  <tr>
+    <td> GET</td>
+    <td> /api/v1/drivers/{profileId}/vehicle</td>
+    <td> Obtiene el vehiculo de un conductor mediante el Id del perfil</td>
+  </tr>
+  <tr>
+    <td> POST</td>
+    <td> /api/v1/drivers/{profileId}/vehicle</td>
+    <td> Crea el vehículo de un conductor mediante su profileId</td>
+  </tr>
+  <tr>
+    <td> GET</td>
+    <td> /api/v1/profiles/{id}</td>
+    <td> Obtiene el perfil por su Id</td>
+  </tr>
+  <tr>
+    <td> PUT</td>
+    <td> /api/v1/profiles/{id}</td>
+    <td> Actualiza el perfil mediante su Id</td>
+  </tr>
+
+  <tr>
+    <td> POST</td>
+    <td> /api/v1/profiles</td>
+    <td> Crea un nuevo perfil</td>
+  </tr>
+  <tr>
+    <td> GET</td>
+    <td> /drivers</td>
+    <td> Obtiene el perfil de todos los conductores registrados</td>
+  </tr>
+  <tr>
+    <td> GET</td>
+    <td> /api/v1/routes/{id}</td>
+    <td> Obtener una ruta por su Id</td>
+  </tr>
+  <tr>
+    <td> DELETE</td>
+    <td> /api/v1/routes/{id}</td>
+    <td> Elimina una ruta por su Id</td>
+  </tr>  
+  <tr>
+    <td> POST</td>
+    <td> /api/v1/routes</td>
+    <td> Crea una ruta</td>
+  </tr>
+  <tr>
+    <td> POST</td>
+    <td> /api/v1/routes/{routeId}/active</td>
+    <td> Actualiza el estado de una ruta a "Active"</td>
+  </tr>  
+  <tr>
+    <td> POST</td>
+    <td> /api/v1/routes/{routeId}/inactive</td>
+    <td> Actualiza el estado de una ruta a "Inactive"</td>
+  </tr>
+  <tr>
+    <td> GET</td>
+    <td> /api/v1/routes/{routeId}/stops/{id}</td>
+    <td> Obtiene un paradero de una ruta por su Id</td>
+  </tr>  
+  <tr>
+    <td> DELETE</td>
+    <td> /api/v1/routes/{routeId}/stops/{id}</td>
+    <td> Elimina un paradero de una ruta mediante su Id</td>
+  </tr>
+  <tr>
+    <td> GET</td>
+    <td> /api/v1/routes/{routeId}/stops</td>
+    <td> Obtiene todos los paraderos asociados a una ruta</td>
+  </tr>
+  <tr>
+    <td> POST</td>
+    <td> /api/v1/routes/{routeId}/stops</td>
+    <td> Crea un paradero de una ruta</td>
+  </tr>
+  <tr>
+    <td> GET</td>
+    <td> /api/v1/stops/{id}</td>
+    <td> Obtiene un paradero por su Id</td>
+  </tr>
+  <tr>
+    <td> PUT</td>
+    <td> /api/v1/stops/{id}</td>
+    <td> Actualiza un paradero por su Id</td>
+  </tr>
+  <tr>
+    <td> DELETE</td>
+    <td> /api/v1/stops/{id}</td>
+    <td> Elimina un paradero por su Id</td>
+  </tr>
+  <tr>
+    <td> GET</td>
+    <td> /api/v1/stops?driverId</td>
+    <td> Obtiene los paraderos asociados al perfil de un conductor</td>
+  </tr>
+  <tr>
+    <td> POST</td>
+    <td> /api/v1/stops</td>
+    <td> Crea un paradero</td>
+  </tr>
+</table>
+
+#### 4.2.2.7.Software Deployment Evidence for Sprint Review
+
+Para realizar el despliegue de la aplicación movil, usamos Firebase Console, la opción de App Distribution. A continuación se detalla el proceso que se siguió para realizar el despliegue.
+
+**Mobile Application - Kotlin & JetPack Compose**
+
+Primero se creo un nuevo proyecto en Firebase Console.
+
+<img src="resources/chapter-4/deployment-evidence-sprint-2/depliegue-movil.png" alt="" height="450">
+
+<img src="resources/chapter-4/deployment-evidence-sprint-2/depliegue-movil-2.png" alt="" height="450">
+
+Una vez creado el proyecto nos dirigimos a "App Distribution" y seleccionamos la opción de android para nuestra aplicación
+
+<img src="resources/chapter-4/deployment-evidence-sprint-2/depliegue-movil-3.png" alt="" height="450">
+
+<img src="resources/chapter-4/deployment-evidence-sprint-2/depliegue-movil-4.png" alt="" height="450">
+
+Cuando seleccionamos que nuestra aplicación es android nos piden colocar el nombre del paquete de nuestro proyecto (com.frock.chapaturuta) 
+
+<img src="resources/chapter-4/deployment-evidence-sprint-2/depliegue-movil-5.png" alt="" height="450">
+
+Una vez finalizado la configuración del proyecto, solo se sube el APK del proyecto y posteriormente se agrega verificadores para que prueben la aplicación.
+
+<img src="resources/chapter-4/deployment-evidence-sprint-2/depliegue-movil-6.png" alt="" height="450">
+
+<img src="resources/chapter-4/deployment-evidence-sprint-2/depliegue-movil-7.png" alt="" height="450">
+
+
+**Backend**
+
+ En lo que respecta al backend, se realizo el despliegue en Render y para la base de datos se utilizó el servicio de Railway.
+
+<img src="resources/chapter-4/deployment-evidence-sprint-2/deployment-backend-render.png" alt="" height="450">
+
+<img src="resources/chapter-4/deployment-evidence-sprint-2/database-railway.png" alt="" height="450">
+
+
+#### 4.2.2.8.Team Collaboration Insights during Sprint
+
+**Pulse**
+
+<img src="resources/chapter-4/sprint-2/insights-pulse.png" alt="" height="500">
+<br>
+
+**Contributors**
+
+<img src="resources/chapter-4/sprint-2/insights-contributors.png" alt="" height="500">
+<br>
+
+**Network**
+
+<img src="resources/chapter-4/sprint-2/insights-network.png" alt="" height="500">
