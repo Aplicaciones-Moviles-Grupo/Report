@@ -48,7 +48,7 @@ La gestión del código fuente es una parte fundamental en el desarrollo colabor
 - Organización: [https://github.com/Aplicaciones-Moviles-Grupo](https://github.com/Aplicaciones-Moviles-Grupo)
 - Reporte: [https://github.com/Aplicaciones-Moviles-Grupo/Report](https://github.com/Aplicaciones-Moviles-Grupo/Report)
 - Landing Page: [https://github.com/Aplicaciones-Moviles-Grupo/landing-page-original](https://github.com/Aplicaciones-Moviles-Grupo/landing-page-original)
-- Backend: [https://github.com/Aplicaciones-Moviles-Grupo/back-end](https://github.com/Aplicaciones-Moviles-Grupo/back-end)
+- Backend: [https://github.com/Aplicaciones-Moviles-Grupo/ChapaTuRutaBackend](https://github.com/Aplicaciones-Moviles-Grupo/ChapaTuRutaBackend)
 - Aplicación Movil: [https://github.com/Aplicaciones-Moviles-Grupo/ChapaTuRuta-MobileApp](https://github.com/Aplicaciones-Moviles-Grupo/ChapaTuRuta-MobileApp)
 
 **Estructura de Ramas:**
@@ -1102,6 +1102,8 @@ Para este sprint 2 se ha desarrollado todo el app movil en Android Studio, usand
 #### 4.2.2.6.Services Documentation Evidence for Sprint Review
 
 En esta sección del informe se presentan todos los endpoints desarrollados en el backend, detallando que funcion realizan cada uno.
+
+Link del backend desplegado: [https://chapaturutabackend.onrender.com/swagger/index.html](https://chapaturutabackend.onrender.com/swagger/index.html)
 
 <table> 
   <tr>
