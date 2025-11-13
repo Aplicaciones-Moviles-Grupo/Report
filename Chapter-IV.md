@@ -1250,6 +1250,41 @@ En esta sección del informe se presentan todos los endpoints desarrollados en e
 
 #### 4.2.2.7.Software Deployment Evidence for Sprint Review
 
+Para realizar el despliegue de la aplicación movil, usamos Firebase Console, la opción de App Distribution. A continuación se detalla el proceso que se siguió para realizar el despliegue.
+
+**Mobile Application - Kotlin & JetPack Compose**
+
+Primero se creo un nuevo proyecto en Firebase Console.
+
+<img src="resources/chapter-4/deployment-evidence-sprint-2/depliegue-movil.png" alt="" height="450">
+
+<img src="resources/chapter-4/deployment-evidence-sprint-2/depliegue-movil-2.png" alt="" height="450">
+
+Una vez creado el proyecto nos dirigimos a "App Distribution" y seleccionamos la opción de android para nuestra aplicación
+
+<img src="resources/chapter-4/deployment-evidence-sprint-2/depliegue-movil-3.png" alt="" height="450">
+
+<img src="resources/chapter-4/deployment-evidence-sprint-2/depliegue-movil-4.png" alt="" height="450">
+
+Cuando seleccionamos que nuestra aplicación es android nos piden colocar el nombre del paquete de nuestro proyecto (com.frock.chapaturuta) 
+
+<img src="resources/chapter-4/deployment-evidence-sprint-2/depliegue-movil-5.png" alt="" height="450">
+
+Una vez finalizado la configuración del proyecto, solo se sube el APK del proyecto y posteriormente se agrega verificadores para que prueben la aplicación.
+
+<img src="resources/chapter-4/deployment-evidence-sprint-2/depliegue-movil-6.png" alt="" height="450">
+
+<img src="resources/chapter-4/deployment-evidence-sprint-2/depliegue-movil-7.png" alt="" height="450">
+
+
+**Backend**
+
+ En lo que respecta al backend, se realizo el despliegue en Render y para la base de datos se utilizó el servicio de Railway.
+
+<img src="resources/chapter-4/deployment-evidence-sprint-2/deployment-backend-render.png" alt="" height="450">
+
+<img src="resources/chapter-4/deployment-evidence-sprint-2/database-railway.png" alt="" height="450">
+
 
 #### 4.2.2.8.Team Collaboration Insights during Sprint
 
