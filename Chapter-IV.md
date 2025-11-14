@@ -1031,6 +1031,8 @@ Durante este Sprint nos enfocamos en desarrollar toda la aplicación en Android 
 
 Para este sprint 2 se ha desarrollado todo el app movil en Android Studio, usando Kotlin y JetpackCompose. Además, se realizaron algunos cambios al backend.
 
+**Video de Ejecución:** [https://shorturl.at/G1rir](https://shorturl.at/G1rir)
+
 **Mobile Application - Kotlin & Jetpack Compose**
 
 
