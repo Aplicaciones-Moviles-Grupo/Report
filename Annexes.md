@@ -18,6 +18,7 @@ Link de la Organización: [https://github.com/orgs/Aplicaciones-Moviles-Grupo](h
 | Landing Page         | [https://aplicaciones-moviles-grupo.github.io/landing-page-original](https://aplicaciones-moviles-grupo.github.io/landing-page-original) |
 | Backend              | [https://chapaturutabackend.onrender.com/swagger/index.html](https://chapaturutabackend.onrender.com/swagger/index.html)                 |
 | App Movil - Android  | Esta ha sido subido a Firebase App Distribution y se obtiene acceso a travez de una de un correo electrónico a los Testers               |
+| App Movil - Flutter  | [https://github.com/Aplicaciones-Moviles-Grupo/ChapaTuRuta_FlutterApp.git](https://github.com/Aplicaciones-Moviles-Grupo/ChapaTuRuta_FlutterApp) |
 
 ## Videos Realizados
 
