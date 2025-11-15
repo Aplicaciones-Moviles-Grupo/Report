@@ -1070,6 +1070,11 @@ Durante este Sprint nos enfocamos en desarrollar toda la aplicación en Android 
 
 #### 4.2.2.4.Testing Suite Evidence for Sprint Review
 
+<img width="1851" height="949" alt="image" src="https://github.com/user-attachments/assets/b99dbdae-c023-4250-81e2-a0c1214082e6" />
+
+[https://github.com/Aplicaciones-Moviles-Grupo/Acceptance-Criteria] 
+
+
 #### 4.2.2.5.Execution Evidence for Sprint Review
 
 Para este sprint 2 se ha desarrollado todo el app movil en Android Studio, usando Kotlin y JetpackCompose. Además, se realizaron algunos cambios al backend.
