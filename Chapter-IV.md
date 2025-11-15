@@ -816,6 +816,49 @@ Durante este Sprint nos enfocamos en desarrollar toda la aplicación en Android 
 
 #### 4.2.2.2.Sprint Backlog 2
 
+| Sprint # | Sprint 2 |
+|----------|----------|
+
+| User Story |  | Work Item / Task |  |  | Estimation (Hours) | Assigned To | Status (To-do / In-Process / To-Review / Done) |
+|------------|----------|------------------|----------|-------------|-------------------|-------------|------------------------------------------------|
+| **Id** | **Title** | **Id** | **Title** | **Description** | | | |
+| SS01 | Integración de Google Maps | T01 | Configurar Google Maps API | Integrar la API de Google Maps en el proyecto y configurar las credenciales necesarias | 4 | Fabrizio Cutiri | Done |
+| SS01 | Integración de Google Maps | T02 | Implementar mapa interactivo | Desarrollar el componente de mapa con funcionalidades de zoom, pan y marcadores | 4 | Fabrizio Cutiri | Done |
+| US08 | Buscar rutas disponibles | T03 | Diseñar interfaz de búsqueda | Crear el formulario de búsqueda con filtros de origen, destino y horario | 3 | Fabrizio Cutiri | Done |
+| US08 | Buscar rutas disponibles | T04 | Implementar lógica de búsqueda | Desarrollar el algoritmo de búsqueda y conexión con el backend | 5 | Fabrizio Cutiri | Done |
+| US09 | Activar disponibilidad de ruta | T05 | Crear toggle de disponibilidad | Implementar el control para activar/desactivar disponibilidad de ruta | 3 | Fabrizio Cutiri | Done |
+| US09 | Activar disponibilidad de ruta | T06 | Gestionar estados de ruta | Desarrollar la lógica para actualizar el estado de disponibilidad en tiempo real | 5 | Fabrizio Cutiri | Done |
+| US10 | Gestión de Rutas | T07 | Crear módulo CRUD de rutas | Implementar las operaciones de crear, leer, actualizar y eliminar rutas | 5 | Fabrizio Cutiri | Done |
+| US10 | Gestión de Rutas | T08 | Validar datos de rutas | Desarrollar validaciones para los campos de rutas | 3 | Adrián Valerio | Done |
+| US11 | Ver detalles completos de una ruta | T09 | Diseñar vista de detalle | Crear la interfaz para mostrar toda la información de una ruta | 4 | Fabrizio Cutiri | Done |
+| US11 | Ver detalles completos de una ruta | T10 | Integrar datos de ruta | Conectar la vista con los endpoints para obtener información completa | 4 | Yasser Rentería | Done |
+| US13 | Ver paraderos en el mapa | T11 | Mostrar marcadores de paraderos | Implementar marcadores en el mapa para cada paradero | 4 | Fabrizio Cutiri | Done |
+| US13 | Ver paraderos en el mapa | T12 | Agregar información de paraderos | Crear popups informativos al hacer clic en los marcadores | 4 | Fabrizio Cutiri | Done |
+| US14 | Gestión de paraderos | T13 | Crear módulo CRUD de paraderos | Implementar operaciones para gestionar paraderos | 5 | Fabrizio Cutiri | Done |
+| US14 | Gestión de paraderos | T14 | Validar ubicaciones de paraderos | Desarrollar validaciones geográficas para paraderos | 3 | Adrián Valerio | Done |
+| US15 | Ver paraderos en la página de inicio | T15 | Diseñar sección de paraderos | Crear el componente de paraderos para la página principal | 3 | Fabrizio Cutiri | Done |
+| US15 | Ver paraderos en la página de inicio | T16 | Cargar paraderos destacados | Implementar lógica para mostrar paraderos más relevantes | 2 | Yasser Rentería | Done |
+| US01 | Navegación Sencilla | T17 | Diseñar menú de navegación | Crear estructura de navegación intuitiva y responsiva | 2 | Renzo Araujo | Done |
+| US01 | Navegación Sencilla | T18 | Implementar rutas de navegación | Desarrollar sistema de routing entre vistas principales | 3 | Adrián Valerio | Done |
+| US05 | Postular como colaborador | T25 | Diseñar formulario de postulación | Crear interfaz para registro de colaboradores | 3 | Fabrizio Cutiri | Done |
+| US05 | Postular como colaborador | T26 | Implementar envío de postulación | Desarrollar lógica de envío y validación de formulario | 2 | Renzo Araujo | Done |
+| US06 | Video about the product | T27 | Integrar reproductor de video | Implementar componente de video embebido del producto | 2 | Adrián Valerio | Done |
+| US06 | Video about the product | T28 | Optimizar carga de video | Configurar lazy loading y optimización de recursos | 3 |Fabrizio Cutiri  | Done |
+| US07 | Video About the team | T29 | Integrar video del equipo | Implementar sección de video sobre el equipo | 3 | Fabrizio Cutiri | Done |
+| US07 | Video About the team | T30 | Diseñar presentación del equipo | Crear layout para mostrar miembros del equipo | 2 | Fabrizio Cutiri  | Done |
+| US17 | Crear Perfil | T31 | Diseñar formulario de perfil | Crear interfaz de registro de perfil de usuario | 2 | Yasser Rentería | Done |
+| US17 | Crear Perfil | T32 | Implementar validaciones de perfil | Desarrollar validaciones para campos del perfil | 1 | Yasser Rentería | Done |
+| US18 | Editar Perfil | T33 | Crear vista de edición | Implementar interfaz para modificar datos del perfil | 2 | Yasser Rentería | Done |
+| US18 | Editar Perfil | T34 | Actualizar datos de perfil | Desarrollar lógica de actualización y persistencia | 1 | Yasser Rentería | Done |
+| US19 | Ver información del conductor | T35 | Diseñar vista de conductor | Crear interfaz para mostrar datos del conductor | 2 | Yasser Rentería | Done |
+| US19 | Ver información del conductor | T36 | Obtener información del conductor | Integrar endpoint para consultar datos del conductor | 1 | Yasser Rentería | Done |
+| US21 | Iniciar Sesión | T37 | Diseñar formulario de login | Crear interfaz de inicio de sesión | 2 | Fabrizio Cutiri | Done |
+| US21 | Iniciar Sesión | T38 | Implementar autenticación | Desarrollar lógica de autenticación con JWT | 1 | Fabrizio Cutiri | Done |
+| US22 | Cerrar Sesión | T39 | Implementar logout | Desarrollar funcionalidad para cerrar sesión y limpiar tokens | 2 | Fabrizio Cutiri | Done |
+| US22 | Cerrar Sesión | T40 | Validar cierre de sesión | Asegurar que se limpien correctamente las sesiones | 1 | Fabrizio Cutiri | Done |
+| US23 | Registrar Usuario | T41 | Diseñar formulario de registro | Crear interfaz de registro de nuevos usuarios | 2 | Fabrizio Cutiri | Done |
+| US23 | Registrar Usuario | T42 | Implementar registro | Desarrollar lógica de creación de usuarios | 1 | Fabrizio Cutiri | Done |
+
 #### 4.2.2.3.Development Evidence for Sprint Review
 
 **Mobile Application**<br>
