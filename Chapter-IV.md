@@ -1365,12 +1365,18 @@ Una vez finalizado la configuración del proyecto, solo se sube el APK del proye
 
 <img src="resources/chapter-4/sprint-2/insights-pulse.png" alt="" height="500">
 <br>
+<img src="assets/_flutter_pulse.png" alt="" height="500">
+<br>
 
 **Contributors**
 
 <img src="resources/chapter-4/sprint-2/insights-contributors.png" alt="" height="500">
 <br>
+<img src="assets/_flutter_contributors.png" alt="" height="500">
+<br>
 
 **Network**
 
 <img src="resources/chapter-4/sprint-2/insights-network.png" alt="" height="500">
+<img src="assets/_flutter_network.png" alt="" height="500">
+<br>
