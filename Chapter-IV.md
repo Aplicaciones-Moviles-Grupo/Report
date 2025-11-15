@@ -1100,6 +1100,32 @@ Para este sprint 2 se ha desarrollado todo el app movil en Android Studio, usand
   <img src="resources/chapter-4/execution-evidence-sprint-2/backend-execution-4.png" alt="" height="350">
 </p>
 
+Continuando con el Sprint 2, se desarrolló una aplicación móvil utilizando Flutter y Dart, enfocada en los viajeros y en la visualización de rutas de transporte y sus paradas.
+
+**Card list**
+<p align="center">
+  <img src="assets/flutter_card_list.png" alt="" height="350">
+</p>
+
+**Profile**
+
+<p align="center">
+  <img src="assets/flutter_profile.png" alt="" height="350">
+</p>
+
+**Stops detail**
+
+<p align="center">
+  <img src="assets/flutter_detail.png" alt="" height="350">
+</p>
+<p align="center">
+  <img src="assets/flutter_detail2.png" alt="" height="350">
+</p>
+
+**Favorites**
+<p align="center">
+  <img src="assets/flutter_favorites.png" alt="" height="350">
+</p>
 
 #### 4.2.2.6.Services Documentation Evidence for Sprint Review
 
