@@ -1104,27 +1104,27 @@ Continuando con el Sprint 2, se desarrolló una aplicación móvil utilizando Fl
 
 **Card list**
 <p align="center">
-  <img src="assets/flutter_card_list.png" alt="" height="450">
+  <img src="assets/flutter_card_list.png" alt="" height="550">
 </p>
 
 **Profile**
 
 <p align="center">
-  <img src="assets/flutter_profile.png" alt="" height="450">
+  <img src="assets/flutter_profile.png" alt="" height="550">
 </p>
 
 **Stops detail**
 
 <p align="center">
-  <img src="assets/flutter_detail.png" alt="" height="450">
+  <img src="assets/flutter_detail.png" alt="" height="550">
 </p>
 <p align="center">
-  <img src="assets/flutter_detail2.png" alt="" height="450">
+  <img src="assets/flutter_detail2.png" alt="" height="550">
 </p>
 
 **Favorites**
 <p align="center">
-  <img src="assets/flutter_favorites.png" alt="" height="450">
+  <img src="assets/flutter_favorites.png" alt="" height="550">
 </p>
 
 #### 4.2.2.6.Services Documentation Evidence for Sprint Review
